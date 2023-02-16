@@ -1,0 +1,51 @@
+/* main */
+.main { 
+  display: flex;
+  min-height: 100vh;
+  &__left {
+    flex-grow: 1;
+    max-width: 330px;
+    padding: 22px 25px;
+    border-right: 1px solid #F4F4F4;
+  }
+  &__logos {
+    display: flex;
+    align-items: center;
+    margin-top: -20px;
+    li {
+      margin-top: 20px;
+      &:not(:last-child) {
+        padding-right: 20px;
+        margin-right: 20px;
+        position: relative;
+        &:after {
+          content: '';
+          display: block;
+          width: 2px;
+          height: 32px;
+          background-color: #A9B0C6;
+          position: absolute;
+          top: 50%;
+          right: 0;
+          transform: translate(0,-50%);
+        }
+      }
+    }
+  }
+  &__logo {
+    img {
+      display: block;
+    }
+  }
+  &__right {
+    flex-grow: 1;
+  }
+  &__right-top {
+    padding: 22px 25px 22px 30px;
+    border-bottom: 1px solid #F4F4F4;
+  }
+  &__right-bottom {
+    padding: 30px;
+  }
+}
+/* /main */

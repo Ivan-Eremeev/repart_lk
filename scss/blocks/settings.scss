@@ -14,6 +14,7 @@ body {
   background-color: #fff;
   font-family: 'Lato', Arial, sans-serif;
   font-size: 16px;
+  line-height: 167.5%;
   color: $text_color;
   &.lock {
     overflow: hidden;
@@ -42,6 +43,12 @@ body {
 }
 .row {
   @include row();
+  .gy {
+    margin-top: $gutter * -1;
+    > * {
+      padding-top: $gutter;
+    }
+  }
 }
 .wrapper {
   @include wrapper();
@@ -53,14 +60,14 @@ body {
   color: #a9a9a9;
   opacity: 1;
 }
-.page {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-.content {
-  flex-grow: 1;
-}
+// .page {
+//   min-height: 100vh;
+//   display: flex;
+//   flex-direction: column;
+// }
+// .content {
+//   flex-grow: 1;
+// }
 .navpage {
   padding: 100px 0;
   h1 {

@@ -1,0 +1,11 @@
+/* title */
+.title { 
+  font-weight: 400;
+  font-size: 30px;
+  color: $grayText_color;
+  span {
+    font-weight: bold;
+    color: $text_color;
+  }
+}
+/* /title */
