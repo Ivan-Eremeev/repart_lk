@@ -1,0 +1,38 @@
+/* user-block */
+.user-block { 
+  display: flex;
+  align-items: center;
+  &__icons {
+    margin-right: 45px;
+  }
+  &__list {
+    display: flex;
+    margin-left: -20px;
+    margin-top: -20px;
+    > * {
+      margin-left: 20px;
+      margin-top: 20px;
+    }
+    li {
+      a {
+        display: block;
+        fill: $grayText_color;
+        svg {
+          display: block;
+          max-width: 17px;
+          max-height: 17px;
+        }
+        &:hover {
+          fill: $primary_color;
+        }
+      }
+    }
+  }
+  &__name {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000;
+  }
+}
+/* /user-block */

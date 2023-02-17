@@ -3,9 +3,13 @@
   font-weight: 400;
   font-size: 30px;
   color: $grayText_color;
+  margin-bottom: 20px;
   span {
     font-weight: bold;
     color: $text_color;
+  }
+  &--mb60{
+    margin-bottom: 60px;
   }
 }
 /* /title */
