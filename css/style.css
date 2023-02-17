@@ -548,6 +548,8 @@ body.lock {
   transition: 0.3s;
 }
 .menu__link-1 svg {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   max-width: 13px;
   max-height: 13px;
   margin-right: 15px;
@@ -558,7 +560,7 @@ body.lock {
   fill: #fff;
 }
 .menu__link-2 {
-  font-weight: 400;
+  font-weight: 500;
   color: #151519;
 }
 .menu__link-3 {
@@ -597,7 +599,16 @@ body.lock {
   margin-left: -20px;
 }
 .categories__item {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-width: 190px;
   margin-top: 20px;
   margin-left: 20px;
   padding: 25px 40px;
@@ -606,6 +617,14 @@ body.lock {
   font-weight: 700;
   font-size: 16px;
   color: #151519;
+  fill: #4163BC;
+}
+.categories__item svg {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  max-width: 18px;
+  max-height: 18px;
+  margin-right: 15px;
 }
 .categories__item:hover {
   color: #4163BC;
