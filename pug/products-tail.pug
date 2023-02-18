@@ -46,12 +46,12 @@ block content
           label(for="count_100") 100
       .sort__view 
         .sort__view-icon 
-          input#view_list(type="radio" name="view" checked)
+          input#view_list(type="radio" name="view")
           label(for="view_list") 
             svg(class="icon-list-2")
               use(xlink:href="img/sprite.svg#list-2")
         .sort__view-icon 
-          input#view_tile(type="radio" name="view")
+          input#view_tile(type="radio" name="view" checked)
           label(for="view_tile") 
             svg(class="icon-tile")
               use(xlink:href="img/sprite.svg#tile")
@@ -63,5 +63,18 @@ block content
 
   // products
   .products
-    
+    .row.no-gutter
+      .products__col 
+        include blocks/products-item.pug
+        +products-item('9005000-55102', 'Компьютер T3CAS', 'Кол-во:  <span>0 шт</span>', 'Нет в наличии', 'от 200 000₽')
+      .products__col 
+        +products-item('9005000-55102', 'Компьютер T3CAS', 'Кол-во:  <span>0 шт</span>', 'Нет в наличии', 'от 200 000₽')
+      .products__col 
+        +products-item('9005000-55102', 'Компьютер T3CAS', 'Кол-во:  <span>0 шт</span>', 'Нет в наличии', 'от 200 000₽')
+      .products__col 
+        +products-item('9005000-55102', 'Компьютер T3CAS', 'Кол-во:  <span>0 шт</span>', 'Нет в наличии', 'от 200 000₽')
+      .products__col 
+        +products-item('9005000-55102', 'Компьютер T3CAS', 'Кол-во:  <span>0 шт</span>', 'Нет в наличии', 'от 200 000₽')
+      .products__col 
+        +products-item('9005000-55102', 'Компьютер T3CAS', 'Кол-во:  <span>0 шт</span>', 'Нет в наличии', 'от 200 000₽')
   // /products

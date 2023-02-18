@@ -1,0 +1,14 @@
+mixin products-item(title, name, num, instock, price)
+  .products__item 
+    .products__left 
+      .products__img 
+        img(src="img/", alt="")
+      .products__counter 
+
+    .products__right 
+      .products__title= title
+      .products__name= name
+      .products__row 
+        .products__num!= num
+        .products__instock= instock
+      .products__price= price
