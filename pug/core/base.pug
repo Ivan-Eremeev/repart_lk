@@ -29,7 +29,97 @@ html(lang="ru")
 
   body 
 
-    block content
+    .main 
+      .main__left 
+
+        ul.main__logos
+          li  
+            a(href="#").main__logo 
+              img(src="img/logo-oak.svg", alt="")
+          li 
+            a(href="#").main__logo 
+              img(src="img/logo-rapart.svg", alt="")
+
+        // menu
+        .menu
+          ul.menu__list-1
+            li.menu__item-1.js-has-child 
+              a(href="#").menu__link-1 
+                svg(class="icon-message")
+                  use(xlink:href="img/sprite.svg#message")
+                | Материально-техническое обеспечение
+              ul.menu__list-2
+                li.menu__item-2
+                  a(href="#").menu__link-2 Документация МТО
+                li.menu__item-2
+                  a(href="#").menu__link-2 Рекомендуемый поставщик услуг МТО
+                li.menu__item-2.js-has-child 
+                  a(href="#").menu__link-2 Личный кабинет РАпарт
+                  ul.menu__list-3 
+                    li.menu__item-3.js-has-child 
+                      a(href="#").menu__link-3 Поставка
+                      ul.menu__list-4 
+                        li.menu__item-4
+                          a(href="#").menu__link-4 Каталог
+                        li.menu__item-4
+                          a(href="#").menu__link-4 Отправить заявку
+                        li.menu__item-4
+                          a(href="#").menu__link-4 Заявки
+                        li.menu__item-4
+                          a(href="#").menu__link-4 Заказы
+                    li.menu__item-3
+                      a(href="#").menu__link-3 Ремонт / Обмен / Аренда
+                    li.menu__item-3
+                      a(href="#").menu__link-3 Сервисное соглашение
+                    li.menu__item-3
+                      a(href="#").menu__link-3 Счета
+            li.menu__item-1
+              a(href="#").menu__link-1 
+                svg(class="icon-headphones")
+                  use(xlink:href="img/sprite.svg#headphones")
+                | Оперативно-ситуационный центр
+            li.menu__item-1
+              a(href="#").menu__link-1 
+                svg(class="icon-hammer")
+                  use(xlink:href="img/sprite.svg#hammer")
+                | Техническое обслуживание
+        // /menu
+
+      .main__right 
+        .main__right-top 
+          .main__lang 
+            .main__lang-head.js-drop-btn(data-drop="langMenu") RUS
+              svg(class="icon-arrow-down")
+                use(xlink:href="img/sprite.svg#arrow-down")
+            .main__lang-drop#langMenu 
+              ul.main__drop-list 
+                li 
+                  a(href="#") En
+                li 
+                  a(href="#") GER 
+                li 
+                  a(href="#") ITA
+                li 
+                  a(href="#") FR
+
+          // user-block
+          .user-block
+            .user-block__icons 
+              ul.user-block__list 
+                li 
+                  a(href="#") 
+                    svg(class="icon-man")
+                      use(xlink:href="img/sprite.svg#man")
+                li 
+                  a(href="#") 
+                    svg(class="icon-bell")
+                      use(xlink:href="img/sprite.svg#bell")
+            .user-block__name Романенко Н.А
+          // /user-block
+
+        .main__right-bottom 
+
+          block content
 
     script(src="js/jquery.min.js") 
     //- script(src="js/plugins/jquery.fancybox.min.js")
