@@ -1,5 +1,46 @@
 /* sort */
 .sort { 
-  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__search {
+    
+  }
+  &__controll {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__items {
+    display: flex;
+    align-items: center;
+  }
+  &__item {
+    
+  }
+  &__checkbox {
+    display: flex;
+    align-items: center;
+  }
+  &__count {
+    display: flex;
+    align-items: center;
+  }
+  &__count-title {
+    
+  }
+  &__count-item {
+    
+  }
+  &__view {
+    display: flex;
+    align-items: center;
+  }
+  &__view-icon {
+    
+  }
+  &__cart {
+    
+  }
 }
 /* /sort */

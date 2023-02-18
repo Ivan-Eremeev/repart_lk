@@ -407,12 +407,13 @@ body.lock {
   padding: 14px 40px 14px 20px;
   border-radius: 5px;
   background-color: #fff;
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: -1px 10px 22px rgba(63, 63, 63, 0.06);
+  box-shadow: -1px 10px 22px rgba(63, 63, 63, 0.06);
   font-weight: 400;
   font-size: 14px;
 }
 .main__drop-list li a {
+  display: block;
   color: #151519;
 }
 .main__drop-list li a:hover {
@@ -482,13 +483,13 @@ body.lock {
   line-height: 135%;
 }
 .menu__list-2 {
-  padding: 14px 30px 0;
+  padding: 14px 20px 0 30px;
 }
 .menu__list-3 {
-  padding: 14px 20px 0;
+  padding: 14px 10px 0 20px;
 }
 .menu__list-4 {
-  padding: 14px 20px 0;
+  padding: 14px 10px 0 20px;
 }
 .menu__item-1 {
   margin: 14px 0;
@@ -560,13 +561,22 @@ body.lock {
   font-weight: 500;
   color: #151519;
 }
+.menu__link-2:hover {
+  color: #4163BC;
+}
 .menu__link-3 {
   font-weight: 600;
   color: #151519;
 }
+.menu__link-3:hover {
+  color: #4163BC;
+}
 .menu__link-4 {
   font-weight: 400;
   color: #828282;
+}
+.menu__link-4:hover {
+  color: #4163BC;
 }
 
 .js-has-child > ul {
@@ -629,6 +639,59 @@ body.lock {
 
 /* /categories */
 /* sort */
+.sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.sort__controll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.sort__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.sort__checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.sort__count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.sort__view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
 /* /sort */
 /* products */
 /* /products */

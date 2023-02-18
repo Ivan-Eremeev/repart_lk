@@ -95,11 +95,12 @@
     padding: 14px 40px 14px 20px;
     border-radius: 5px;
     background-color: #fff;
-    box-shadow: 0 0 20px rgba(0,0,0,.2);
+    box-shadow: -1px 10px 22px rgba(63, 63, 63, 0.06);
     font-weight: 400;
     font-size: 14px;
     li {
       a {
+        display: block;
         color: $text_color;
         &:hover {
           color: $primary_color;

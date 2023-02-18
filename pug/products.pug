@@ -7,7 +7,33 @@ block content
 
   // sort
   .sort
-    
+    .sort__search 
+      input(type="text")
+    .sort__controll 
+      .sort__items 
+        .sort__item 
+        .sort__item 
+      .sort___checkbox 
+        input(type="checkbox")
+      .sort__count
+        .sort__count-title Количество: 
+        .sort__count-item 
+          input#count-30(type="radio" name="count")
+          label(for="count-30") 30
+        .sort__count-item 
+          input#count-50(type="radio" name="count")
+          label(for="count-50") 50
+        .sort__count-item 
+          input#count-100(type="radio" name="count")
+          label(for="count-100") 100
+      .sort__view 
+        .sort__view-icon 
+          input#view-list(type="radio" name="view")
+          label(for="view-list") 
+        .sort__view-icon 
+          input#view-tile(type="radio" name="view")
+          label(for="view-tile") 
+      .sort__cart 
   // /sort
 
   // products
