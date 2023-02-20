@@ -14,23 +14,41 @@
     display: flex;
     padding: 20px 30px;
     height: 100%;
+    user-select: none;
   }
   &__left {
     width: 120px;
+    margin-right: 20px;
     flex-shrink: 0;
   }
   &__img {
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    img {
+      max-height: 100%;
+    }
   }
   &__counter {
     
   }
   &__right {
-    padding-left: 20px;
   }
   &__title {
     font-weight: 700;
     font-size: 18px;
+    transition: 0.1s;
+    cursor: pointer;
+    user-select: none;
+    &:hover {
+      color: $primary_color;
+    }
   }
   &__name {
     font-weight: 600;

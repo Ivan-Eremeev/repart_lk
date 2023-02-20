@@ -24,6 +24,7 @@
       position: absolute;
       top: 13px;
       left: 20px;
+      pointer-events: none;
     }
   }
   &__controll {
@@ -151,10 +152,9 @@
   &__view {
     display: flex;
     align-items: center;
-    min-height: 35px;
     margin-right: 30px;
-    padding: 0 12px;
     border-radius: 2px;
+    overflow: hidden;
     background-color: $gray_color;
   }
   &__view-icon {
@@ -166,6 +166,11 @@
       height: 12px;
     }
     label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 35px;
+      height: 35px;
       cursor: pointer;
       user-select: none;
       fill: $border_color;

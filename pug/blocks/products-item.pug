@@ -1,10 +1,18 @@
-mixin products-item(title, name, num, instock, price)
+mixin products-item(img, title, name, num, instock, price)
   .products__item 
     .products__left 
       .products__img 
-        img(src="img/", alt="")
+        img(src= img, alt="")
       .products__counter 
-
+        .counter.js-counter
+          .counter__btn.js-counter-minus 
+            svg(class="icon-minus")
+              use(xlink:href="img/sprite.svg#minus")
+          .counter__input.js-counter-input
+            input(type="text" value="0" maxlength="3")
+          .counter__btn.js-counter-plus 
+            svg(class="icon-plus")
+              use(xlink:href="img/sprite.svg#plus")
     .products__right 
       .products__title= title
       .products__name= name

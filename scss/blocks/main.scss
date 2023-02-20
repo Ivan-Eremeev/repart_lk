@@ -4,6 +4,7 @@
   min-height: 100vh;
   &__left {
     flex-grow: 1;
+    flex-shrink: 0;
     max-width: 330px;
     padding: 22px 25px;
     border-right: 1px solid #F4F4F4;
