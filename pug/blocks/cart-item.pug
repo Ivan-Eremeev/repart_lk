@@ -1,0 +1,24 @@
+mixin cart-item(img, title, name, num, stock, price, stockClass)
+  .cart__item(class= stockClass)
+    .cart__img 
+      img(src= img, alt="")
+    .cart__content 
+      .cart__subtitle= title
+      .cart__name= name
+      .cart__num!= num
+      .cart__bottom 
+        .cart__stock= stock
+        .cart__price= price
+        .cart__counter 
+          .counter.js-counter
+            .counter__btn.js-counter-minus 
+              svg(class="icon-minus")
+                use(xlink:href="img/sprite.svg#minus")
+            .counter__input.js-counter-input
+              input(type="text" value="2" maxlength="3")
+            .counter__btn.js-counter-plus 
+              svg(class="icon-plus")
+                use(xlink:href="img/sprite.svg#plus")
+    .cart__delete 
+      svg(class="icon-basket")
+        use(xlink:href="img/sprite.svg#basket")

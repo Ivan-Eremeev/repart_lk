@@ -1,7 +1,7 @@
-mixin products-item(img, title, name, num, instock, price)
-  .products__item 
+mixin products-item(img, title, name, num, instock, price, stock)
+  .products__item(class= stock)
     .products__left 
-      .products__img 
+      .products__img.js-modal-btn(data-drop="productModal") 
         img(src= img, alt="")
       .products__counter 
         .counter.js-counter
@@ -14,7 +14,7 @@ mixin products-item(img, title, name, num, instock, price)
             svg(class="icon-plus")
               use(xlink:href="img/sprite.svg#plus")
     .products__right 
-      .products__title= title
+      .products__title.js-modal-btn(data-drop="productModal")= title
       .products__name= name
       .products__row 
         .products__num!= num

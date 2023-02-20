@@ -284,7 +284,7 @@ window.onload = function () {
         $this.addClass('is-active');
         drop.addClass('open');
         if (lock) {
-          body.toggleClass('lock');
+          body.addClass('lock');
           body.css('padding-right', scrollWidth);
         }
       } else {
@@ -313,6 +313,7 @@ window.onload = function () {
     })
   }
   dropBlock($('.js-drop-btn'));
+  dropBlock($('.js-modal-btn'), true);
   // dropBlock($('.js-drop-menu'), true);
 
 }
