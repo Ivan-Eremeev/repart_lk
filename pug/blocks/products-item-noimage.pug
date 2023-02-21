@@ -1,0 +1,20 @@
+mixin products-item-noimage(img, title, name, num, instock, price, stock)
+  .products__item.products__item--noimage(class= stock)
+    .products__right 
+      .products__name= name
+      .products__title
+        span.js-modal-btn(data-drop="productModal")= title
+      .products__row 
+        .products__num!= num
+        .products__instock= instock
+        .products__price= price
+      .products__counter 
+        .counter.js-counter
+          .counter__btn.js-counter-minus 
+            svg(class="icon-minus")
+              use(xlink:href="img/sprite.svg#minus")
+          .counter__input.js-counter-input
+            input(type="text" value="0" maxlength="3")
+          .counter__btn.js-counter-plus 
+            svg(class="icon-plus")
+              use(xlink:href="img/sprite.svg#plus")

@@ -14,7 +14,8 @@ mixin products-item(img, title, name, num, instock, price, stock)
             svg(class="icon-plus")
               use(xlink:href="img/sprite.svg#plus")
     .products__right 
-      .products__title.js-modal-btn(data-drop="productModal")= title
+      .products__title
+        span.js-modal-btn(data-drop="productModal")= title
       .products__name= name
       .products__row 
         .products__num!= num
