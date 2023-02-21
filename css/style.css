@@ -97,7 +97,7 @@ h1, h2, h3 {
   font-family: "Lato";
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/lato/Lato-Medium.ttf.woff2") format("woff2"), url("../fonts/lato/Lato-Medium.ttf.woff") format("woff"), url("../fonts/lato/Lato-Medium.ttf.ttf") format("truetype");
+  src: url("../fonts/lato/Lato-Medium.woff2") format("woff2"), url("../fonts/lato/Lato-Medium.woff") format("woff"), url("../fonts/lato/Lato-Medium.ttf") format("truetype");
   font-display: swap;
 }
 @font-face {
