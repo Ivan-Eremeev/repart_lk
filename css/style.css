@@ -1241,7 +1241,7 @@ body.lock {
   opacity: 1;
   right: 0;
 }
-.modal.open ~ .modal__overlay {
+.modal.open + .modal__overlay {
   visibility: visible;
   opacity: 1;
 }

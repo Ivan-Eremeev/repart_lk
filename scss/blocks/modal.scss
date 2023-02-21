@@ -14,7 +14,7 @@
     visibility: visible;
     opacity: 1;
     right: 0;
-    ~ .modal__overlay {
+    + .modal__overlay {
       visibility: visible;
       opacity: 1;
     }
