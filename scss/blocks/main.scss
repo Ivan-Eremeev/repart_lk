@@ -81,15 +81,15 @@
     padding-top: 10px;
     position: absolute;
     top: 100%;
-    left: 0;
+    left: 50%;
     visibility: hidden;
     opacity: 0;
-    transform: translate(0,10px);
+    transform: translate(-50%,10px);
     transition: 0.3s;
     &.open {
       visibility: visible;
       opacity: 1;
-      transform: translate(0,0);
+      transform: translate(-50%,0);
     }
   }
   &__drop-list {

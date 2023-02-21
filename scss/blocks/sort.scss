@@ -28,6 +28,36 @@
       pointer-events: none;
     }
   }
+  &__search-drop {
+    display: none;
+    width: 100%;
+    max-height: 200px;
+    padding: 14px 20px;
+    background: #FFFFFF;
+    box-shadow: -1px 10px 22px rgba(63, 63, 63, 0.06);
+    border-radius: 5px;
+    overflow-y: auto;
+    position: absolute;
+    top: calc(100% + 14px);
+    z-index: 5;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+    li {
+      color: $grayText_color;
+      cursor: pointer;
+      user-select: none;
+      &:hover {
+        color: $primary_color;
+      }
+    }
+    &.open {
+      display: block;
+    }
+  }
   &__controll {
     display: flex;
     align-items: center;
