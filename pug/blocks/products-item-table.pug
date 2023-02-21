@@ -1,0 +1,27 @@
+mixin products-item-table(img, title, name, num, stock, price, addClass)
+  tr.products-table__item(class= addClass)
+    td 
+      .products-table__img.js-modal-btn(data-drop="productModal")
+        img(src= img, alt="")
+    td 
+      .products-table__title
+        span.products-table__title-span.js-modal-btn(data-drop="productModal")= title
+    td 
+      .products-table__name= name
+    td 
+      .products-table__num= num
+    td 
+      .products-table__stock= stock
+    td 
+      .products-table__price= price
+    td
+      .products-table__counter 
+        .counter.js-counter
+          .counter__btn.js-counter-minus 
+            svg(class="icon-minus")
+              use(xlink:href="img/sprite.svg#minus")
+          .counter__input.js-counter-input
+            input(type="text" value="0" maxlength="3")
+          .counter__btn.js-counter-plus 
+            svg(class="icon-plus")
+              use(xlink:href="img/sprite.svg#plus")

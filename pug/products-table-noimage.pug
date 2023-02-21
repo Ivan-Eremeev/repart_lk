@@ -1,7 +1,7 @@
 extends core/base.pug
 
 block title 
-  title Товары (плитка без фото)
+  title Товары (список без фото)
 
 block content
 
@@ -10,41 +10,26 @@ block content
 
   include blocks/sort.pug
 
-  // products
-  .products
-    .row.no-gutter
-      .products__col 
-        include blocks/products-item-noimage.pug
-        +products-item-noimage('img/products/image-1.jpg', '9005000-55102', 'Компьютер T3CAS', 'Кол-во:  <span>0 шт</span>', 'Нет в наличии', 'от 200 000₽', 'products__item--nostock')
-      .products__col 
-        +products-item-noimage('img/products/image-2.jpg', '(2)-10-60-Хим.Пас-ОСТ 1 31162-80', 'Болт', 'Кол-во:  <span>44 шт</span>', 'Нет в наличии', 'от 200 000₽', 'products__item--nostock')
-      .products__col 
-        +products-item-noimage('img/products/image-3.jpg', '0,2-16-28-ХИМ.ПАС-ОСТ 1 34508-80', 'Распределительное устройство Распределительное', 'Кол-во:  <span>44 шт</span>', 'Будет 22.02.23', 'от 200 000₽', 'products__item--soonstock')
-      .products__col 
-        +products-item-noimage('img/products/image-4.jpg', '0,2-16-28-ХИМ.ПАС-ОСТ 1 34508-80', 'Шайба', 'Кол-во:  <span>44 шт</span>', 'В наличии', 'от 200 000₽')
-      .products__col 
-        +products-item-noimage('img/products/image-5.jpg', '(2)-10-60-Хим.Пас-ОСТ 1 31162-80', 'Эмаль ЭП-140М цвет темно-красн...', 'Кол-во:  <span>44 шт</span>', 'Будет 22.02.23', 'от 200 000₽', 'products__item--soonstock')
-      .products__col 
-        +products-item-noimage('img/products/image-6.jpg', '(2)-10-60-Хим.Пас-ОСТ 1 31162-80', 'Грунтовка', 'Кол-во:  <span>44 шт</span>', 'В наличии', 'от 200 000₽')
-      .products__col 
-        +products-item-noimage('img/products/image-7.jpg', '(2)-10-60-Хим.Пас-ОСТ 1 31162-80', 'Развертка ручная цилиндрическая', 'Кол-во:  <span>44 шт</span>', 'В наличии', 'от 200 000₽')
-      .products__col 
-        +products-item-noimage('img/products/image-8.jpg', '(2)-10-60-Хим.Пас-ОСТ 1 31162-80', 'Фанера береза', 'Кол-во:  <span>44 шт</span>', 'В наличии', 'от 200 000₽')
-      .products__col 
-        +products-item-noimage('img/products/no-image.jpg', '(2)-10-60-Хим.Пас-ОСТ 1 31162-80', 'Эмаль красная', 'Кол-во:  <span>44 шт</span>', 'В наличии', 'от 200 000₽')
-      .products__col 
-        +products-item-noimage('img/products/image-9.jpg', '(2)-10-60-Хим.Пас-ОСТ 1 31162-80', 'Розетка', 'Кол-во:  <span>44 шт</span>', 'В наличии', 'от 200 000₽')
-      .products__col 
-        +products-item-noimage('img/products/image-10.jpg', '(2)-10-60-Хим.Пас-ОСТ 1 31162-80', 'Блок дополнительной топливной...', 'Кол-во:  <span>44 шт</span>', 'В наличии', 'от 200 000₽')
-      .products__col 
-        +products-item-noimage('img/products/no-image.jpg', '(2)-10-60-Хим.Пас-ОСТ 1 31162-80', 'Лист холоднокатанный', 'Кол-во:  <span>44 шт</span>', 'В наличии', 'от 200 000₽')
-      .products__col 
-        +products-item-noimage('img/products/no-image.jpg', '(2)-10-60-Хим.Пас-ОСТ 1 31162-80', 'Розетка', 'Кол-во:  <span>44 шт</span>', 'В наличии', 'от 200 000₽')
-      .products__col 
-        +products-item-noimage('img/products/image-5.jpg', '(2)-10-60-Хим.Пас-ОСТ 1 31162-80', 'Блок дополнительной топливной...', 'Кол-во:  <span>44 шт</span>', 'В наличии', 'от 200 000₽')
-      .products__col 
-        +products-item-noimage('img/products/no-image.jpg', '(2)-10-60-Хим.Пас-ОСТ 1 31162-80', 'Лист холоднокатанныйAS', 'Кол-во:  <span>44 шт</span>', 'В наличии', 'от 200 000₽')
-  // /products
+  // products-table
+  .products-table.products-table--noimage
+    table.products-table__table 
+      tr 
+        th Номер запчасти
+        th Название запчасти
+        th Кол-во
+        th В наличии
+        th Цена
+        th 
+      include blocks/products-item-table-noimage.pug
+      +products-item-table-noimage('img/products/image-1.jpg', '9005000-55102', 'Компьютер T3CAS', '44 шт', 'Нет в наличии', 'от 200 000₽', 'products-table__item--nostock')
+      +products-item-table-noimage('img/products/image-2.jpg', '0,2-16-28-ХИМ.ПАС-ОСТ 1 34508-80', 'Шайба', '44 шт', 'Будет 22.02.23', 'от 200 000₽', 'products-table__item--soonstock')
+      +products-item-table-noimage('img/products/image-3.jpg', '0,2-16-28-ХИМ.ПАС-ОСТ 1 34508-80', 'Развертка ручная цилиндрическая', '44 шт', 'Будет 22.02.23', 'от 200 000₽', 'products-table__item--soonstock')
+      +products-item-table-noimage('img/products/image-4.jpg', '0,2-16-28-ХИМ.ПАС-ОСТ 1 34508-80', 'Розетка', '44 шт', 'Будет 22.02.23', 'от 200 000₽', 'products-table__item--soonstock')
+      +products-item-table-noimage('img/products/no-image.jpg', '0,2-16-28-ХИМ.ПАС-ОСТ 1 34508-80', 'Распределительное устройство переменного тока', '44 шт', 'Будет 22.02.23', 'от 200 000₽', 'products-table__item--soonstock')
+      +products-item-table-noimage('img/products/no-image.jpg', '0,2-16-28-ХИМ.ПАС-ОСТ 1 34508-80', 'Распределительное устройство переменного тока', '44 шт', 'Будет 22.02.23', 'от 200 000₽', 'products-table__item--soonstock')
+      +products-item-table-noimage('img/products/no-image.jpg', '0,2-16-28-ХИМ.ПАС-ОСТ 1 34508-80', 'Распределительное устройство переменного тока', '44 шт', 'В наличии', 'от 200 000₽')
+      +products-item-table-noimage('img/products/no-image.jpg', '0,2-16-28-ХИМ.ПАС-ОСТ 1 34508-80', 'Распределительное устройство переменного тока', '44 шт', 'В наличии', 'от 200 000₽')
+  // /products-table
 
   // modal
   .modal#cartModal
