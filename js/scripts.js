@@ -67,6 +67,8 @@ window.onload = function () {
     nextHtml: `<svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M6.84675 3.48573L3.8295 0.72718L4.62488 8.08639e-07L9 4L4.62487 8L3.8295 7.27282L6.84675 4.51427L-7.893e-07 4.51427L-6.09464e-07 3.48573L6.84675 3.48573Z"/>
     </svg>`,
+    showOtherMonths: false,
+    selectOtherMonths: false,
     // inline: true,
   });
 
