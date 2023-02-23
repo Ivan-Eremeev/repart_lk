@@ -61,6 +61,12 @@ window.onload = function () {
   new AirDatepicker('#date', {
     range: true,
     multipleDatesSeparator: '-',
+    prevHtml: `<svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M2.15325 4.51427L5.1705 7.27282L4.37512 8L3.49691e-07 4L4.37513 -4.04319e-07L5.1705 0.727179L2.15325 3.48573L9 3.48573L9 4.51427L2.15325 4.51427Z"/>
+    </svg>`,
+    nextHtml: `<svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M6.84675 3.48573L3.8295 0.72718L4.62488 8.08639e-07L9 4L4.62487 8L3.8295 7.27282L6.84675 4.51427L-7.893e-07 4.51427L-6.09464e-07 3.48573L6.84675 3.48573Z"/>
+    </svg>`,
     // inline: true,
   });
 

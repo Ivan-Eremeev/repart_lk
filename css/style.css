@@ -404,7 +404,7 @@ body.lock {
 .input--has-icon input:focus ~ svg {
   fill: #4163BC;
 }
-.input--has-icon svg {
+.input--has-icon > svg {
   width: 13px;
   height: 13px;
   position: absolute;
@@ -567,8 +567,35 @@ body.lock {
   color: #fff;
 }
 
+.air-datepicker-nav--action {
+  background-color: #F8F8F8;
+}
+.air-datepicker-nav--action svg {
+  width: 9px;
+  height: 8px;
+  fill: #828282;
+}
 .air-datepicker-nav--action:hover {
-  background: transparent;
+  background-color: #F8F8F8;
+}
+.air-datepicker-nav--action:hover path {
+  fill: #4163BC;
+}
+
+.air-datepicker-nav--action path {
+  fill: #828282;
+  stroke: none;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.air-datepicker-cell.-in-range- {
+  background-color: #F8F8F8;
+}
+
+.air-datepicker--pointer {
+  display: none;
 }
 
 /* /air-datepicker */

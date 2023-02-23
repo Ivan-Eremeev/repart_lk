@@ -40,8 +40,28 @@
   color: #fff;
 }
 .air-datepicker-nav--action {
-  &:hover {
-    background: transparent;
+  background-color: $gray_color;
+  svg {
+    width: 9px;
+    height: 8px;
+    fill: $grayText_color;
   }
+  &:hover {
+    background-color: $gray_color;
+    path {
+      fill: $primary_color;
+    }
+  }
+}
+.air-datepicker-nav--action path {
+  fill: $grayText_color;
+  stroke: none;
+  transition: .1s;
+}
+.air-datepicker-cell.-in-range- {
+  background-color: $gray_color;
+}
+.air-datepicker--pointer {
+  display: none;
 }
 /* /air-datepicker */
