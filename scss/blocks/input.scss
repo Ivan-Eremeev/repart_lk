@@ -1,0 +1,60 @@
+/* input */
+.input { 
+  input {
+    display: block;
+    width: 100%;
+    height: 35px;
+    padding: 0 15px;
+    border-radius: 2px;
+    background-color: $gray_color;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: $primary_color;
+  }
+  &--has-icon {
+    position: relative;
+    fill: $grayText_color;
+    input {
+      padding-left: 38px;
+      cursor: pointer;
+      user-select: none;
+      &:focus {
+        ~ svg {
+          fill: $primary_color;
+        }
+      }
+    }
+    svg {
+      width: 13px;
+      height: 13px;
+      position: absolute;
+      top: 11px;
+      left: 15px;
+    }
+  }
+  &--select {
+    position: relative;
+    b {
+      content: '';
+      display: block;
+      height: 0;
+      border-color: #888 transparent transparent transparent;
+      border-style: solid;
+      border-width: 5px 4px 0 4px;
+      position: absolute;
+      top: 17px;
+      right: 15px;
+    }
+    input {
+      padding-right: 30px;
+      &:focus {
+        ~ b {
+          border-color: $primary_color transparent transparent transparent;
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+}
+/* /input */

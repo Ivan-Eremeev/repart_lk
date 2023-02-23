@@ -1,0 +1,40 @@
+extends core/base.pug
+
+block title 
+  title Товары (плитка)
+
+block content
+
+  h1.title.title--mb60 Материально-техническое обеспечение - Личный кабинет РАпарт - Поставка - 
+    span Каталог
+
+  include blocks/sort.pug
+
+  include blocks/filter.pug
+
+  // modal
+  .modal#cartModal
+    // cart
+    .cart
+      .cart__products 
+        .cart__head 
+          .cart__title Корзина
+          .cart__close.js-drop-close(data-drop="cartModal") Скрыть
+            .cart__cross 
+        .cart__items 
+          include blocks/cart-item.pug
+          +cart-item('img/products/image-1.jpg', '9005000-55102', 'Компьютер T3CAS', 'Кол-во:  <span>44 шт</span>', 'Нет в наличии', 'от 200 000₽', 'cart--nostock')
+          +cart-item('img/products/image-2.jpg', '0,2-16-28-ХИМ.ПАС-ОСТ 1 34508-80', 'Шайба', 'Кол-во:  <span>12 шт</span>', 'Будет 22.02.23', '157 890₽', 'cart--soonstock')
+          +cart-item('img/products/no-image.jpg', '0,2-16-28-ХИМ.ПАС-ОСТ 1 34508-80', 'Развертка ручная цилиндрическая', 'Кол-во:  <span>12 шт</span>', 'В наличии', '157 890₽')
+          +cart-item('img/products/image-9.jpg', '0,2-16-28-ХИМ.ПАС-ОСТ 1 34508-80', 'Розетка', 'Кол-во:  <span>12 шт</span>', 'Будет 22.02.23', '185 800₽', 'cart--soonstock')
+          +cart-item('img/products/image-3.jpg', '0,2-16-28-ХИМ.ПАС-ОСТ 1 34508-80', 'Распределительное устройство переменног...', 'Кол-во:  <span>12 шт</span>', 'Будет 22.02.23', '157 890₽', 'cart--soonstock')
+      .cart__arrange 
+        .cart__subhead 
+          .cart__title Общая сумма
+          .cart__result 530 820₽
+        .cart__all Всего товаров 6 шт
+        .cart__text После отправки запроса менеджер свяжется с Вами в ближайшее время
+        .cart__btn.btn Оформить заказ
+    // /cart
+  .modal__overlay
+  // /modal

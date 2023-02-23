@@ -1,0 +1,37 @@
+// filter
+form(action="#").filter
+  .filter__selects 
+    .filter__col 
+      .input.input--select.input--has-icon 
+        input#date(type="text", name="date" placeholder="Выбрать период")
+        svg(class="icon-calendar")
+          use(xlink:href="img/sprite.svg#calendar")
+        b 
+    .filter__col 
+      .select 
+        select#status(name="status" data-placeholder="Статус").js-select-styled 
+          option(value="" disabled selected hidden) Статус
+          option(value="#") В работе
+          option(value="#") Выполнен
+          option(value="#") Новый
+          option(value="#") Закрыт
+          option(value="#") AOG
+    .filter__col 
+      .select 
+        select#priority(name="priority" data-placeholder="Приоритет").js-select-styled 
+          option(value="" disabled selected hidden) Приоритет
+          option(value="#") CRITICAL A (MEL A)
+          option(value="#") ROUTINE B (MEL B)
+          option(value="#") ROUTINE C (MEL C)
+          option(value="#") ROUTINE D (MEL D)
+          option(value="#") AOG
+    .filter__col 
+      .filter__icon 
+        svg(class="icon-basket")
+          use(xlink:href="img/sprite.svg#basket")
+    .filter__col.filter__col--right
+      a(href="#").filter__download 
+        svg(class="icon-excel")
+          use(xlink:href="img/sprite.svg#excel")
+        | Скачать отчет
+// /filter

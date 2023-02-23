@@ -60,7 +60,7 @@ body {
   -webkit-box-shadow: inset 0 0 0 50px #fff !important;
 }
 *::placeholder {
-  color: #a9a9a9;
+  color: $grayText_color;
   opacity: 1;
 }
 // .page {

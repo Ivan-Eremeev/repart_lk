@@ -57,10 +57,20 @@ window.onload = function () {
   //   });
   // }
 
-  // // Air Datepicker | Календарь
-  // new AirDatepicker('#airDatepicker', {
-  //   position: 'right top',
-  // });
+  // Air Datepicker | Календарь
+  new AirDatepicker('#date', {
+    range: true,
+    multipleDatesSeparator: '-',
+    // inline: true,
+  });
+
+  // Select2 || Стилизация селектов
+  $('.js-select-styled ').select2({
+    minimumResultsForSearch: Infinity,
+    placeholder: function () {
+      $(this).data('placeholder');
+    }
+  });
 
   // // Magnific Popup | Попап окна
   // $('.open-popup-link').magnificPopup({
