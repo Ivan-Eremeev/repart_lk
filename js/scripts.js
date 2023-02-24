@@ -363,4 +363,53 @@ window.onload = function () {
   }
   filterSearch();
 
+  // Цвет у пункта в таблице когда отмечен чекбокс
+  function checkboxColorItem() {
+    let checkbox = $('.table__drop-checkbox input');
+    checkbox.on('change', function () {
+      console.log($(this).closest('tr'));
+      $(this).closest('tr').toggleClass('active');
+    })
+  }
+  checkboxColorItem();
+
+  // Открывание вложенной таблицы при клике на родительский пункт таблицы
+  function toggleTable() {
+    let item = $('.js-table-item');
+    let drop = $('.js-table-drop');
+    item.on('click', function () {
+      let itemCurrent = $(this);
+      let dropCurrent = itemCurrent.next('tr').find('.js-table-drop');
+      if (!itemCurrent.hasClass('active')) {
+        itemCurrent.addClass('active');
+        dropCurrent.addClass('open');
+      }else {
+        itemCurrent.removeClass('active');
+        dropCurrent.removeClass('open');
+      }
+    })
+  }
+  toggleTable();
+
+  // Вывод подсказки, если текст не вмещается
+  function tooltipShowTextOverflow() {
+    let block = $('.js-text-overflow');
+    console.log(block);
+    function overflow(e) {
+      return e.scrollWidth > e.offsetWidth || e.scrollHeight > e.offsetHeight;
+    }
+    block.each(function () { 
+      let blockCurrent = $(this);
+      console.log(blockCurrent);
+      if (overflow(blockCurrent[0])) {
+        let icon = $('<div class="text-overflow-icon"><svg class="icon-info"><use xlink: href= "img/sprite.svg#info"></use></div>');
+        let drop = $('<div class="text-overflow-drop"></div>');
+        drop.text(blockCurrent.text());
+        blockCurrent.parent().append(icon);
+        blockCurrent.parent().append(drop);
+      }
+    });
+  }
+  tooltipShowTextOverflow();
+
 }
