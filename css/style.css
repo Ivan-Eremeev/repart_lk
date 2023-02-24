@@ -2171,12 +2171,6 @@ body.lock {
 .table__table td {
   padding: 30px 10px;
 }
-.table__drop {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  visibility: hidden;
-}
 .table__drop tr.active {
   background-color: #EBFFF3;
 }
@@ -2187,10 +2181,6 @@ body.lock {
 .table__drop td {
   padding: 10px 10px;
 }
-.table__drop.open {
-  position: static;
-  visibility: visible;
-}
 .table__item.active {
   background-color: #F8F8F8;
 }
@@ -2199,7 +2189,14 @@ body.lock {
 }
 .table__has-table-td {
   padding: 0 !important;
-  position: relative;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  visibility: hidden;
+}
+.table__has-table-td.open {
+  position: static;
+  visibility: visible;
 }
 .table__table-title {
   font-weight: 500;

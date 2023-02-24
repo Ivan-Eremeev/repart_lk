@@ -33,11 +33,6 @@
     }
   }
   &__drop {
-    // display: none;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    visibility: hidden;
     tr {
       &.active {
         background-color: #EBFFF3;
@@ -49,11 +44,6 @@
     }
     td {
       padding: 10px 10px;
-    }
-    &.open {
-      // display: table;
-      position: static;
-      visibility: visible;
     }
   }
   &__item {
@@ -68,7 +58,15 @@
   }
   &__has-table-td {
     padding: 0 !important;
-    position: relative;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    visibility: hidden;
+    &.open {
+      // display: table;
+      position: static;
+      visibility: visible;
+    }
   }
   &__table-title {
     font-weight: 500;
