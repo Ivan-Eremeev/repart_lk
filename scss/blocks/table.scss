@@ -6,6 +6,7 @@
     width: 100%;
     th {
       text-align: left;
+      white-space: nowrap;
       &:first-child {
         padding-left: 40px;
       }
@@ -52,6 +53,7 @@
     }
   }
   &__has-table-row {
+    position: relative;
     &:not(:last-child) {
       border-bottom: 1px solid $border_color;
     }
@@ -63,7 +65,6 @@
     bottom: 0;
     visibility: hidden;
     &.open {
-      // display: table;
       position: static;
       visibility: visible;
     }
@@ -112,6 +113,10 @@
       margin-right: 8px;
       background-size: contain;
       background-repeat: no-repeat;
+    }
+    &--2 {
+      font-size: 14px;
+      font-weight: normal;
     }
     &--issued {
       &:before {
@@ -165,6 +170,42 @@
   }
   &__text-center {
     text-align: center;
+  }
+  &__drop-small-text {
+    font-size: 14px;
+  }
+  &__tabs {
+
+  }
+  &__triggers {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 40px;
+    margin-left: -10px;
+    margin-top: -10px;
+  }
+  &__trigger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    padding: 0 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: $gray_color;
+    border-radius: 10px;
+    font-weight: 500;
+    color: $text_color;
+    text-align: center;
+    &:hover {
+      color: $grayText_color;
+    }
+    &.active {
+      color: $primary_color;
+    }
+  }
+  &__content {
+    
   }
 }
 
