@@ -1,0 +1,38 @@
+/* breadcrumbs */
+.breadcrumbs { 
+  font-size: 25px;
+  line-height: 1.5;
+  margin-bottom: 60px;
+  ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    li {
+      &:not(:last-child) {
+        padding-right: 12px;
+        margin-right: 12px;
+        position: relative;
+        &:after {
+          content: '';
+          display: block;
+          width: 8px;
+          height: 2px;
+          background-color: $grayText_color;
+          position: absolute;
+          top: 20px;
+          right: -4px;
+        }
+      }
+      a {
+        color: $grayText_color;
+        &:hover {
+          color: $text_color;
+        }
+      }
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+}
+/* /breadcrumbs */

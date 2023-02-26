@@ -5,8 +5,18 @@ block title
 
 block content
 
-  h1.title.title--mb60 Материально-техническое обеспечение - Личный кабинет РАпарт - Поставка - 
-    span Каталог
+  // breadcrumbs
+  .breadcrumbs
+    ul 
+      li 
+        a(href="#") Материально-техническое обеспечение
+      li 
+        a(href="#") Личный кабинет РАпарт
+      li 
+        a(href="#") Поставка
+      li 
+        span Заказы
+  // /breadcrumbs
 
   include blocks/sort.pug
   +sort

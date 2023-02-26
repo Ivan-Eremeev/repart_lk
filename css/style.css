@@ -267,22 +267,48 @@ body.lock {
 }
 
 /* /settings */
-/* title */
-.title {
-  font-weight: 400;
-  font-size: 30px;
-  color: #828282;
-  margin-bottom: 20px;
-}
-.title span {
-  font-weight: bold;
-  color: #151519;
-}
-.title--mb60 {
+/* breadcrumbs */
+.breadcrumbs {
+  font-size: 25px;
+  line-height: 1.5;
   margin-bottom: 60px;
 }
+.breadcrumbs ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.breadcrumbs ul li:not(:last-child) {
+  padding-right: 12px;
+  margin-right: 12px;
+  position: relative;
+}
+.breadcrumbs ul li:not(:last-child):after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 2px;
+  background-color: #828282;
+  position: absolute;
+  top: 20px;
+  right: -4px;
+}
+.breadcrumbs ul li a {
+  color: #828282;
+}
+.breadcrumbs ul li a:hover {
+  color: #151519;
+}
+.breadcrumbs ul li span {
+  font-weight: bold;
+}
 
-/* /title */
+/* /breadcrumbs */
 /* counter */
 .counter {
   display: -webkit-box;
