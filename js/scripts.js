@@ -92,7 +92,7 @@ window.onload = function () {
 			tabs.each( function () {
         let triggers = $(this).find('.js-tabs-trigger');
         let contents = $(this).find('.js-tabs-content');
-        let time = 300;
+        let time = 0;
         triggers.on('click', function (e) {
           e.preventDefault();
           let trigger = $(this);

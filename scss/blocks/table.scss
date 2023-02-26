@@ -189,6 +189,7 @@
     align-items: center;
     font-size: 14px;
     color: $text_color;
+    transition: none;
     &:before {
       content: '';
       display: block;
