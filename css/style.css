@@ -2194,6 +2194,9 @@ body.lock {
 .table__item.active {
   background-color: #F8F8F8;
 }
+.table__item--border-bottom:not(.table__item--border-bottom:last-child) {
+  border-bottom: 1px solid #D9D9D9;
+}
 .table__has-table-row {
   position: relative;
 }
@@ -2376,6 +2379,25 @@ body.lock {
 .table__table-sort label svg {
   width: 14px;
   height: 9px;
+}
+.table__gray-status {
+  font-size: 14px;
+  color: #828282;
+}
+.table__gray-status--issued {
+  padding-left: 13px;
+  position: relative;
+}
+.table__gray-status--issued:before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  background-color: #219653;
+  border-radius: 100%;
+  position: absolute;
+  top: 10px;
+  left: 0;
 }
 .table__triggers {
   display: -webkit-box;
