@@ -50,5 +50,65 @@
       color: $primary_color;
     }
   }
+  &__radio-block {
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-top: 10px;
+  }
+  &__radio-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: -10px;
+    margin-left: -30px;
+    .filter__col {
+      margin-top: 10px;
+      margin-left: 30px;
+    }
+  }
+  &__radio {
+    font-size: 14px;
+    input {
+      position: absolute;
+      visibility: hidden;
+      &:checked {
+        ~ label {
+          .filter__radio-circle {
+            border-color: $primary_color;
+            &:after {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+    label {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      user-select: none;
+    }
+  }
+  &__radio-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+    border-radius: 100%;
+    border: 1px solid $grayText_color;
+    position: relative;
+    &:after {
+      content: '';
+      display: block;
+      width: 6px;
+      height: 6px;
+      border-radius: 100%;
+      background-color: $primary_color;
+      opacity: 0;
+    }
+  }
 }
 /* /filter */

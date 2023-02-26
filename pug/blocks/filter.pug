@@ -1,4 +1,4 @@
-mixin filter(moreBtn)
+mixin filter(moreBtn, moreRadio)
   // filter
   form(action="#").filter
     .filter__selects 
@@ -27,6 +27,27 @@ mixin filter(moreBtn)
               option(value="#") ROUTINE C (MEL C)
               option(value="#") ROUTINE D (MEL D)
               option(value="#") AOG
+      if moreRadio
+        .filter__radio-block 
+          .filter__radio-row 
+            .filter__col 
+              .filter__radio 
+                input#statusSERV(type="radio", name="status")
+                label(for="statusSERV") 
+                  span.filter__radio-circle
+                  | Передан SERV
+            .filter__col 
+              .filter__radio 
+                input#statusUNSERV(type="radio", name="status")
+                label(for="statusUNSERV") 
+                  span.filter__radio-circle
+                  | Передан UNSERV
+            .filter__col 
+              .filter__radio 
+                input#statusSwap(type="radio", name="status")
+                label(for="statusSwap") 
+                  span.filter__radio-circle
+                  | Обмен правами
       .filter__col 
         .filter__icon 
           svg(class="icon-basket")

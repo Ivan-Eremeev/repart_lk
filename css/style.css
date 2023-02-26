@@ -2145,6 +2145,81 @@ body.lock {
 .filter__download:hover {
   color: #4163BC;
 }
+.filter__radio-block {
+  margin-left: 30px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+.filter__radio-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: -10px;
+  margin-left: -30px;
+}
+.filter__radio-row .filter__col {
+  margin-top: 10px;
+  margin-left: 30px;
+}
+.filter__radio {
+  font-size: 14px;
+}
+.filter__radio input {
+  position: absolute;
+  visibility: hidden;
+}
+.filter__radio input:checked ~ label .filter__radio-circle {
+  border-color: #4163BC;
+}
+.filter__radio input:checked ~ label .filter__radio-circle:after {
+  opacity: 1;
+}
+.filter__radio label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.filter__radio-circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 12px;
+  height: 12px;
+  margin-right: 10px;
+  border-radius: 100%;
+  border: 1px solid #828282;
+  position: relative;
+}
+.filter__radio-circle:after {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  background-color: #4163BC;
+  opacity: 0;
+}
 
 /* /filter */
 /* table */
