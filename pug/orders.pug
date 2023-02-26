@@ -19,11 +19,19 @@ block content
 
       tr 
         th 
-          .table__table-title Дата
+          .table__table-sort 
+            input#dateSortTable(type="checkbox", name="dateSortTable")
+            label(for="dateSortTable") Дата
+              svg(class="icon-pyramid")
+                use(xlink:href="img/sprite.svg#pyramid")
         th 
           .table__table-title № Клиента
         th 
-          .table__table-title Сумма
+          .table__table-sort 
+            input#priceSortTable(type="checkbox", name="dateSortTable")
+            label(for="priceSortTable") Сумма
+              svg(class="icon-pyramid")
+                use(xlink:href="img/sprite.svg#pyramid")
         th 
           .table__table-title Приоритет
         th 
@@ -51,15 +59,15 @@ block content
 
             ul.table__triggers
               li 
-                a(href="#tab_00").table__trigger.js-tabs-trigger.active tab_1
+                a(href="#tab_0_0").table__trigger.js-tabs-trigger.active Заказ
               li 
-                a(href="#tab_01").table__trigger.js-tabs-trigger tab_2
+                a(href="#tab_0_1").table__trigger.js-tabs-trigger Счет
               li 
-                a(href="#tab_02").table__trigger.js-tabs-trigger tab_3
+                a(href="#tab_0_2").table__trigger.js-tabs-trigger Реализация
 
             div
-              .table__content.js-tabs-content.open(data-href="#tab_00")
 
+              .table__content.js-tabs-content.open(data-href="#tab_0_0")
                 table.table__drop
                   tr 
                     th 
@@ -78,7 +86,7 @@ block content
                       .table__drop-title Дата РО
                     th 
                       .table__drop-title Состояние
-                  mixin table__drop-item-1(num, id)
+                  mixin table__drop-item-1(num)
                     tr 
                       td 
                         .table__drop-small-text= num
@@ -96,21 +104,387 @@ block content
                         .table__drop-small-text 03.03.2022
                       td 
                         .table__table-status.table__table-status--2.table__table-status--issued Отгружен
-                  +table__drop-item-1(1, 'table_checkbox_0_0')
-                  +table__drop-item-1(2, 'table_checkbox_0_1', 'Распределительное устройство переменного тока')
-                  +table__drop-item-1(3, 'table_checkbox_0_2', 'Розетка')
-                  +table__drop-item-1(4, 'table_checkbox_0_3', 'Розетка')
-                  +table__drop-item-1(5, 'table_checkbox_0_4', 'Розетка')
-                  +table__drop-item-1(6, 'table_checkbox_0_5', 'Розетка')
-                  +table__drop-item-1(7, 'table_checkbox_0_6', 'Розетка')
-                  +table__drop-item-1(8, 'table_checkbox_0_7', 'Розетка')
-                  +table__drop-item-1(9, 'table_checkbox_0_8', 'Розетка')
+                  +table__drop-item-1(1)
+                  +table__drop-item-1(2)
+                  +table__drop-item-1(3)
+                  +table__drop-item-1(4)
+                  +table__drop-item-1(5)
+                  +table__drop-item-1(6)
+                  +table__drop-item-1(7)
+                  +table__drop-item-1(8)
+                  +table__drop-item-1(9)
 
-              .table__content.js-tabs-content(data-href="#tab_01")
-                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt assumenda quod fugit, eos dolorem ut ex inventore facere non sit.
-              .table__content.js-tabs-content(data-href="#tab_02")
-                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt assumenda quod fugit, eos dolorem ut ex inventore facere non sit. Dolorum, eveniet, adipisci! Aperiam soluta, harum obcaecati earum optio libero reprehenderit, fuga. Libero odio eaque deserunt recusandae, maxime quaerat autem! Eligendi inventore laudantium odit magni nihil eos soluta quisquam, unde. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus officia, aliquam, nemo est unde nesciunt ipsam iure numquam natus error!
+              .table__content.js-tabs-content(data-href="#tab_0_1")
+                table.table__drop
+                  tr 
+                    th 
+                      .table__drop-title №
+                    th 
+                      .table__drop-title Дата
+                    th 
+                      .table__drop-title.table__text-center Сумма USD
+                    th 
+                      .table__drop-title Отменен
+                    th 
+                      .table__drop-title Файл
+                    th 
+                      .table__drop-title Состояние
+                  mixin table__drop-item-2(num)
+                    tr 
+                      td 
+                        .table__drop-small-text= num
+                      td 
+                        .table__drop-small-text 01.03.2022
+                      td 
+                        .table__drop-small-text.table__text-center $17,384.14
+                      td 
+                        .table__drop-small-text Нет
+                      td 
+                        a(href="#").table__drop-file PDF 1.44
+                      td 
+                        .table__table-status.table__table-status--2.table__table-status--issued Отгружен
+                  +table__drop-item-2(1)
+                  +table__drop-item-2(2)
+                  +table__drop-item-2(3)
+                  +table__drop-item-2(4)
+                  +table__drop-item-2(5)
+                  +table__drop-item-2(6)
+                  +table__drop-item-2(7)
+                  +table__drop-item-2(8)
+                  +table__drop-item-2(9)
+                  
+              .table__content.js-tabs-content(data-href="#tab_0_2")
+                table.table__drop
+                  tr 
+                    th 
+                      .table__drop-title №
+                    th 
+                      .table__drop-title Дата
+                    th 
+                      .table__drop-title.table__text-center Сумма USD
+                    th 
+                      .table__drop-title Файл
+                    th 
+                      .table__drop-title Состояние ЭДО
+                  mixin table__drop-item-3(num, addClass, addText)
+                    tr 
+                      td 
+                        .table__drop-small-text= num
+                      td 
+                        .table__drop-small-text 01.03.2022
+                      td 
+                        .table__drop-small-text.table__text-center $17,384.14
+                      td 
+                        a(href="#").table__drop-file PDF 1.44
+                      td 
+                        div(class= addClass)= addText
+                  +table__drop-item-3(1, 'table__table-status table__table-status--2 table__table-status--issued', 'Отгружен')
+                  +table__drop-item-3(2, 'table__table-status table__table-status--2 table__table-status--wait', 'Ожидается подтверждение')
+                  +table__drop-item-3(3, 'table__table-status table__table-status--2 table__table-status--issued', 'Отгружен')
+                  +table__drop-item-3(4, 'table__table-status table__table-status--2 table__table-status--issued', 'Отгружен')
+                  +table__drop-item-3(5, 'table__table-status table__table-status--2 table__table-status--issued', 'Отгружен')
+                  +table__drop-item-3(6, 'table__table-status table__table-status--2 table__table-status--wait', 'Ожидается подтверждение')
+                  +table__drop-item-3(7, 'table__table-status table__table-status--2 table__table-status--wait', 'Ожидается подтверждение')
+                  +table__drop-item-3(8, 'table__table-status table__table-status--2 table__table-status--issued', 'Отгружен')
+                  +table__drop-item-3(9, 'table__table-status table__table-status--2 table__table-status--issued', 'Отгружен')
 
+      tr.table__item.js-table-item 
+        td 
+          .table__table-text 28.12.2021
+        td 
+          .table__table-text P250222-89096
+        td 
+          .table__table-text $13,940.40
+        td 
+          .table__table-text $CRITICAL A (MEL A)
+        td 
+          .table__table-status.table__table-status--wait В работе
+        td 
+          .table__table-text 0/99
+      tr.table__has-table-row
+        td(colspan="6").table__has-table-td.js-table-drop 
+
+          .js-tabs.table__tabs
+
+            ul.table__triggers
+              li 
+                a(href="#tab_1_0").table__trigger.js-tabs-trigger.active Заказ
+              li 
+                a(href="#tab_1_1").table__trigger.js-tabs-trigger Счет
+              li 
+                a(href="#tab_1_2").table__trigger.js-tabs-trigger Реализация
+
+            div
+
+              .table__content.js-tabs-content.open(data-href="#tab_1_0")
+                table.table__drop
+                  tr 
+                    th 
+                      .table__drop-title №
+                    th 
+                      .table__drop-title P/N
+                    th 
+                      .table__drop-title.table__text-center Кол-во, ЕИ
+                    th 
+                      .table__drop-title Сумма USD
+                    th 
+                      .table__drop-title Цена с НДС / Ставка НДС
+                    th 
+                      .table__drop-title Дата отгрузки
+                    th 
+                      .table__drop-title Дата РО
+                    th 
+                      .table__drop-title Состояние
+                  mixin table__drop-item-1(num)
+                    tr 
+                      td 
+                        .table__drop-small-text= num
+                      td 
+                        .table__drop-small-text AS3553-14 Гайка
+                      td 
+                        .table__drop-small-text.table__text-center 12 шт
+                      td 
+                        .table__drop-small-text $1,384.14
+                      td 
+                        .table__drop-small-text $17,384.14 / 0 %
+                      td 
+                        .table__drop-small-text 01.03.2022
+                      td 
+                        .table__drop-small-text 03.03.2022
+                      td 
+                        .table__table-status.table__table-status--2.table__table-status--issued Отгружен
+                  +table__drop-item-1(1)
+                  +table__drop-item-1(2)
+                  +table__drop-item-1(3)
+                  +table__drop-item-1(4)
+                  +table__drop-item-1(5)
+                  +table__drop-item-1(6)
+                  +table__drop-item-1(7)
+                  +table__drop-item-1(8)
+                  +table__drop-item-1(9)
+
+              .table__content.js-tabs-content(data-href="#tab_1_1")
+                table.table__drop
+                  tr 
+                    th 
+                      .table__drop-title №
+                    th 
+                      .table__drop-title Дата
+                    th 
+                      .table__drop-title.table__text-center Сумма USD
+                    th 
+                      .table__drop-title Отменен
+                    th 
+                      .table__drop-title Файл
+                    th 
+                      .table__drop-title Состояние
+                  mixin table__drop-item-2(num)
+                    tr 
+                      td 
+                        .table__drop-small-text= num
+                      td 
+                        .table__drop-small-text 01.03.2022
+                      td 
+                        .table__drop-small-text.table__text-center $17,384.14
+                      td 
+                        .table__drop-small-text Нет
+                      td 
+                        a(href="#").table__drop-file PDF 1.44
+                      td 
+                        .table__table-status.table__table-status--2.table__table-status--issued Отгружен
+                  +table__drop-item-2(1)
+                  +table__drop-item-2(2)
+                  +table__drop-item-2(3)
+                  +table__drop-item-2(4)
+                  +table__drop-item-2(5)
+                  +table__drop-item-2(6)
+                  +table__drop-item-2(7)
+                  +table__drop-item-2(8)
+                  +table__drop-item-2(9)
+                  
+              .table__content.js-tabs-content(data-href="#tab_1_2")
+                table.table__drop
+                  tr 
+                    th 
+                      .table__drop-title №
+                    th 
+                      .table__drop-title Дата
+                    th 
+                      .table__drop-title.table__text-center Сумма USD
+                    th 
+                      .table__drop-title Файл
+                    th 
+                      .table__drop-title Состояние ЭДО
+                  mixin table__drop-item-3(num, addClass, addText)
+                    tr 
+                      td 
+                        .table__drop-small-text= num
+                      td 
+                        .table__drop-small-text 01.03.2022
+                      td 
+                        .table__drop-small-text.table__text-center $17,384.14
+                      td 
+                        a(href="#").table__drop-file PDF 1.44
+                      td 
+                        div(class= addClass)= addText
+                  +table__drop-item-3(1, 'table__table-status table__table-status--2 table__table-status--issued', 'Отгружен')
+                  +table__drop-item-3(2, 'table__table-status table__table-status--2 table__table-status--wait', 'Ожидается подтверждение')
+                  +table__drop-item-3(3, 'table__table-status table__table-status--2 table__table-status--issued', 'Отгружен')
+                  +table__drop-item-3(4, 'table__table-status table__table-status--2 table__table-status--issued', 'Отгружен')
+                  +table__drop-item-3(5, 'table__table-status table__table-status--2 table__table-status--issued', 'Отгружен')
+                  +table__drop-item-3(6, 'table__table-status table__table-status--2 table__table-status--wait', 'Ожидается подтверждение')
+                  +table__drop-item-3(7, 'table__table-status table__table-status--2 table__table-status--wait', 'Ожидается подтверждение')
+                  +table__drop-item-3(8, 'table__table-status table__table-status--2 table__table-status--issued', 'Отгружен')
+                  +table__drop-item-3(9, 'table__table-status table__table-status--2 table__table-status--issued', 'Отгружен')
+
+      tr.table__item.js-table-item 
+        td 
+          .table__table-text 28.12.2021
+        td 
+          .table__table-text P250222-89096
+        td 
+          .table__table-text $13,940.40
+        td 
+          .table__table-text $CRITICAL A (MEL A)
+        td 
+          .table__table-status.table__table-status--new Новый
+        td 
+          .table__table-text 0/99
+      tr.table__has-table-row
+        td(colspan="6").table__has-table-td.js-table-drop 
+
+          .js-tabs.table__tabs
+
+            ul.table__triggers
+              li 
+                a(href="#tab_2_0").table__trigger.js-tabs-trigger.active Заказ
+              li 
+                a(href="#tab_2_1").table__trigger.js-tabs-trigger Счет
+              li 
+                a(href="#tab_2_2").table__trigger.js-tabs-trigger Реализация
+
+            div
+
+              .table__content.js-tabs-content.open(data-href="#tab_2_0")
+                table.table__drop
+                  tr 
+                    th 
+                      .table__drop-title №
+                    th 
+                      .table__drop-title P/N
+                    th 
+                      .table__drop-title.table__text-center Кол-во, ЕИ
+                    th 
+                      .table__drop-title Сумма USD
+                    th 
+                      .table__drop-title Цена с НДС / Ставка НДС
+                    th 
+                      .table__drop-title Дата отгрузки
+                    th 
+                      .table__drop-title Дата РО
+                    th 
+                      .table__drop-title Состояние
+                  mixin table__drop-item-1(num)
+                    tr 
+                      td 
+                        .table__drop-small-text= num
+                      td 
+                        .table__drop-small-text AS3553-14 Гайка
+                      td 
+                        .table__drop-small-text.table__text-center 12 шт
+                      td 
+                        .table__drop-small-text $1,384.14
+                      td 
+                        .table__drop-small-text $17,384.14 / 0 %
+                      td 
+                        .table__drop-small-text 01.03.2022
+                      td 
+                        .table__drop-small-text 03.03.2022
+                      td 
+                        .table__table-status.table__table-status--2.table__table-status--issued Отгружен
+                  +table__drop-item-1(1)
+                  +table__drop-item-1(2)
+                  +table__drop-item-1(3)
+                  +table__drop-item-1(4)
+                  +table__drop-item-1(5)
+                  +table__drop-item-1(6)
+                  +table__drop-item-1(7)
+                  +table__drop-item-1(8)
+                  +table__drop-item-1(9)
+
+              .table__content.js-tabs-content(data-href="#tab_2_1")
+                table.table__drop
+                  tr 
+                    th 
+                      .table__drop-title №
+                    th 
+                      .table__drop-title Дата
+                    th 
+                      .table__drop-title.table__text-center Сумма USD
+                    th 
+                      .table__drop-title Отменен
+                    th 
+                      .table__drop-title Файл
+                    th 
+                      .table__drop-title Состояние
+                  mixin table__drop-item-2(num)
+                    tr 
+                      td 
+                        .table__drop-small-text= num
+                      td 
+                        .table__drop-small-text 01.03.2022
+                      td 
+                        .table__drop-small-text.table__text-center $17,384.14
+                      td 
+                        .table__drop-small-text Нет
+                      td 
+                        a(href="#").table__drop-file PDF 1.44
+                      td 
+                        .table__table-status.table__table-status--2.table__table-status--issued Отгружен
+                  +table__drop-item-2(1)
+                  +table__drop-item-2(2)
+                  +table__drop-item-2(3)
+                  +table__drop-item-2(4)
+                  +table__drop-item-2(5)
+                  +table__drop-item-2(6)
+                  +table__drop-item-2(7)
+                  +table__drop-item-2(8)
+                  +table__drop-item-2(9)
+                  
+              .table__content.js-tabs-content(data-href="#tab_2_2")
+                table.table__drop
+                  tr 
+                    th 
+                      .table__drop-title №
+                    th 
+                      .table__drop-title Дата
+                    th 
+                      .table__drop-title.table__text-center Сумма USD
+                    th 
+                      .table__drop-title Файл
+                    th 
+                      .table__drop-title Состояние ЭДО
+                  mixin table__drop-item-3(num, addClass, addText)
+                    tr 
+                      td 
+                        .table__drop-small-text= num
+                      td 
+                        .table__drop-small-text 01.03.2022
+                      td 
+                        .table__drop-small-text.table__text-center $17,384.14
+                      td 
+                        a(href="#").table__drop-file PDF 1.44
+                      td 
+                        div(class= addClass)= addText
+                  +table__drop-item-3(1, 'table__table-status table__table-status--2 table__table-status--issued', 'Отгружен')
+                  +table__drop-item-3(2, 'table__table-status table__table-status--2 table__table-status--wait', 'Ожидается подтверждение')
+                  +table__drop-item-3(3, 'table__table-status table__table-status--2 table__table-status--issued', 'Отгружен')
+                  +table__drop-item-3(4, 'table__table-status table__table-status--2 table__table-status--issued', 'Отгружен')
+                  +table__drop-item-3(5, 'table__table-status table__table-status--2 table__table-status--issued', 'Отгружен')
+                  +table__drop-item-3(6, 'table__table-status table__table-status--2 table__table-status--wait', 'Ожидается подтверждение')
+                  +table__drop-item-3(7, 'table__table-status table__table-status--2 table__table-status--wait', 'Ожидается подтверждение')
+                  +table__drop-item-3(8, 'table__table-status table__table-status--2 table__table-status--issued', 'Отгружен')
+                  +table__drop-item-3(9, 'table__table-status table__table-status--2 table__table-status--issued', 'Отгружен')
   // /table
 
   // pagination

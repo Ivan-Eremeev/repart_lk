@@ -229,13 +229,27 @@
 						<table class="table__table">
 							<tr> 
 								<th> 
-									<div class="table__table-title">Дата</div>
+									<div class="table__table-sort"> 
+										<input id="dateSortTable" type="checkbox" name="dateSortTable">
+										<label for="dateSortTable">Дата
+											<svg class="icon-pyramid">
+												<use xlink:href="img/sprite.svg#pyramid"></use>
+											</svg>
+										</label>
+									</div>
 								</th>
 								<th> 
 									<div class="table__table-title">№ Клиента</div>
 								</th>
 								<th> 
-									<div class="table__table-title">Сумма</div>
+									<div class="table__table-sort"> 
+										<input id="priceSortTable" type="checkbox" name="dateSortTable">
+										<label for="priceSortTable">Сумма
+											<svg class="icon-pyramid">
+												<use xlink:href="img/sprite.svg#pyramid"></use>
+											</svg>
+										</label>
+									</div>
 								</th>
 								<th> 
 									<div class="table__table-title">Приоритет</div>
@@ -271,12 +285,12 @@
 								<td class="table__has-table-td js-table-drop" colspan="6"> 
 									<div class="js-tabs table__tabs">
 										<ul class="table__triggers">
-											<li> <a class="table__trigger js-tabs-trigger active" href="#tab_00">tab_1</a></li>
-											<li> <a class="table__trigger js-tabs-trigger" href="#tab_01">tab_2</a></li>
-											<li> <a class="table__trigger js-tabs-trigger" href="#tab_02">tab_3</a></li>
+											<li> <a class="table__trigger js-tabs-trigger active" href="#tab_0_0">Заказ</a></li>
+											<li> <a class="table__trigger js-tabs-trigger" href="#tab_0_1">Счет</a></li>
+											<li> <a class="table__trigger js-tabs-trigger" href="#tab_0_2">Реализация</a></li>
 										</ul>
 										<div>
-											<div class="table__content js-tabs-content open" data-href="#tab_00">
+											<div class="table__content js-tabs-content open" data-href="#tab_0_0">
 												<table class="table__drop">
 													<tr> 
 														<th> 
@@ -540,11 +554,1625 @@
 																										</tr>
 												</table>
 											</div>
-											<div class="table__content js-tabs-content" data-href="#tab_01">
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt assumenda quod fugit, eos dolorem ut ex inventore facere non sit.</p>
+											<div class="table__content js-tabs-content" data-href="#tab_0_1">
+												<table class="table__drop">
+													<tr> 
+														<th> 
+															<div class="table__drop-title">№</div>
+														</th>
+														<th> 
+															<div class="table__drop-title">Дата</div>
+														</th>
+														<th> 
+															<div class="table__drop-title table__text-center">Сумма USD</div>
+														</th>
+														<th> 
+															<div class="table__drop-title">Отменен</div>
+														</th>
+														<th> 
+															<div class="table__drop-title">Файл</div>
+														</th>
+														<th> 
+															<div class="table__drop-title">Состояние</div>
+														</th>
+													</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">1</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">Нет</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">2</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">Нет</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">3</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">Нет</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">4</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">Нет</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">5</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">Нет</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">6</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">Нет</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">7</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">Нет</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">8</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">Нет</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">9</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">Нет</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+												</table>
 											</div>
-											<div class="table__content js-tabs-content" data-href="#tab_02">
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt assumenda quod fugit, eos dolorem ut ex inventore facere non sit. Dolorum, eveniet, adipisci! Aperiam soluta, harum obcaecati earum optio libero reprehenderit, fuga. Libero odio eaque deserunt recusandae, maxime quaerat autem! Eligendi inventore laudantium odit magni nihil eos soluta quisquam, unde. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus officia, aliquam, nemo est unde nesciunt ipsam iure numquam natus error!</p>
+											<div class="table__content js-tabs-content" data-href="#tab_0_2">
+												<table class="table__drop">
+													<tr> 
+														<th> 
+															<div class="table__drop-title">№</div>
+														</th>
+														<th> 
+															<div class="table__drop-title">Дата</div>
+														</th>
+														<th> 
+															<div class="table__drop-title table__text-center">Сумма USD</div>
+														</th>
+														<th> 
+															<div class="table__drop-title">Файл</div>
+														</th>
+														<th> 
+															<div class="table__drop-title">Состояние ЭДО</div>
+														</th>
+													</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">1</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">2</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--wait">Ожидается подтверждение</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">3</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">4</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">5</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">6</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--wait">Ожидается подтверждение</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">7</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--wait">Ожидается подтверждение</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">8</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">9</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+												</table>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr class="table__item js-table-item"> 
+								<td> 
+									<div class="table__table-text">28.12.2021</div>
+								</td>
+								<td> 
+									<div class="table__table-text">P250222-89096</div>
+								</td>
+								<td> 
+									<div class="table__table-text">$13,940.40</div>
+								</td>
+								<td> 
+									<div class="table__table-text">$CRITICAL A (MEL A)</div>
+								</td>
+								<td> 
+									<div class="table__table-status table__table-status--wait">В работе</div>
+								</td>
+								<td> 
+									<div class="table__table-text">0/99</div>
+								</td>
+							</tr>
+							<tr class="table__has-table-row">
+								<td class="table__has-table-td js-table-drop" colspan="6"> 
+									<div class="js-tabs table__tabs">
+										<ul class="table__triggers">
+											<li> <a class="table__trigger js-tabs-trigger active" href="#tab_1_0">Заказ</a></li>
+											<li> <a class="table__trigger js-tabs-trigger" href="#tab_1_1">Счет</a></li>
+											<li> <a class="table__trigger js-tabs-trigger" href="#tab_1_2">Реализация</a></li>
+										</ul>
+										<div>
+											<div class="table__content js-tabs-content open" data-href="#tab_1_0">
+												<table class="table__drop">
+													<tr> 
+														<th> 
+															<div class="table__drop-title">№</div>
+														</th>
+														<th> 
+															<div class="table__drop-title">P/N</div>
+														</th>
+														<th> 
+															<div class="table__drop-title table__text-center">Кол-во, ЕИ</div>
+														</th>
+														<th> 
+															<div class="table__drop-title">Сумма USD</div>
+														</th>
+														<th> 
+															<div class="table__drop-title">Цена с НДС / Ставка НДС</div>
+														</th>
+														<th> 
+															<div class="table__drop-title">Дата отгрузки</div>
+														</th>
+														<th> 
+															<div class="table__drop-title">Дата РО</div>
+														</th>
+														<th> 
+															<div class="table__drop-title">Состояние</div>
+														</th>
+													</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">1</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">AS3553-14 Гайка</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">12 шт</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">$1,384.14</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">$17,384.14 / 0 %</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">03.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">2</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">AS3553-14 Гайка</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">12 шт</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">$1,384.14</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">$17,384.14 / 0 %</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">03.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">3</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">AS3553-14 Гайка</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">12 шт</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">$1,384.14</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">$17,384.14 / 0 %</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">03.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">4</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">AS3553-14 Гайка</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">12 шт</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">$1,384.14</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">$17,384.14 / 0 %</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">03.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">5</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">AS3553-14 Гайка</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">12 шт</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">$1,384.14</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">$17,384.14 / 0 %</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">03.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">6</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">AS3553-14 Гайка</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">12 шт</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">$1,384.14</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">$17,384.14 / 0 %</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">03.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">7</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">AS3553-14 Гайка</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">12 шт</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">$1,384.14</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">$17,384.14 / 0 %</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">03.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">8</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">AS3553-14 Гайка</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">12 шт</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">$1,384.14</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">$17,384.14 / 0 %</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">03.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">9</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">AS3553-14 Гайка</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">12 шт</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">$1,384.14</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">$17,384.14 / 0 %</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">03.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+												</table>
+											</div>
+											<div class="table__content js-tabs-content" data-href="#tab_1_1">
+												<table class="table__drop">
+													<tr> 
+														<th> 
+															<div class="table__drop-title">№</div>
+														</th>
+														<th> 
+															<div class="table__drop-title">Дата</div>
+														</th>
+														<th> 
+															<div class="table__drop-title table__text-center">Сумма USD</div>
+														</th>
+														<th> 
+															<div class="table__drop-title">Отменен</div>
+														</th>
+														<th> 
+															<div class="table__drop-title">Файл</div>
+														</th>
+														<th> 
+															<div class="table__drop-title">Состояние</div>
+														</th>
+													</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">1</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">Нет</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">2</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">Нет</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">3</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">Нет</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">4</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">Нет</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">5</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">Нет</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">6</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">Нет</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">7</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">Нет</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">8</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">Нет</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">9</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">Нет</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+												</table>
+											</div>
+											<div class="table__content js-tabs-content" data-href="#tab_1_2">
+												<table class="table__drop">
+													<tr> 
+														<th> 
+															<div class="table__drop-title">№</div>
+														</th>
+														<th> 
+															<div class="table__drop-title">Дата</div>
+														</th>
+														<th> 
+															<div class="table__drop-title table__text-center">Сумма USD</div>
+														</th>
+														<th> 
+															<div class="table__drop-title">Файл</div>
+														</th>
+														<th> 
+															<div class="table__drop-title">Состояние ЭДО</div>
+														</th>
+													</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">1</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">2</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--wait">Ожидается подтверждение</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">3</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">4</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">5</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">6</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--wait">Ожидается подтверждение</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">7</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--wait">Ожидается подтверждение</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">8</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">9</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+												</table>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr class="table__item js-table-item"> 
+								<td> 
+									<div class="table__table-text">28.12.2021</div>
+								</td>
+								<td> 
+									<div class="table__table-text">P250222-89096</div>
+								</td>
+								<td> 
+									<div class="table__table-text">$13,940.40</div>
+								</td>
+								<td> 
+									<div class="table__table-text">$CRITICAL A (MEL A)</div>
+								</td>
+								<td> 
+									<div class="table__table-status table__table-status--new">Новый</div>
+								</td>
+								<td> 
+									<div class="table__table-text">0/99</div>
+								</td>
+							</tr>
+							<tr class="table__has-table-row">
+								<td class="table__has-table-td js-table-drop" colspan="6"> 
+									<div class="js-tabs table__tabs">
+										<ul class="table__triggers">
+											<li> <a class="table__trigger js-tabs-trigger active" href="#tab_2_0">Заказ</a></li>
+											<li> <a class="table__trigger js-tabs-trigger" href="#tab_2_1">Счет</a></li>
+											<li> <a class="table__trigger js-tabs-trigger" href="#tab_2_2">Реализация</a></li>
+										</ul>
+										<div>
+											<div class="table__content js-tabs-content open" data-href="#tab_2_0">
+												<table class="table__drop">
+													<tr> 
+														<th> 
+															<div class="table__drop-title">№</div>
+														</th>
+														<th> 
+															<div class="table__drop-title">P/N</div>
+														</th>
+														<th> 
+															<div class="table__drop-title table__text-center">Кол-во, ЕИ</div>
+														</th>
+														<th> 
+															<div class="table__drop-title">Сумма USD</div>
+														</th>
+														<th> 
+															<div class="table__drop-title">Цена с НДС / Ставка НДС</div>
+														</th>
+														<th> 
+															<div class="table__drop-title">Дата отгрузки</div>
+														</th>
+														<th> 
+															<div class="table__drop-title">Дата РО</div>
+														</th>
+														<th> 
+															<div class="table__drop-title">Состояние</div>
+														</th>
+													</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">1</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">AS3553-14 Гайка</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">12 шт</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">$1,384.14</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">$17,384.14 / 0 %</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">03.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">2</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">AS3553-14 Гайка</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">12 шт</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">$1,384.14</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">$17,384.14 / 0 %</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">03.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">3</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">AS3553-14 Гайка</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">12 шт</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">$1,384.14</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">$17,384.14 / 0 %</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">03.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">4</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">AS3553-14 Гайка</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">12 шт</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">$1,384.14</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">$17,384.14 / 0 %</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">03.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">5</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">AS3553-14 Гайка</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">12 шт</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">$1,384.14</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">$17,384.14 / 0 %</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">03.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">6</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">AS3553-14 Гайка</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">12 шт</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">$1,384.14</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">$17,384.14 / 0 %</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">03.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">7</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">AS3553-14 Гайка</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">12 шт</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">$1,384.14</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">$17,384.14 / 0 %</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">03.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">8</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">AS3553-14 Гайка</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">12 шт</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">$1,384.14</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">$17,384.14 / 0 %</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">03.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">9</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">AS3553-14 Гайка</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">12 шт</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">$1,384.14</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">$17,384.14 / 0 %</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">03.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+												</table>
+											</div>
+											<div class="table__content js-tabs-content" data-href="#tab_2_1">
+												<table class="table__drop">
+													<tr> 
+														<th> 
+															<div class="table__drop-title">№</div>
+														</th>
+														<th> 
+															<div class="table__drop-title">Дата</div>
+														</th>
+														<th> 
+															<div class="table__drop-title table__text-center">Сумма USD</div>
+														</th>
+														<th> 
+															<div class="table__drop-title">Отменен</div>
+														</th>
+														<th> 
+															<div class="table__drop-title">Файл</div>
+														</th>
+														<th> 
+															<div class="table__drop-title">Состояние</div>
+														</th>
+													</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">1</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">Нет</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">2</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">Нет</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">3</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">Нет</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">4</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">Нет</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">5</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">Нет</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">6</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">Нет</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">7</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">Нет</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">8</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">Нет</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">9</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">Нет</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+												</table>
+											</div>
+											<div class="table__content js-tabs-content" data-href="#tab_2_2">
+												<table class="table__drop">
+													<tr> 
+														<th> 
+															<div class="table__drop-title">№</div>
+														</th>
+														<th> 
+															<div class="table__drop-title">Дата</div>
+														</th>
+														<th> 
+															<div class="table__drop-title table__text-center">Сумма USD</div>
+														</th>
+														<th> 
+															<div class="table__drop-title">Файл</div>
+														</th>
+														<th> 
+															<div class="table__drop-title">Состояние ЭДО</div>
+														</th>
+													</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">1</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">2</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--wait">Ожидается подтверждение</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">3</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">4</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">5</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">6</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--wait">Ожидается подтверждение</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">7</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--wait">Ожидается подтверждение</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">8</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+																										<tr> 
+																											<td> 
+																												<div class="table__drop-small-text">9</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text">01.03.2022</div>
+																											</td>
+																											<td> 
+																												<div class="table__drop-small-text table__text-center">$17,384.14</div>
+																											</td>
+																											<td> <a class="table__drop-file" href="#">PDF 1.44</a></td>
+																											<td> 
+																												<div class="table__table-status table__table-status--2 table__table-status--issued">Отгружен</div>
+																											</td>
+																										</tr>
+												</table>
 											</div>
 										</div>
 									</div>
