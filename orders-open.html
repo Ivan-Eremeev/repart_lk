@@ -185,54 +185,56 @@
 										<!-- /sort-->
 										<!-- filter-->
 										<form class="filter" action="#">
-											<div class="filter__selects"> 
+											<div class="filter__row"> 
 												<div class="filter__col"> 
-													<div class="input input--select input--has-icon"> 
-														<input id="date" type="text" name="date" placeholder="Выбрать период">
-														<svg class="icon-calendar">
-															<use xlink:href="img/sprite.svg#calendar"></use>
-														</svg><b> </b>
+													<div class="filter__selects"> 
+														<div class="filter__selects-row"> 
+															<div class="filter__selects-col"> 
+																<div class="input input--select input--has-icon"> 
+																	<input id="date" type="text" name="date" placeholder="Выбрать период">
+																	<svg class="icon-calendar">
+																		<use xlink:href="img/sprite.svg#calendar"></use>
+																	</svg><b> </b>
+																</div>
+															</div>
+															<div class="filter__selects-col"> 
+																<div class="select"> 
+																	<select class="js-select-styled" id="status" name="status" data-placeholder="Статус"> 
+																		<option value="" disabled selected hidden>Статус</option>
+																		<option value="#">В работе</option>
+																		<option value="#">Выполнен</option>
+																		<option value="#">Новый</option>
+																		<option value="#">Закрыт</option>
+																		<option value="#">AOG</option>
+																	</select>
+																</div>
+															</div>
+															<div class="filter__selects-col"> 
+																<div class="select"> 
+																	<select class="js-select-styled" id="priority" name="priority" data-placeholder="Приоритет"> 
+																		<option value="" disabled selected hidden>Приоритет</option>
+																		<option value="#">CRITICAL A (MEL A)</option>
+																		<option value="#">ROUTINE B (MEL B)</option>
+																		<option value="#">ROUTINE C (MEL C)</option>
+																		<option value="#">ROUTINE D (MEL D)</option>
+																		<option value="#">AOG</option>
+																	</select>
+																</div>
+															</div>
+														</div>
 													</div>
 												</div>
 												<div class="filter__col"> 
-													<div class="select"> 
-														<select class="js-select-styled" id="status" name="status" data-placeholder="Статус"> 
-															<option value="" disabled selected hidden>Статус</option>
-															<option value="#">В работе</option>
-															<option value="#">Выполнен</option>
-															<option value="#">Новый</option>
-															<option value="#">Закрыт</option>
-															<option value="#">AOG</option>
-														</select>
-													</div>
-												</div>
-												<div class="filter__col"> 
-													<div class="select"> 
-														<select class="js-select-styled" id="priority" name="priority" data-placeholder="Приоритет"> 
-															<option value="" disabled selected hidden>Приоритет</option>
-															<option value="#">CRITICAL A (MEL A)</option>
-															<option value="#">ROUTINE B (MEL B)</option>
-															<option value="#">ROUTINE C (MEL C)</option>
-															<option value="#">ROUTINE D (MEL D)</option>
-															<option value="#">AOG</option>
-														</select>
-													</div>
-												</div>
-												<div class="filter__radio-block"> 
-													<div class="filter__radio-row"> 
-														<div class="filter__col"> 
+													<div class="filter__radio-block"> 
+														<div class="filter__radio-row"> 
 															<div class="filter__radio"> 
 																<input id="statusSERV" type="radio" name="status">
 																<label for="statusSERV"> <span class="filter__radio-circle"></span>Передан SERV</label>
 															</div>
-														</div>
-														<div class="filter__col"> 
 															<div class="filter__radio"> 
 																<input id="statusUNSERV" type="radio" name="status">
 																<label for="statusUNSERV"> <span class="filter__radio-circle"></span>Передан UNSERV</label>
 															</div>
-														</div>
-														<div class="filter__col"> 
 															<div class="filter__radio"> 
 																<input id="statusSwap" type="radio" name="status">
 																<label for="statusSwap"> <span class="filter__radio-circle"></span>Обмен правами</label>
@@ -240,7 +242,7 @@
 														</div>
 													</div>
 												</div>
-												<div class="filter__col"> 
+												<div class="filter__col">
 													<div class="filter__icon"> 
 														<svg class="icon-basket">
 															<use xlink:href="img/sprite.svg#basket"></use>

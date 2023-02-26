@@ -1,14 +1,34 @@
 /* filter */
 .filter { 
   margin-bottom: 30px;
+  &__row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: -20px;
+    margin-left: -30px;
+  }
+  &__col {
+    margin-top: 20px;
+    margin-left: 30px;
+    &--right {
+      margin-left: auto;
+    }
+    &--ml10 {
+      margin-left: 10px;
+    }
+  }
   &__selects {
+    
+  }
+  &__selects-row {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     margin-top: -10px;
     margin-left: -10px;
   }
-  &__col {
+  &__selects-col {
     margin-top: 10px;
     margin-left: 10px;
     &--right {
@@ -51,9 +71,7 @@
     }
   }
   &__radio-block {
-    margin-left: 30px;
-    margin-right: 20px;
-    margin-top: 10px;
+    
   }
   &__radio-row {
     display: flex;
@@ -67,6 +85,8 @@
     }
   }
   &__radio {
+    margin-top: 10px;
+    margin-left: 30px;
     font-size: 14px;
     input {
       position: absolute;
@@ -108,6 +128,38 @@
       border-radius: 100%;
       background-color: $primary_color;
       opacity: 0;
+    }
+  }
+  &__period {
+    
+  }
+  &__period-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -10px;
+  }
+  &__period-item {
+    margin-left: 30px;
+    margin-top: 10px;
+    input {
+      position: absolute;
+      visibility: hidden;
+      &:checked {
+        ~ label {
+          color: $primary_color;
+        }
+      }
+    } 
+    label {
+      cursor: pointer;
+      user-select: none;
+      font-size: 14px;
+      color: $grayText_color;
+      &:hover {
+        color: $text_color;
+      }
     }
   }
 }

@@ -117,6 +117,60 @@
 						</ul>
 					</div>
 					<!-- /breadcrumbs-->
+										<!-- filter-->
+										<form class="filter" action="#">
+											<div class="filter__row"> 
+												<div class="filter__col"> 
+													<div class="filter__selects"> 
+														<div class="filter__selects-row"> 
+															<div class="filter__selects-col"> 
+																<div class="input input--select input--has-icon"> 
+																	<input id="date" type="text" name="date" placeholder="Выбрать период">
+																	<svg class="icon-calendar">
+																		<use xlink:href="img/sprite.svg#calendar"></use>
+																	</svg><b> </b>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="filter__col"> 
+													<div class="filter__period"> 
+														<div class="filter__period-row"> 
+															<div class="filter__period-item"> 
+																<input id="periodToday" type="radio" name="period">
+																<label for="periodToday">Сегодня</label>
+															</div>
+															<div class="filter__period-item"> 
+																<input id="periodYesterday" type="radio" name="period">
+																<label for="periodYesterday">Вчера</label>
+															</div>
+															<div class="filter__period-item"> 
+																<input id="periodWeek" type="radio" name="period">
+																<label for="periodWeek">Неделя</label>
+															</div>
+															<div class="filter__period-item"> 
+																<input id="periodMonth" type="radio" name="period">
+																<label for="periodMonth">Месяц</label>
+															</div>
+															<div class="filter__period-item"> 
+																<input id="periodYear" type="radio" name="period">
+																<label for="periodYear">Год</label>
+															</div>
+															<div class="filter__period-item"> 
+																<input id="periodAlltime" type="radio" name="period" checked>
+																<label for="periodAlltime">Все время</label>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="filter__col filter__col--right"><a class="filter__download" href="#"> 
+														<svg class="icon-excel">
+															<use xlink:href="img/sprite.svg#excel"></use>
+														</svg>Скачать отчет</a></div>
+											</div>
+										</form>
+										<!-- /filter-->
 				</div>
 			</div>
 		</div>

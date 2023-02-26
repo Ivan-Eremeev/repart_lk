@@ -2102,7 +2102,29 @@ body.lock {
 .filter {
   margin-bottom: 30px;
 }
-.filter__selects {
+.filter__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: -20px;
+  margin-left: -30px;
+}
+.filter__col {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+.filter__col--right {
+  margin-left: auto;
+}
+.filter__col--ml10 {
+  margin-left: 10px;
+}
+.filter__selects-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2114,11 +2136,11 @@ body.lock {
   margin-top: -10px;
   margin-left: -10px;
 }
-.filter__col {
+.filter__selects-col {
   margin-top: 10px;
   margin-left: 10px;
 }
-.filter__col--right {
+.filter__selects-col--right {
   margin-left: auto;
 }
 .filter__icon {
@@ -2171,11 +2193,6 @@ body.lock {
 .filter__download:hover {
   color: #4163BC;
 }
-.filter__radio-block {
-  margin-left: 30px;
-  margin-right: 20px;
-  margin-top: 10px;
-}
 .filter__radio-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2193,6 +2210,8 @@ body.lock {
   margin-left: 30px;
 }
 .filter__radio {
+  margin-top: 10px;
+  margin-left: 30px;
   font-size: 14px;
 }
 .filter__radio input {
@@ -2245,6 +2264,41 @@ body.lock {
   border-radius: 100%;
   background-color: #4163BC;
   opacity: 0;
+}
+.filter__period-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -10px;
+}
+.filter__period-item {
+  margin-left: 30px;
+  margin-top: 10px;
+}
+.filter__period-item input {
+  position: absolute;
+  visibility: hidden;
+}
+.filter__period-item input:checked ~ label {
+  color: #4163BC;
+}
+.filter__period-item label {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 14px;
+  color: #828282;
+}
+.filter__period-item label:hover {
+  color: #151519;
 }
 
 /* /filter */

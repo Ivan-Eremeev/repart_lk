@@ -1,57 +1,81 @@
-mixin filter(moreBtn, moreRadio)
+mixin filter(moreBtn, moreRadio, period, deleteIconNot)
   // filter
   form(action="#").filter
-    .filter__selects 
+    .filter__row 
       .filter__col 
-        .input.input--select.input--has-icon 
-          input#date(type="text", name="date" placeholder="Выбрать период")
-          svg(class="icon-calendar")
-            use(xlink:href="img/sprite.svg#calendar")
-          b 
-      if moreBtn
-        .filter__col 
-          .select 
-            select#status(name="status" data-placeholder="Статус").js-select-styled 
-              option(value="" disabled selected hidden) Статус
-              option(value="#") В работе
-              option(value="#") Выполнен
-              option(value="#") Новый
-              option(value="#") Закрыт
-              option(value="#") AOG
-        .filter__col 
-          .select 
-            select#priority(name="priority" data-placeholder="Приоритет").js-select-styled 
-              option(value="" disabled selected hidden) Приоритет
-              option(value="#") CRITICAL A (MEL A)
-              option(value="#") ROUTINE B (MEL B)
-              option(value="#") ROUTINE C (MEL C)
-              option(value="#") ROUTINE D (MEL D)
-              option(value="#") AOG
+        .filter__selects 
+          .filter__selects-row 
+            .filter__selects-col 
+              .input.input--select.input--has-icon 
+                input#date(type="text", name="date" placeholder="Выбрать период")
+                svg(class="icon-calendar")
+                  use(xlink:href="img/sprite.svg#calendar")
+                b 
+            if moreBtn
+              .filter__selects-col 
+                .select 
+                  select#status(name="status" data-placeholder="Статус").js-select-styled 
+                    option(value="" disabled selected hidden) Статус
+                    option(value="#") В работе
+                    option(value="#") Выполнен
+                    option(value="#") Новый
+                    option(value="#") Закрыт
+                    option(value="#") AOG
+              .filter__selects-col 
+                .select 
+                  select#priority(name="priority" data-placeholder="Приоритет").js-select-styled 
+                    option(value="" disabled selected hidden) Приоритет
+                    option(value="#") CRITICAL A (MEL A)
+                    option(value="#") ROUTINE B (MEL B)
+                    option(value="#") ROUTINE C (MEL C)
+                    option(value="#") ROUTINE D (MEL D)
+                    option(value="#") AOG
       if moreRadio
-        .filter__radio-block 
-          .filter__radio-row 
-            .filter__col 
+        .filter__col 
+          .filter__radio-block 
+            .filter__radio-row 
               .filter__radio 
                 input#statusSERV(type="radio", name="status")
                 label(for="statusSERV") 
                   span.filter__radio-circle
                   | Передан SERV
-            .filter__col 
               .filter__radio 
                 input#statusUNSERV(type="radio", name="status")
                 label(for="statusUNSERV") 
                   span.filter__radio-circle
                   | Передан UNSERV
-            .filter__col 
               .filter__radio 
                 input#statusSwap(type="radio", name="status")
                 label(for="statusSwap") 
                   span.filter__radio-circle
                   | Обмен правами
-      .filter__col 
-        .filter__icon 
-          svg(class="icon-basket")
-            use(xlink:href="img/sprite.svg#basket")
+      if period 
+        .filter__col 
+          .filter__period 
+            .filter__period-row 
+              .filter__period-item 
+                input#periodToday(type="radio", name="period")
+                label(for="periodToday") Сегодня
+              .filter__period-item 
+                input#periodYesterday(type="radio", name="period")
+                label(for="periodYesterday") Вчера
+              .filter__period-item 
+                input#periodWeek(type="radio", name="period")
+                label(for="periodWeek") Неделя
+              .filter__period-item 
+                input#periodMonth(type="radio", name="period")
+                label(for="periodMonth") Месяц
+              .filter__period-item 
+                input#periodYear(type="radio", name="period")
+                label(for="periodYear") Год
+              .filter__period-item 
+                input#periodAlltime(type="radio", name="period" checked)
+                label(for="periodAlltime") Все время
+      if !deleteIconNot
+        .filter__col
+          .filter__icon 
+            svg(class="icon-basket")
+              use(xlink:href="img/sprite.svg#basket")
       .filter__col.filter__col--right
         a(href="#").filter__download 
           svg(class="icon-excel")
