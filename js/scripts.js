@@ -395,13 +395,11 @@ window.onload = function () {
   // Вывод подсказки, если текст не вмещается
   function tooltipShowTextOverflow() {
     let block = $('.js-text-overflow');
-    console.log(block);
     function overflow(e) {
       return e.scrollWidth > e.offsetWidth || e.scrollHeight > e.offsetHeight;
     }
     block.each(function () { 
       let blockCurrent = $(this);
-      console.log(blockCurrent);
       if (overflow(blockCurrent[0])) {
         let icon = $('<div class="text-overflow-icon"><svg class="icon-info"><use xlink: href= "img/sprite.svg#info"></use></div>');
         let drop = $('<div class="text-overflow-drop"></div>');
@@ -413,4 +411,62 @@ window.onload = function () {
   }
   tooltipShowTextOverflow();
 
+  // График уровня сервиса
+  const chart = Highcharts.chart('chartStatistics', {
+    title: false,
+
+    xAxis: {
+      categories: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь',
+        'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+    },
+    
+    yAxis: {
+      title: {
+        enabled: false
+      },
+    },
+
+    series: [{
+      name: ' UNSERV',
+      marker: {
+        symbol: 'circle'
+      },
+      data: [80, 60, 60, 30, 80, 60, 100, 50, 80, 60, 40, 20],
+      color: '#D9D9D9',
+      dashStyle: 'dash',
+    }, {
+      name: 'SERV',
+      marker: {
+        symbol: 'circle'
+      },
+      data: [20, 40, 30, 50, 60, 40, 80, 60, 90, 60, 70, 60],
+      color: '#4163BC',
+    }],
+
+    legend: {
+      enabled: false,
+    },
+
+    plotOptions: {
+      line: {
+        marker: {
+          enabled: false,
+        }
+      },
+      series: {
+        states: {
+          inactive: {
+            opacity: 1,
+          }
+        }
+      }
+    },
+
+    tooltip: {
+      useHTML: true,
+      pointFormat: '{point.y}%',
+      borderWidth: 0,
+      padding: 0
+    }
+  });
 }

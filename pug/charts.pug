@@ -20,3 +20,13 @@ block content
 
   include blocks/filter.pug
   +filter('', '', 'period', 'deleteIcon')
+
+  // chart
+  .chart
+    .chart__head 
+      .chart__title Статистика уровня сервиса
+      .chart__item.chart__item--serv Уровень сервиса по передаче SERV
+      .chart__item.chart__item--unserv Уровень сервиса по возврату UNSERV
+    .chart__body 
+      #chartStatistics
+  // /chart

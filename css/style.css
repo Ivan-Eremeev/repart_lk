@@ -2735,3 +2735,67 @@ body.lock {
 }
 
 /* /pagination */
+/* chart */
+.chart {
+  border: 1px solid #D9D9D9;
+}
+.chart__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 20px 30px 20px 40px;
+  border-bottom: 1px solid #D9D9D9;
+}
+.chart__title {
+  font-weight: bold;
+  margin-right: auto;
+}
+.chart__item {
+  margin-left: 40px;
+  font-size: 14px;
+  padding-left: 16px;
+  position: relative;
+}
+.chart__item:after {
+  content: "";
+  display: block;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  position: absolute;
+  top: 8px;
+  left: 0;
+}
+.chart__item--serv:after {
+  background-color: #4163BC;
+}
+.chart__item--unserv:after {
+  background-color: #D9D9D9;
+}
+.chart__body {
+  padding: 40px;
+}
+
+.highcharts-credits {
+  display: none;
+}
+
+.highcharts-tooltip {
+  text-align: center;
+}
+.highcharts-tooltip span {
+  padding: 8px 15px;
+  font-family: "Lato", Arial, sans-serif !important;
+  font-size: 14px !important;
+  color: #828282 !important;
+}
+.highcharts-tooltip br {
+  font-weight: bold !important;
+}
+
+/* /chart */
