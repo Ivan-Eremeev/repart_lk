@@ -1,0 +1,60 @@
+/* form */
+.form { 
+  &__items {
+    margin-bottom: 30px;
+    .row {
+      margin-left: -30px;
+      margin-top: -30px;
+      > * {
+        padding-left: 30px;
+        padding-top: 30px;
+      }
+    }
+    .select {
+      select {
+        height: 50px;
+      }
+      .select2 {
+        width: 100% !important;
+      }
+      .select2-container--default .select2-selection--single {
+        height: 50px;
+      }
+      .select2-container--default .select2-selection--single .select2-selection__arrow {
+        height: 50px;
+      }
+      .select2-container--default .select2-selection--single {
+        border-radius: 5px;
+      }
+    }
+    .input {
+      input {
+        height: 50px;
+      }
+    }
+    .counter {
+      height: 50px;
+      background-color: $gray_color;
+      border: none;
+      &__input {
+        input {
+          background-color: $gray_color;
+        }
+      }
+    }
+
+  }
+  &__col {
+    @include col(2);
+  }
+  &__title {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  &__btn  {
+    .btn {
+      height: 50px;
+    }
+  }
+}
+/* /form */

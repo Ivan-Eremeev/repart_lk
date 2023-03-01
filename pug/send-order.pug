@@ -1,0 +1,98 @@
+extends core/base.pug
+
+block title 
+  title Отправить заказ
+
+block content
+
+  // breadcrumbs
+  .breadcrumbs
+    ul 
+      li 
+        a(href="#") Материально-техническое обеспечение
+      li 
+        a(href="#") Личный кабинет РАпарт
+      li 
+        a(href="#") Сервисное соглашение
+      li 
+        span Отправить заказ
+  // /breadcrumbs
+
+  // form
+  form(action="#").form
+    .form__items 
+      .row 
+        .form__col 
+          .form__title Договор
+          .select 
+            select#contract(name="contract").js-select-styled 
+              option(value="" disabled selected hidden)
+              option(value="#") ПУЛ 01.01.2021
+              option(value="#") ПУЛ 01.01.2021
+              option(value="#") ПУЛ 01.01.2021
+        .form__col 
+          .form__title Номер заказа
+          .select 
+            select#orderNumber(name="orderNumber").js-select-styled 
+              option(value="" disabled selected hidden)
+              option(value="#") PR0112722
+              option(value="#") PR0112722
+              option(value="#") PR0112722
+        .form__col 
+          .form__title Приоритет
+          .select 
+            select#priority(name="priority").js-select-styled 
+              option(value="" disabled selected hidden)
+              option(value="#") CRITICAL A (MEL A)
+              option(value="#") ROUTINE B (MEL B)
+              option(value="#") ROUTINE C (MEL C)
+              option(value="#") ROUTINE D (MEL D)
+              option(value="#") AOG
+    .form__items 
+      .row 
+        .form__col 
+          .form__title PN
+          .select 
+            select#PN(name="PN").js-select-styled 
+              option(value="" disabled selected hidden)
+              option(value="#") PN
+              option(value="#") PN
+              option(value="#") PN
+        .form__col 
+          .form__title Дата потребности
+          .input.input--has-icon 
+            input#dateNeed(type="text", name="dateNeed")
+            svg(class="icon-calendar")
+              use(xlink:href="img/sprite.svg#calendar")
+        .form__col 
+          .form__title Дата заказа
+          .input.input--has-icon 
+            input#dateOrder(type="text", name="dateOrder")
+            svg(class="icon-calendar")
+              use(xlink:href="img/sprite.svg#calendar")
+    .form__items 
+      .row 
+        .form__col 
+          .form__title Номер ВС
+          .select 
+            select#bcNumber(name="bcNumber").js-select-styled 
+              option(value="" disabled selected hidden)
+              option(value="#") 89024
+              option(value="#") 89024
+              option(value="#") 89024
+        .form__col 
+          .form__title Количество
+          .counter.js-counter
+            .counter__btn.js-counter-minus 
+              svg(class="icon-minus")
+                use(xlink:href="img/sprite.svg#minus")
+            .counter__input.js-counter-input
+              input(type="text" value="0" maxlength="3")
+            .counter__btn.js-counter-plus 
+              svg(class="icon-plus")
+                use(xlink:href="img/sprite.svg#plus")
+    .form__btn
+      button(type="submit").btn Отправить
+  // /form
+
+  

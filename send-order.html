@@ -6,7 +6,7 @@
 		<meta name="keywords" content="">
 		<meta name="description" content="">
 		<meta name="robots" content="noindex, nofollow">
-		<title>Навигация по страницам</title>
+		<title>Отправить заказ</title>
 		<link rel="stylesheet" href="css/plugins/air-datepicker.css">
 		<link rel="stylesheet" href="css/plugins/select2.min.css">
 		<link rel="stylesheet" href="css/style.css">
@@ -92,25 +92,128 @@
 					<!-- /user-block-->
 				</div>
 				<div class="main__right-bottom"> 
-					<div class="navpage"> 
-						<div class="wrapper">
-							<h1>Навигация по страницам</h1>
-							<ul> 
-								<li> <a href="main.html">Главная</a></li>
-								<li> <a href="products-tail.html">Товары (плитка)</a></li>
-								<li> <a href="products-tail-noimage.html">Товары (плитка без фото)</a></li>
-								<li> <a href="products-table.html">Товары (список)</a></li>
-								<li> <a href="products-table-noimage.html">Товары (список без фото)</a></li>
-								<li><a href="requests.html">Заявки </a></li>
-								<li> <a href="orders.html">Заказы</a></li>
-								<li> <a href="orders-pul.html">Заказы ПУЛ</a></li>
-								<li> <a href="orders-open.html">Открытые заказы</a></li>
-								<li> <a href="charts.html">Уровень сервиса</a></li>
-								<li> <a href="charts-forday.html">Уровень сервиса за день</a></li>
-								<li> <a href="send-order.html">Отправить заказ</a></li>
-							</ul>
-						</div>
+					<!-- breadcrumbs-->
+					<div class="breadcrumbs">
+						<ul> 
+							<li> <a href="#">Материально-техническое обеспечение</a></li>
+							<li> <a href="#">Личный кабинет РАпарт</a></li>
+							<li> <a href="#">Сервисное соглашение</a></li>
+							<li> <span>Отправить заказ</span></li>
+						</ul>
 					</div>
+					<!-- /breadcrumbs-->
+					<!-- form-->
+					<form class="form" action="#">
+						<div class="form__items"> 
+							<div class="row"> 
+								<div class="form__col"> 
+									<div class="form__title">Договор</div>
+									<div class="select"> 
+										<select class="js-select-styled" id="contract" name="contract"> 
+											<option value="" disabled selected hidden></option>
+											<option value="#">ПУЛ 01.01.2021</option>
+											<option value="#">ПУЛ 01.01.2021</option>
+											<option value="#">ПУЛ 01.01.2021</option>
+										</select>
+									</div>
+								</div>
+								<div class="form__col"> 
+									<div class="form__title">Номер заказа</div>
+									<div class="select"> 
+										<select class="js-select-styled" id="orderNumber" name="orderNumber"> 
+											<option value="" disabled selected hidden></option>
+											<option value="#">PR0112722</option>
+											<option value="#">PR0112722</option>
+											<option value="#">PR0112722</option>
+										</select>
+									</div>
+								</div>
+								<div class="form__col"> 
+									<div class="form__title">Приоритет</div>
+									<div class="select"> 
+										<select class="js-select-styled" id="priority" name="priority"> 
+											<option value="" disabled selected hidden></option>
+											<option value="#">CRITICAL A (MEL A)</option>
+											<option value="#">ROUTINE B (MEL B)</option>
+											<option value="#">ROUTINE C (MEL C)</option>
+											<option value="#">ROUTINE D (MEL D)</option>
+											<option value="#">AOG</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form__items"> 
+							<div class="row"> 
+								<div class="form__col"> 
+									<div class="form__title">PN</div>
+									<div class="select"> 
+										<select class="js-select-styled" id="PN" name="PN"> 
+											<option value="" disabled selected hidden></option>
+											<option value="#">PN</option>
+											<option value="#">PN</option>
+											<option value="#">PN</option>
+										</select>
+									</div>
+								</div>
+								<div class="form__col"> 
+									<div class="form__title">Дата потребности</div>
+									<div class="input input--has-icon"> 
+										<input id="dateNeed" type="text" name="dateNeed">
+										<svg class="icon-calendar">
+											<use xlink:href="img/sprite.svg#calendar"></use>
+										</svg>
+									</div>
+								</div>
+								<div class="form__col"> 
+									<div class="form__title">Дата заказа</div>
+									<div class="input input--has-icon"> 
+										<input id="dateOrder" type="text" name="dateOrder">
+										<svg class="icon-calendar">
+											<use xlink:href="img/sprite.svg#calendar"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form__items"> 
+							<div class="row"> 
+								<div class="form__col"> 
+									<div class="form__title">Номер ВС</div>
+									<div class="select"> 
+										<select class="js-select-styled" id="bcNumber" name="bcNumber"> 
+											<option value="" disabled selected hidden></option>
+											<option value="#">89024</option>
+											<option value="#">89024</option>
+											<option value="#">89024</option>
+										</select>
+									</div>
+								</div>
+								<div class="form__col"> 
+									<div class="form__title">Количество</div>
+									<div class="counter js-counter">
+										<div class="counter__btn js-counter-minus"> 
+											<svg class="icon-minus">
+												<use xlink:href="img/sprite.svg#minus"></use>
+											</svg>
+										</div>
+										<div class="counter__input js-counter-input">
+											<input type="text" value="0" maxlength="3">
+										</div>
+										<div class="counter__btn js-counter-plus"> 
+											<svg class="icon-plus">
+												<use xlink:href="img/sprite.svg#plus"></use>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form__btn">
+							<button class="btn" type="submit">Отправить</button>
+						</div>
+					</form>
+					<!-- /form-->
 				</div>
 			</div>
 		</div>
