@@ -95,16 +95,31 @@ block content
       .row 
         .form__col 
           .form__file 
-            input#file(type="file", name="file")
-            label(for="file") 
-              svg(class="icon-spiral")
-                use(xlink:href="img/sprite.svg#spiral")
-              | Прикрепить файл
+            .form__file-item 
+              | PDF. 10.12.23
+              .form__file-item-cross 
+            .form__file-item 
+              | PDF. 10.12.23
+              .form__file-item-cross 
+            .form__file-input 
+              input#file(type="file", name="file")
+              label(for="file") 
+                svg(class="icon-spiral")
+                  use(xlink:href="img/sprite.svg#spiral")
+                | Прикрепить файл
         .form__col 
           .form__file 
-            svg(class="icon-plus2")
-              use(xlink:href="img/sprite.svg#plus2")
-            | Добавить комментарий
+            .form__file-item 
+              svg(class="icon-comment")
+                use(xlink:href="img/sprite.svg#comment")
+              | Комментарий 10.12.23
+              .form__file-item-cross 
+            .form__textarea 
+              textarea
+            .form__file-input
+              svg(class="icon-plus2")
+                use(xlink:href="img/sprite.svg#plus2")
+              | Добавить комментарий
     .form__btn
       button(type="submit").btn Отправить
   // /form
