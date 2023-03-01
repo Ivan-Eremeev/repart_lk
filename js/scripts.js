@@ -413,6 +413,11 @@ window.onload = function () {
 
   // График уровня сервиса
   const chart = Highcharts.chart('chartStatistics', {
+
+    chart: {
+      type: 'line',
+    },
+
     title: false,
 
     xAxis: {
@@ -467,6 +472,135 @@ window.onload = function () {
       pointFormat: '{point.y}%',
       borderWidth: 0,
       padding: 0
-    }
+    },
   });
+
+  // График по категориям за период
+  const piePeriod = Highcharts.chart('piePeriod', {
+
+    chart: {
+      type: 'pie',
+    },
+
+    title: {
+      text: '<span>95</span><br>Поступило заказов',
+      align: 'center',
+      verticalAlign: 'middle',
+      y: 45,
+    },
+
+    tooltip: {
+      useHTML: true,
+      pointFormat: '{point.y}%',
+      borderWidth: 0,
+      padding: 0
+    },
+
+    series: [{
+      name: 'Заказы',
+      colorByPoint: true,
+      innerSize: '80%',
+      dataLabels: {
+        enabled: false,
+      },
+      data: [
+        {
+          name: 'MEL C',
+          y: 28,
+          color: '#2ED97C',
+        },
+        {
+          name: 'MEL A',
+          y: 14,
+          color: '#FF4F53',
+        },
+        {
+          name: 'MEL B',
+          y: 12,
+          color: '#E018E3',
+        },
+        {
+          name: 'AOG',
+          y: 7,
+          color: '#FFD147',
+        },
+        {
+          name: 'MEL D',
+          y: 32,
+          color: '#2E9BD9',
+        },
+        {
+          name: 'REP...',
+          y: 7,
+          color: '#FF8C39',
+        }
+      ]
+    }],
+    
+  });
+
+  // График по открытые заказы
+  const pieOpen = Highcharts.chart('pieOpen', {
+
+    chart: {
+      type: 'pie',
+    },
+
+    title: {
+      text: '<span>45</span><br>Открытых заказов',
+      align: 'center',
+      verticalAlign: 'middle',
+      y: 45,
+    },
+
+    tooltip: {
+      useHTML: true,
+      pointFormat: '{point.y}%',
+      borderWidth: 0,
+      padding: 0
+    },
+
+    series: [{
+      name: 'Заказы',
+      colorByPoint: true,
+      innerSize: '80%',
+      dataLabels: {
+        enabled: false,
+      },
+      data: [
+        {
+          name: 'MEL C',
+          y: 28,
+          color: '#2ED97C',
+        },
+        {
+          name: 'MEL A',
+          y: 4,
+          color: '#FF4F53',
+        },
+        {
+          name: 'MEL B',
+          y: 31,
+          color: '#E018E3',
+        },
+        {
+          name: 'AOG',
+          y: 7,
+          color: '#FFD147',
+        },
+        {
+          name: 'MEL D',
+          y: 22,
+          color: '#2E9BD9',
+        },
+        {
+          name: 'REP...',
+          y: 8,
+          color: '#FF8C39',
+        }
+      ]
+    }],
+
+  });
+
 }

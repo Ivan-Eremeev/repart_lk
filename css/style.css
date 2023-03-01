@@ -2738,6 +2738,7 @@ body.lock {
 /* chart */
 .chart {
   border: 1px solid #D9D9D9;
+  margin-bottom: 30px;
 }
 .chart__head {
   display: -webkit-box;
@@ -2780,22 +2781,124 @@ body.lock {
 .chart__body {
   padding: 40px;
 }
-
-.highcharts-credits {
+.chart__body #chartStatistics {
+  height: 340px;
+}
+.chart .highcharts-credits {
   display: none;
 }
-
-.highcharts-tooltip {
+.chart .highcharts-tooltip {
   text-align: center;
 }
-.highcharts-tooltip span {
+.chart .highcharts-tooltip span {
   padding: 8px 15px;
   font-family: "Lato", Arial, sans-serif !important;
   font-size: 14px !important;
   color: #828282 !important;
 }
-.highcharts-tooltip br {
+.chart .highcharts-tooltip br {
   font-weight: bold !important;
 }
 
 /* /chart */
+/* pies */
+.pies__col {
+  width: 33.3333333333%;
+}
+.pies__block {
+  border: 1px solid #D9D9D9;
+}
+.pies__head {
+  padding: 20px 40px;
+  border-bottom: 1px solid #D9D9D9;
+  font-weight: bold;
+}
+.pies__body {
+  padding: 20px 40px 40px;
+}
+.pies__bigpie {
+  margin-bottom: 20px;
+  position: relative;
+}
+.pies__bigpie > div {
+  height: 265px;
+}
+.pies__smallpies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+.pies__smallpies-item {
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+}
+.pies__circle {
+  width: 20px;
+  height: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100%;
+  margin-bottom: 13px;
+}
+.pies__circle--green {
+  background-color: #2ED97C;
+}
+.pies__circle--red {
+  background-color: #FF4F53;
+}
+.pies__circle--violet {
+  background-color: #E018E3;
+}
+.pies__circle--yellow {
+  background-color: #FFD147;
+}
+.pies__circle--blue {
+  background-color: #2E9BD9;
+}
+.pies__circle--orange {
+  background-color: #FF8C39;
+}
+.pies__percent {
+  font-size: 14px;
+  color: #828282;
+}
+.pies__name {
+  font-size: 12px;
+  font-weight: 500;
+}
+.pies .highcharts-credits {
+  display: none;
+}
+.pies .highcharts-tooltip {
+  text-align: center;
+  z-index: 2;
+}
+.pies .highcharts-tooltip span {
+  padding: 8px 15px;
+  font-family: "Lato", Arial, sans-serif !important;
+  font-size: 14px !important;
+  color: #828282 !important;
+}
+.pies .highcharts-tooltip br {
+  font-weight: bold !important;
+}
+.pies .highcharts-title {
+  font-family: "Lato", Arial, sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 600;
+  fill: #828282 !important;
+  text-align: center;
+}
+.pies .highcharts-title tspan {
+  font-size: 56px;
+  font-weight: bold;
+  fill: #151519;
+}
+
+/* /pies */
