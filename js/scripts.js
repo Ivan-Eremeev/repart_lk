@@ -412,195 +412,266 @@ window.onload = function () {
   tooltipShowTextOverflow();
 
   // График уровня сервиса
-  const chart = Highcharts.chart('chartStatistics', {
+  if ($('#chartStatistics'). length) {
+    const chartStatistics = Highcharts.chart('chartStatistics', {
 
-    chart: {
-      type: 'line',
-    },
-
-    title: false,
-
-    xAxis: {
-      categories: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь',
-        'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
-    },
-    
-    yAxis: {
-      title: {
-        enabled: false
+      chart: {
+        type: 'line',
       },
-    },
 
-    series: [{
-      name: ' UNSERV',
-      marker: {
-        symbol: 'circle'
+      title: false,
+
+      xAxis: {
+        categories: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь',
+          'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
       },
-      data: [80, 60, 60, 30, 80, 60, 100, 50, 80, 60, 40, 20],
-      color: '#D9D9D9',
-      dashStyle: 'dash',
-    }, {
-      name: 'SERV',
-      marker: {
-        symbol: 'circle'
+      
+      yAxis: {
+        title: {
+          enabled: false
+        },
       },
-      data: [20, 40, 30, 50, 60, 40, 80, 60, 90, 60, 70, 60],
-      color: '#4163BC',
-    }],
 
-    legend: {
-      enabled: false,
-    },
-
-    plotOptions: {
-      line: {
+      series: [{
+        name: ' UNSERV',
         marker: {
-          enabled: false,
-        }
+          symbol: 'circle'
+        },
+        data: [80, 60, 60, 30, 80, 60, 100, 50, 80, 60, 40, 20],
+        color: '#D9D9D9',
+        dashStyle: 'dash',
+      }, {
+        name: 'SERV',
+        marker: {
+          symbol: 'circle'
+        },
+        data: [20, 40, 30, 50, 60, 40, 80, 60, 90, 60, 70, 60],
+        color: '#4163BC',
+      }],
+
+      legend: {
+        enabled: false,
       },
-      series: {
-        states: {
-          inactive: {
-            opacity: 1,
+
+      plotOptions: {
+        line: {
+          marker: {
+            enabled: false,
+          }
+        },
+        series: {
+          states: {
+            inactive: {
+              opacity: 1,
+            }
           }
         }
-      }
-    },
+      },
 
-    tooltip: {
-      useHTML: true,
-      pointFormat: '{point.y}%',
-      borderWidth: 0,
-      padding: 0
-    },
-  });
+      tooltip: {
+        useHTML: true,
+        pointFormat: '{point.y}%',
+        borderWidth: 0,
+        padding: 0
+      },
+    });
+  }
+
+  // График уровня сервиса зв день
+  if ($('#chartStatisticsForDay').length) {
+    const chartStatisticsForDay = Highcharts.chart('chartStatisticsForDay', {
+
+      chart: {
+        type: 'line',
+      },
+
+      title: false,
+
+      xAxis: {
+        categories: ['7.00','8.00','9.00','10.00','11.00','12.00','13.00','14.00','15.00','16.00','17.00','18.00','19.00','20.00','21.00','22.00','23.00'],
+      },
+
+      yAxis: {
+        title: {
+          enabled: false
+        },
+      },
+
+      series: [{
+        name: ' UNSERV',
+        marker: {
+          symbol: 'circle'
+        },
+        data: [80, 60, 60, 30, 80, 60, 100, 50, 80, 60, 40, 20, 40, 60, 40 ,10 , 70],
+        color: '#D9D9D9',
+        dashStyle: 'dash',
+      }, {
+        name: 'SERV',
+        marker: {
+          symbol: 'circle'
+        },
+        data: [20, 40, 30, 50, 60, 40, 80, 60, 90, 60, 70, 60, 30, 50, 20, 30, 60],
+        color: '#4163BC',
+      }],
+
+      legend: {
+        enabled: false,
+      },
+
+      plotOptions: {
+        line: {
+          marker: {
+            enabled: false,
+          }
+        },
+        series: {
+          states: {
+            inactive: {
+              opacity: 1,
+            }
+          }
+        }
+      },
+
+      tooltip: {
+        useHTML: true,
+        pointFormat: '{point.y}%',
+        borderWidth: 0,
+        padding: 0
+      },
+    });
+  }
 
   // График по категориям за период
-  const piePeriod = Highcharts.chart('piePeriod', {
+  if ($('#piePeriod').length) {
+    const piePeriod = Highcharts.chart('piePeriod', {
 
-    chart: {
-      type: 'pie',
-    },
-
-    title: {
-      text: '<span>95</span><br>Поступило заказов',
-      align: 'center',
-      verticalAlign: 'middle',
-      y: 45,
-    },
-
-    tooltip: {
-      useHTML: true,
-      pointFormat: '{point.y}%',
-      borderWidth: 0,
-      padding: 0
-    },
-
-    series: [{
-      name: 'Заказы',
-      colorByPoint: true,
-      innerSize: '80%',
-      dataLabels: {
-        enabled: false,
+      chart: {
+        type: 'pie',
       },
-      data: [
-        {
-          name: 'MEL C',
-          y: 28,
-          color: '#2ED97C',
+
+      title: {
+        text: '<span>95</span><br>Поступило заказов',
+        align: 'center',
+        verticalAlign: 'middle',
+        y: 45,
+      },
+
+      tooltip: {
+        useHTML: true,
+        pointFormat: '{point.y}%',
+        borderWidth: 0,
+        padding: 0
+      },
+
+      series: [{
+        name: 'Заказы',
+        colorByPoint: true,
+        innerSize: '80%',
+        dataLabels: {
+          enabled: false,
         },
-        {
-          name: 'MEL A',
-          y: 14,
-          color: '#FF4F53',
-        },
-        {
-          name: 'MEL B',
-          y: 12,
-          color: '#E018E3',
-        },
-        {
-          name: 'AOG',
-          y: 7,
-          color: '#FFD147',
-        },
-        {
-          name: 'MEL D',
-          y: 32,
-          color: '#2E9BD9',
-        },
-        {
-          name: 'REP...',
-          y: 7,
-          color: '#FF8C39',
-        }
-      ]
-    }],
-    
-  });
+        data: [
+          {
+            name: 'MEL C',
+            y: 28,
+            color: '#2ED97C',
+          },
+          {
+            name: 'MEL A',
+            y: 14,
+            color: '#FF4F53',
+          },
+          {
+            name: 'MEL B',
+            y: 12,
+            color: '#E018E3',
+          },
+          {
+            name: 'AOG',
+            y: 7,
+            color: '#FFD147',
+          },
+          {
+            name: 'MEL D',
+            y: 32,
+            color: '#2E9BD9',
+          },
+          {
+            name: 'REP...',
+            y: 7,
+            color: '#FF8C39',
+          }
+        ]
+      }],
+      
+    });
+  }
 
   // График по открытые заказы
-  const pieOpen = Highcharts.chart('pieOpen', {
+  if ($('#pieOpen').length) {
+    const pieOpen = Highcharts.chart('pieOpen', {
 
-    chart: {
-      type: 'pie',
-    },
-
-    title: {
-      text: '<span>45</span><br>Открытых заказов',
-      align: 'center',
-      verticalAlign: 'middle',
-      y: 45,
-    },
-
-    tooltip: {
-      useHTML: true,
-      pointFormat: '{point.y}%',
-      borderWidth: 0,
-      padding: 0
-    },
-
-    series: [{
-      name: 'Заказы',
-      colorByPoint: true,
-      innerSize: '80%',
-      dataLabels: {
-        enabled: false,
+      chart: {
+        type: 'pie',
       },
-      data: [
-        {
-          name: 'MEL C',
-          y: 28,
-          color: '#2ED97C',
-        },
-        {
-          name: 'MEL A',
-          y: 4,
-          color: '#FF4F53',
-        },
-        {
-          name: 'MEL B',
-          y: 31,
-          color: '#E018E3',
-        },
-        {
-          name: 'AOG',
-          y: 7,
-          color: '#FFD147',
-        },
-        {
-          name: 'MEL D',
-          y: 22,
-          color: '#2E9BD9',
-        },
-        {
-          name: 'REP...',
-          y: 8,
-          color: '#FF8C39',
-        }
-      ]
-    }],
 
-  });
+      title: {
+        text: '<span>45</span><br>Открытых заказов',
+        align: 'center',
+        verticalAlign: 'middle',
+        y: 45,
+      },
+
+      tooltip: {
+        useHTML: true,
+        pointFormat: '{point.y}%',
+        borderWidth: 0,
+        padding: 0
+      },
+
+      series: [{
+        name: 'Заказы',
+        colorByPoint: true,
+        innerSize: '80%',
+        dataLabels: {
+          enabled: false,
+        },
+        data: [
+          {
+            name: 'MEL C',
+            y: 28,
+            color: '#2ED97C',
+          },
+          {
+            name: 'MEL A',
+            y: 4,
+            color: '#FF4F53',
+          },
+          {
+            name: 'MEL B',
+            y: 31,
+            color: '#E018E3',
+          },
+          {
+            name: 'AOG',
+            y: 7,
+            color: '#FFD147',
+          },
+          {
+            name: 'MEL D',
+            y: 22,
+            color: '#2E9BD9',
+          },
+          {
+            name: 'REP...',
+            y: 8,
+            color: '#FF8C39',
+          }
+        ]
+      }],
+
+    });
+  }
 
 }

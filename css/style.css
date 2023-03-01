@@ -2802,6 +2802,12 @@ body.lock {
 
 /* /chart */
 /* pies */
+.pies .row {
+  margin-left: -30px;
+}
+.pies .row > * {
+  padding-left: 30px;
+}
 .pies__col {
   width: 33.3333333333%;
 }
