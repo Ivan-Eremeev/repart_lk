@@ -56,5 +56,31 @@
       height: 50px;
     }
   }
+  &__files {
+    margin: 40px 0;
+  }
+  &__file {
+    display: inline-flex;
+    align-items: center;
+    color: $grayText_color;
+    fill: $grayText_color;
+    cursor: pointer;
+    user-select: none;
+    input {
+      position: absolute;
+      visibility: hidden;
+    }
+    label {
+      display: inline-flex;
+      align-items: center;
+      cursor: pointer;
+      user-select: none;
+    }
+    svg {
+      width: 13px;
+      height: 13px;
+      margin-right: 12px;
+    }
+  }
 }
 /* /form */

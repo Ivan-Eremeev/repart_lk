@@ -699,4 +699,11 @@ window.onload = function () {
     });
   }
 
+  // const input = $('#file');
+  // input.on('change', function (e) {
+  //   const file = e.target.files;
+  //   const name = file.name;
+  //   console.log(name);
+  // })
+
 }

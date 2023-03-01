@@ -91,6 +91,20 @@ block content
             .counter__btn.js-counter-plus 
               svg(class="icon-plus")
                 use(xlink:href="img/sprite.svg#plus")
+    .form__files 
+      .row 
+        .form__col 
+          .form__file 
+            input#file(type="file", name="file")
+            label(for="file") 
+              svg(class="icon-spiral")
+                use(xlink:href="img/sprite.svg#spiral")
+              | Прикрепить файл
+        .form__col 
+          .form__file 
+            svg(class="icon-plus2")
+              use(xlink:href="img/sprite.svg#plus2")
+            | Добавить комментарий
     .form__btn
       button(type="submit").btn Отправить
   // /form
