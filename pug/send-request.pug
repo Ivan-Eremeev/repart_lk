@@ -1,0 +1,94 @@
+extends core/base.pug
+
+block title 
+  title Отправить заявку
+
+block content
+
+  // breadcrumbs
+  .breadcrumbs
+    ul 
+      li 
+        a(href="#") Материально-техническое обеспечение
+      li 
+        a(href="#") Личный кабинет РАпарт
+      li 
+        a(href="#") Сервисное соглашение
+      li 
+        span Отправить заявку
+  // /breadcrumbs
+
+  // form
+  form(action="#").form
+    .form__items 
+      .row 
+        .form__col 
+          .form__title Договор
+          .select 
+            select#contract(name="contract").js-select-styled 
+              option(value="" disabled selected hidden)
+              option(value="#") ПУЛ 01.01.2021
+              option(value="#") ПУЛ 01.01.2021
+              option(value="#") ПУЛ 01.01.2021
+        .form__col 
+          .form__title Номер заказа
+          .select 
+            select#orderNumber(name="orderNumber").js-select-styled 
+              option(value="" disabled selected hidden)
+              option(value="#") PR0112722
+              option(value="#") PR0112722
+              option(value="#") PR0112722
+        .form__col 
+          .form__title Приоритет
+          .select 
+            select#priority(name="priority").js-select-styled 
+              option(value="" disabled selected hidden)
+              option(value="#") CRITICAL A (MEL A)
+              option(value="#") ROUTINE B (MEL B)
+              option(value="#") ROUTINE C (MEL C)
+              option(value="#") ROUTINE D (MEL D)
+              option(value="#") AOG
+    .form__items 
+      .row 
+        .form__col 
+          .form__title Тип ВС
+          .select 
+            select#BCType(name="BCType").js-select-styled 
+              option(value="" disabled selected hidden)
+              option(value="#") SJ 100
+              option(value="#") SJ 100
+              option(value="#") SJ 100
+    .form__files 
+      .row 
+        .form__col 
+          .form__file 
+            .form__file-item 
+              | PDF. 10.12.23
+              .form__file-item-cross 
+            .form__file-item 
+              | PDF. 10.12.23
+              .form__file-item-cross 
+            .form__file-input 
+              input#file(type="file", name="file")
+              label(for="file") 
+                svg(class="icon-spiral")
+                  use(xlink:href="img/sprite.svg#spiral")
+                | Прикрепить файл
+        .form__col 
+          .form__file 
+            .form__file-item 
+              svg(class="icon-comment")
+                use(xlink:href="img/sprite.svg#comment")
+              | Комментарий 10.12.23
+              .form__file-item-cross 
+            .form__textarea 
+              textarea
+            .form__file-input
+              svg(class="icon-plus2")
+                use(xlink:href="img/sprite.svg#plus2")
+              | Добавить комментарий
+    .form__btn
+      button(type="submit").btn Отправить
+  // /form
+
+  
