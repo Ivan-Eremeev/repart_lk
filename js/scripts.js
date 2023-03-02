@@ -105,10 +105,10 @@ window.onload = function () {
     }
   });
 
-  // // Magnific Popup | Попап окна
-  // $('.open-popup-link').magnificPopup({
-  //   mainClass: 'mfp-fade'
-  // });
+  // Magnific Popup | Попап окна
+  $('.open-popup-link').magnificPopup({
+    mainClass: 'mfp-fade'
+  });
 
   // // Табы
 	function tabs() {
@@ -357,7 +357,7 @@ window.onload = function () {
     })
   }
   dropBlock($('.js-drop-btn'));
-  dropBlock($('.js-modal-btn'), true);
+  dropBlock($('.js-modal-btn'));
   // dropBlock($('.js-drop-menu'), true);
 
   // Фильтр поиска
@@ -699,11 +699,20 @@ window.onload = function () {
     });
   }
 
-  // const input = $('#file');
-  // input.on('change', function (e) {
-  //   const file = e.target.files;
-  //   const name = file.name;
-  //   console.log(name);
-  // })
+  // Открыть пароль в поле password
+  function togglePasswordInput() {
+    let passwordBlock = $('.js-toggle-password ');
+    passwordBlock.on('click', function () {
+      let passwordBlockCurrent = $(this);
+      if (!passwordBlockCurrent.hasClass('active')) {
+        $(this).siblings('input').attr('type', 'text');
+        $(this).addClass('active');
+      }else {
+        $(this).siblings('input').attr('type', 'password');
+        $(this).removeClass('active');
+      }
+    })
+  }
+  togglePasswordInput();
 
 }

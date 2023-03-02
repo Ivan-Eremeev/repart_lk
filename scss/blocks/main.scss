@@ -103,6 +103,7 @@
       a {
         display: block;
         color: $text_color;
+        line-height: 2;
         &:hover {
           color: $primary_color;
         }

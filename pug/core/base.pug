@@ -23,7 +23,7 @@ html(lang="ru")
     //- link(rel="stylesheet", href="css/plugins/aos.css")
     //- link(rel="stylesheet", href="css/plugins/swiper-bundle.min.css")
     link(rel="stylesheet", href="css/plugins/air-datepicker.css")
-    //- link(rel="stylesheet", href="css/plugins/magnific-popup.css")
+    link(rel="stylesheet", href="css/plugins/magnific-popup.css")
     //- link(rel="stylesheet", href="css/plugins/nouislider.min.css")
     link(rel="stylesheet", href="css/plugins/select2.min.css")
     //- link(rel="stylesheet", href="css/plugins/highcharts.css")
@@ -135,12 +135,39 @@ html(lang="ru")
                   a(href="#") 
                     svg(class="icon-bell")
                       use(xlink:href="img/sprite.svg#bell")
-            .user-block__name Романенко Н.А
+            .user-block__name 
+              .user-block__name-text.js-drop-btn(data-drop="userDropMenu") Романенко Н.А
+              .user-block__name-drop#userDropMenu
+                ul.main__drop-list 
+                  li 
+                    a(href="#test-popup").open-popup-link Настройки
+                  li 
+                    a(href="#") Выход 
           // /user-block
 
         .main__right-bottom 
 
           block content
+
+        // popup
+        #test-popup.popup.mfp-hide
+          form(action="#") 
+            .popup__title.popup__title--center Изменить пароль
+            .popup__subtitle Введите новый пароль
+            .popup__input
+              .input.input--password
+                input#passwordNew(type="password", name="passwordNew" placeholder="Введите  пароль")
+                svg(class="icon-eye").js-toggle-password 
+                  use(xlink:href="img/sprite.svg#eye")
+            .popup__subtitle Подтвердите пароль
+            .popup__input
+              .input.input--password
+                input#passwordNewConfirm(type="password", name="passwordNewConfirm" placeholder="Введите  пароль")
+                svg(class="icon-eye").js-toggle-password 
+                  use(xlink:href="img/sprite.svg#eye")
+            .popup__btn 
+              button(type="submit").btn Сохранить
+        // /popup
 
     script(src="js/jquery.min.js") 
     //- script(src="js/plugins/jquery.fancybox.min.js")
@@ -157,7 +184,7 @@ html(lang="ru")
     //- script(src="js/plugins/bootstrap.bundle.min.js") 
     //- script(src="js/plugins/swiper-bundle.min.js") 
     script(src="js/plugins/air-datepicker.js") 
-    //- script(src="js/plugins/jquery.magnific-popup.min.js") 
+    script(src="js/plugins/jquery.magnific-popup.min.js") 
     //- script(src="js/plugins/sticky-sidebar.js") 
     //- script(src="js/plugins/nouislider.min.js") 
     //- script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU")

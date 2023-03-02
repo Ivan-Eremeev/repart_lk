@@ -57,5 +57,26 @@
       }
     }
   }
+  &--password {
+    position: relative;
+    input {
+      padding-right: 50px;
+    }
+    svg {
+      width: 18px;
+      height: 18px;
+      fill: $grayText_color;
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translate(0,-50%);
+      transition: 0.1s;
+      cursor: pointer;
+      user-select: none;
+      &:hover {
+        fill: $text_color;
+      }
+    }
+  }
 }
 /* /input */

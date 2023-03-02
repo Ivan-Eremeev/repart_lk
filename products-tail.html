@@ -8,6 +8,7 @@
 		<meta name="robots" content="noindex, nofollow">
 		<title>Товары (плитка)</title>
 		<link rel="stylesheet" href="css/plugins/air-datepicker.css">
+		<link rel="stylesheet" href="css/plugins/magnific-popup.css">
 		<link rel="stylesheet" href="css/plugins/select2.min.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
@@ -87,7 +88,15 @@
 										</svg></a></li>
 							</ul>
 						</div>
-						<div class="user-block__name">Романенко Н.А</div>
+						<div class="user-block__name"> 
+							<div class="user-block__name-text js-drop-btn" data-drop="userDropMenu">Романенко Н.А</div>
+							<div class="user-block__name-drop" id="userDropMenu">
+								<ul class="main__drop-list"> 
+									<li> <a class="open-popup-link" href="#test-popup">Настройки</a></li>
+									<li> <a href="#">Выход </a></li>
+								</ul>
+							</div>
+						</div>
 					</div>
 					<!-- /user-block-->
 				</div>
@@ -950,10 +959,39 @@
 					<div class="modal__overlay"></div>
 					<!-- /modal-->
 				</div>
+				<!-- popup-->
+				<div class="popup mfp-hide" id="test-popup">
+					<form action="#"> 
+						<div class="popup__title popup__title--center">Изменить пароль</div>
+						<div class="popup__subtitle">Введите новый пароль</div>
+						<div class="popup__input">
+							<div class="input input--password">
+								<input id="passwordNew" type="password" name="passwordNew" placeholder="Введите  пароль">
+								<svg class="icon-eye js-toggle-password"> 
+									<use xlink:href="img/sprite.svg#eye"></use>
+								</svg>
+							</div>
+						</div>
+						<div class="popup__subtitle">Подтвердите пароль</div>
+						<div class="popup__input">
+							<div class="input input--password">
+								<input id="passwordNewConfirm" type="password" name="passwordNewConfirm" placeholder="Введите  пароль">
+								<svg class="icon-eye js-toggle-password"> 
+									<use xlink:href="img/sprite.svg#eye"></use>
+								</svg>
+							</div>
+						</div>
+						<div class="popup__btn"> 
+							<button class="btn" type="submit">Сохранить</button>
+						</div>
+					</form>
+				</div>
+				<!-- /popup-->
 			</div>
 		</div>
 		<script src="js/jquery.min.js"> </script>
 		<script src="js/plugins/air-datepicker.js"> </script>
+		<script src="js/plugins/jquery.magnific-popup.min.js"> </script>
 		<script src="js/plugins/select2.min.js"> </script>
 		<script src="js/plugins/highcharts.js"> </script>
 		<script src="js/scripts.js"></script>
