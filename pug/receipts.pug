@@ -1,0 +1,450 @@
+extends core/base.pug
+
+block title 
+  title Заявки
+
+block content
+
+  // breadcrumbs
+  .breadcrumbs
+    ul 
+      li 
+        a(href="#") Материально-техническое обеспечение
+      li 
+        a(href="#") Личный кабинет РАпарт
+      li 
+        a(href="#") Поставка
+      li 
+        span Заявки
+  // /breadcrumbs
+
+  include blocks/sort.pug
+  +sort
+
+  include blocks/filter.pug
+  +filter('moreBtn')
+
+  // table
+  .table
+    table.table__table
+
+      tr 
+        th 
+          .table__table-title Дата
+        th 
+          .table__table-title № Заказчика
+        th 
+          .table__table-title Приоритет
+        th 
+          .table__table-title Статус
+
+      tr.table__item.js-table-item 
+        td 
+          .table__table-text 16.06.2020
+        td 
+          .table__table-text AZT140720-HBS
+        td 
+          .table__table-text CRITICAL A (MEL A)
+        td 
+          .table__table-status.table__table-status--issued КП выдано
+      tr.table__has-table-row
+        td(colspan="4").table__has-table-td.js-table-drop 
+          table.table__drop
+            tr 
+              th 
+                .table__drop-title №
+              th 
+                .table__drop-title P/N
+              th 
+                .table__drop-title Кол-во
+              th 
+                .table__drop-title Состояние
+              th 
+                .table__drop-title КП
+              th 
+                .table__drop-title Кол-во в КП
+              th 
+                .table__drop-title Срок поставки
+              th 
+                .table__drop-title Цена с НДС/ Ставка НДС
+              th 
+                .table__drop-title В заказ
+            mixin table__drop-item(num, id, name)
+              tr 
+                td 
+                  .table__drop-text= num
+                td 
+                  .table__drop-text T7.92.3701.905.000.70/A 
+                  if name 
+                    .table__drop-gray-text 
+                      p.js-text-overflow= name
+                  else 
+                    .table__drop-gray-text 
+                      p.js-text-overflow Бокс для персонального аварийного радиомаяка ПАРМ 406А
+                td 
+                  .table__drop-text.table__text-center 2 шт
+                td 
+                  .table__drop-text КП направлено
+                  .table__drop-gray-text Действует до 01.02.2023
+                td 
+                  .table__drop-text 00KA-009800
+                  .table__drop-gray-text 01.01.2023
+                td 
+                  .table__drop-text.table__text-center 2 шт
+                td 
+                  .table__drop-text.table__text-center 1
+                td 
+                  .table__drop-text 10940, 2 USD / 0%
+                td 
+                  .table__drop-checkbox
+                    input(id= id type="checkbox")
+                    label(for= id) 
+            +table__drop-item(1, 'table_checkbox_0_0')
+            +table__drop-item(2, 'table_checkbox_0_1', 'Распределительное устройство переменного тока')
+            +table__drop-item(3, 'table_checkbox_0_2', 'Розетка')
+            +table__drop-item(4, 'table_checkbox_0_3', 'Розетка')
+            +table__drop-item(5, 'table_checkbox_0_4', 'Розетка')
+            +table__drop-item(6, 'table_checkbox_0_5', 'Розетка')
+            +table__drop-item(7, 'table_checkbox_0_6', 'Розетка')
+            +table__drop-item(8, 'table_checkbox_0_7', 'Розетка')
+            +table__drop-item(9, 'table_checkbox_0_8', 'Розетка')
+
+      tr.table__item.js-table-item 
+        td 
+          .table__table-text 16.06.2020
+        td 
+          .table__table-text AZT140720-HBS
+        td 
+          .table__table-text CRITICAL A (MEL A)
+        td 
+          .table__table-status.table__table-status--issued КП выдано
+      tr.table__has-table-row
+        td(colspan="4").table__has-table-td.js-table-drop 
+          table.table__drop
+            tr 
+              th 
+                .table__drop-title №
+              th 
+                .table__drop-title P/N
+              th 
+                .table__drop-title Кол-во
+              th 
+                .table__drop-title Состояние
+              th 
+                .table__drop-title КП
+              th 
+                .table__drop-title Кол-во в КП
+              th 
+                .table__drop-title Срок поставки
+              th 
+                .table__drop-title Цена с НДС/ Ставка НДС
+              th 
+                .table__drop-title В заказ
+            +table__drop-item(1, 'table_checkbox_1_0')
+            +table__drop-item(2, 'table_checkbox_1_1')
+            +table__drop-item(3, 'table_checkbox_1_2')
+            +table__drop-item(4, 'table_checkbox_1_3')
+            +table__drop-item(5, 'table_checkbox_1_4')
+            +table__drop-item(6, 'table_checkbox_1_5')
+            +table__drop-item(7, 'table_checkbox_1_6')
+            +table__drop-item(8, 'table_checkbox_1_7')
+            +table__drop-item(9, 'table_checkbox_1_8')
+
+      tr.table__item.js-table-item 
+        td 
+          .table__table-text 16.06.2020
+        td 
+          .table__table-text AZT140720-HBS
+        td 
+          .table__table-text CRITICAL A (MEL A)
+        td 
+          .table__table-status.table__table-status--issued КП выдано
+      tr.table__has-table-row
+        td(colspan="4").table__has-table-td.js-table-drop 
+          table.table__drop
+            tr 
+              th 
+                .table__drop-title №
+              th 
+                .table__drop-title P/N
+              th 
+                .table__drop-title Кол-во
+              th 
+                .table__drop-title Состояние
+              th 
+                .table__drop-title КП
+              th 
+                .table__drop-title Кол-во в КП
+              th 
+                .table__drop-title Срок поставки
+              th 
+                .table__drop-title Цена с НДС/ Ставка НДС
+              th 
+                .table__drop-title В заказ
+            +table__drop-item(1, 'table_checkbox_2_0')
+            +table__drop-item(2, 'table_checkbox_2_1')
+            +table__drop-item(3, 'table_checkbox_2_2')
+            +table__drop-item(4, 'table_checkbox_2_3')
+            +table__drop-item(5, 'table_checkbox_2_4')
+            +table__drop-item(6, 'table_checkbox_2_5')
+            +table__drop-item(7, 'table_checkbox_2_6')
+            +table__drop-item(8, 'table_checkbox_2_7')
+            +table__drop-item(9, 'table_checkbox_2_8')
+
+      tr.table__item.js-table-item 
+        td 
+          .table__table-text 16.06.2020
+        td 
+          .table__table-text AZT140720-HBS
+        td 
+          .table__table-text CRITICAL A (MEL A)
+        td 
+          .table__table-status.table__table-status--discontinued Прекращено
+      tr.table__has-table-row
+        td(colspan="4").table__has-table-td.js-table-drop 
+          table.table__drop
+            tr 
+              th 
+                .table__drop-title №
+              th 
+                .table__drop-title P/N
+              th 
+                .table__drop-title Кол-во
+              th 
+                .table__drop-title Состояние
+              th 
+                .table__drop-title КП
+              th 
+                .table__drop-title Кол-во в КП
+              th 
+                .table__drop-title Срок поставки
+              th 
+                .table__drop-title Цена с НДС/ Ставка НДС
+              th 
+                .table__drop-title В заказ
+            +table__drop-item(1, 'table_checkbox_3_0')
+            +table__drop-item(2, 'table_checkbox_3_1')
+            +table__drop-item(3, 'table_checkbox_3_2')
+            +table__drop-item(4, 'table_checkbox_3_3')
+            +table__drop-item(5, 'table_checkbox_3_4')
+            +table__drop-item(6, 'table_checkbox_3_5')
+            +table__drop-item(7, 'table_checkbox_3_6')
+            +table__drop-item(8, 'table_checkbox_3_7')
+            +table__drop-item(9, 'table_checkbox_3_8')
+
+      tr.table__item.js-table-item 
+        td 
+          .table__table-text 16.06.2020
+        td 
+          .table__table-text AZT140720-HBS
+        td 
+          .table__table-text CRITICAL A (MEL A)
+        td 
+          .table__table-status.table__table-status--discontinued Прекращено
+      tr.table__has-table-row
+        td(colspan="4").table__has-table-td.js-table-drop 
+          table.table__drop
+            tr 
+              th 
+                .table__drop-title №
+              th 
+                .table__drop-title P/N
+              th 
+                .table__drop-title Кол-во
+              th 
+                .table__drop-title Состояние
+              th 
+                .table__drop-title КП
+              th 
+                .table__drop-title Кол-во в КП
+              th 
+                .table__drop-title Срок поставки
+              th 
+                .table__drop-title Цена с НДС/ Ставка НДС
+              th 
+                .table__drop-title В заказ
+            +table__drop-item(1, 'table_checkbox_4_0')
+            +table__drop-item(2, 'table_checkbox_4_1')
+            +table__drop-item(3, 'table_checkbox_4_2')
+            +table__drop-item(4, 'table_checkbox_4_3')
+            +table__drop-item(5, 'table_checkbox_4_4')
+            +table__drop-item(6, 'table_checkbox_4_5')
+            +table__drop-item(7, 'table_checkbox_4_6')
+            +table__drop-item(8, 'table_checkbox_4_7')
+            +table__drop-item(9, 'table_checkbox_4_8')
+
+      tr.table__item.js-table-item 
+        td 
+          .table__table-text 16.06.2020
+        td 
+          .table__table-text AZT140720-HBS
+        td 
+          .table__table-text CRITICAL A (MEL A)
+        td 
+          .table__table-status.table__table-status--issued КП выдано
+      tr.table__has-table-row
+        td(colspan="4").table__has-table-td.js-table-drop 
+          table.table__drop
+            tr 
+              th 
+                .table__drop-title №
+              th 
+                .table__drop-title P/N
+              th 
+                .table__drop-title Кол-во
+              th 
+                .table__drop-title Состояние
+              th 
+                .table__drop-title КП
+              th 
+                .table__drop-title Кол-во в КП
+              th 
+                .table__drop-title Срок поставки
+              th 
+                .table__drop-title Цена с НДС/ Ставка НДС
+              th 
+                .table__drop-title В заказ
+            +table__drop-item(1, 'table_checkbox_5_0')
+            +table__drop-item(2, 'table_checkbox_5_1')
+            +table__drop-item(3, 'table_checkbox_5_2')
+            +table__drop-item(4, 'table_checkbox_5_3')
+            +table__drop-item(5, 'table_checkbox_5_4')
+            +table__drop-item(6, 'table_checkbox_5_5')
+            +table__drop-item(7, 'table_checkbox_5_6')
+            +table__drop-item(8, 'table_checkbox_5_7')
+            +table__drop-item(9, 'table_checkbox_5_8')
+
+      tr.table__item.js-table-item 
+        td 
+          .table__table-text 16.06.2020
+        td 
+          .table__table-text AZT140720-HBS
+        td 
+          .table__table-text CRITICAL A (MEL A)
+        td 
+          .table__table-status.table__table-status--issued КП выдано
+      tr.table__has-table-row
+        td(colspan="4").table__has-table-td.js-table-drop 
+          table.table__drop
+            tr 
+              th 
+                .table__drop-title №
+              th 
+                .table__drop-title P/N
+              th 
+                .table__drop-title Кол-во
+              th 
+                .table__drop-title Состояние
+              th 
+                .table__drop-title КП
+              th 
+                .table__drop-title Кол-во в КП
+              th 
+                .table__drop-title Срок поставки
+              th 
+                .table__drop-title Цена с НДС/ Ставка НДС
+              th 
+                .table__drop-title В заказ
+            +table__drop-item(1, 'table_checkbox_6_0')
+            +table__drop-item(2, 'table_checkbox_6_1')
+            +table__drop-item(3, 'table_checkbox_6_2')
+            +table__drop-item(4, 'table_checkbox_6_3')
+            +table__drop-item(5, 'table_checkbox_6_4')
+            +table__drop-item(6, 'table_checkbox_6_5')
+            +table__drop-item(7, 'table_checkbox_6_6')
+            +table__drop-item(8, 'table_checkbox_6_7')
+            +table__drop-item(9, 'table_checkbox_6_8')
+
+      tr.table__item.js-table-item 
+        td 
+          .table__table-text 16.06.2020
+        td 
+          .table__table-text AZT140720-HBS
+        td 
+          .table__table-text CRITICAL A (MEL A)
+        td 
+          .table__table-status.table__table-status--issued КП выдано
+      tr.table__has-table-row
+        td(colspan="4").table__has-table-td.js-table-drop 
+          table.table__drop
+            tr 
+              th 
+                .table__drop-title №
+              th 
+                .table__drop-title P/N
+              th 
+                .table__drop-title Кол-во
+              th 
+                .table__drop-title Состояние
+              th 
+                .table__drop-title КП
+              th 
+                .table__drop-title Кол-во в КП
+              th 
+                .table__drop-title Срок поставки
+              th 
+                .table__drop-title Цена с НДС/ Ставка НДС
+              th 
+                .table__drop-title В заказ
+            +table__drop-item(1, 'table_checkbox_7_0')
+            +table__drop-item(2, 'table_checkbox_7_1')
+            +table__drop-item(3, 'table_checkbox_7_2')
+            +table__drop-item(4, 'table_checkbox_7_3')
+            +table__drop-item(5, 'table_checkbox_7_4')
+            +table__drop-item(6, 'table_checkbox_7_5')
+            +table__drop-item(7, 'table_checkbox_7_6')
+            +table__drop-item(8, 'table_checkbox_7_7')
+            +table__drop-item(9, 'table_checkbox_7_8')
+  // /table
+
+  // pagination
+  .pagination
+    a(href="#").pagination__arrow.pagination__arrow--prev 
+      svg(class="icon-arrow-down")
+        use(xlink:href="img/sprite.svg#arrow-down")
+    ul.pagination__list 
+      li 
+        a(href="#") 1
+      li 
+        a(href="#") 2
+      li 
+        a(href="#").active 3
+      li 
+        a(href="#") 4
+      li 
+        a(href="#") 5
+      li 
+        span ...
+      li 
+        a(href="#") 12
+    a(href="#").pagination__arrow.pagination__arrow--next 
+      svg(class="icon-arrow-down")
+        use(xlink:href="img/sprite.svg#arrow-down")
+  // /pagination
+
+  // modal
+  .modal#cartModal
+    // cart
+    .cart
+      .cart__products 
+        .cart__head 
+          .cart__title Корзина
+          .cart__close.js-drop-close(data-drop="cartModal") Скрыть
+            .cart__cross 
+        .cart__items 
+          include blocks/cart-item.pug
+          +cart-item('img/products/image-1.jpg', '9005000-55102', 'Компьютер T3CAS', 'Кол-во:  <span>44 шт</span>', 'Нет в наличии', 'от 200 000₽', 'cart--nostock')
+          +cart-item('img/products/image-2.jpg', '0,2-16-28-ХИМ.ПАС-ОСТ 1 34508-80', 'Шайба', 'Кол-во:  <span>12 шт</span>', 'Будет 22.02.23', '157 890₽', 'cart--soonstock')
+          +cart-item('img/products/no-image.jpg', '0,2-16-28-ХИМ.ПАС-ОСТ 1 34508-80', 'Развертка ручная цилиндрическая', 'Кол-во:  <span>12 шт</span>', 'В наличии', '157 890₽')
+          +cart-item('img/products/image-9.jpg', '0,2-16-28-ХИМ.ПАС-ОСТ 1 34508-80', 'Розетка', 'Кол-во:  <span>12 шт</span>', 'Будет 22.02.23', '185 800₽', 'cart--soonstock')
+          +cart-item('img/products/image-3.jpg', '0,2-16-28-ХИМ.ПАС-ОСТ 1 34508-80', 'Распределительное устройство переменног...', 'Кол-во:  <span>12 шт</span>', 'Будет 22.02.23', '157 890₽', 'cart--soonstock')
+      .cart__arrange 
+        .cart__subhead 
+          .cart__title Общая сумма
+          .cart__result 530 820₽
+        .cart__all Всего товаров 6 шт
+        .cart__text После отправки запроса менеджер свяжется с Вами в ближайшее время
+        .cart__btn.btn Оформить заказ
+    // /cart
+  .modal__overlay
+  // /modal

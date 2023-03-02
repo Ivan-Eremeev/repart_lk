@@ -1,0 +1,3528 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content='width=1900' />
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="robots" content="noindex, nofollow">
+		<title>Заявки</title>
+		<link rel="stylesheet" href="css/plugins/air-datepicker.css">
+		<link rel="stylesheet" href="css/plugins/select2.min.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body> 
+		<div class="main"> 
+			<div class="main__left"> 
+				<ul class="main__logos">
+					<li> <a class="main__logo" href="#"> <img src="img/logo-oak.svg" alt=""></a></li>
+					<li> <a class="main__logo" href="#"> <img src="img/logo-rapart.svg" alt=""></a></li>
+				</ul>
+				<!-- menu-->
+				<div class="menu">
+					<ul class="menu__list-1">
+						<li class="menu__item-1 js-has-child"> <a class="menu__link-1" href="#"> 
+								<svg class="icon-message">
+									<use xlink:href="img/sprite.svg#message"></use>
+								</svg>Материально-техническое обеспечение</a>
+							<ul class="menu__list-2">
+								<li class="menu__item-2"><a class="menu__link-2" href="#">Документация МТО</a></li>
+								<li class="menu__item-2"><a class="menu__link-2" href="#">Рекомендуемый поставщик услуг МТО</a></li>
+								<li class="menu__item-2 js-has-child"> <a class="menu__link-2" href="#">Личный кабинет РАпарт</a>
+									<ul class="menu__list-3"> 
+										<li class="menu__item-3 js-has-child"> <a class="menu__link-3" href="#">Поставка</a>
+											<ul class="menu__list-4"> 
+												<li class="menu__item-4"><a class="menu__link-4" href="#">Каталог</a></li>
+												<li class="menu__item-4"><a class="menu__link-4" href="#">Отправить заявку</a></li>
+												<li class="menu__item-4"><a class="menu__link-4" href="#">Заявки</a></li>
+												<li class="menu__item-4"><a class="menu__link-4" href="#">Заказы</a></li>
+											</ul>
+										</li>
+										<li class="menu__item-3 js-has-child"> <a class="menu__link-3" href="#">Ремонт / Обмен / Аренда</a>
+											<ul class="menu__list-4"> 
+												<li class="menu__item-4"> <a class="menu__link-4" href="#">Отправить заявку</a></li>
+												<li class="menu__item-4"> <a class="menu__link-4" href="#">Заявки</a></li>
+												<li class="menu__item-4"> <a class="menu__link-4" href="#">Заказы</a></li>
+											</ul>
+										</li>
+										<li class="menu__item-3 js-has-child"> <a class="menu__link-3" href="#">Сервисное соглашение</a>
+											<ul class="menu__list-4"> 
+												<li class="menu__item-4"> <a class="menu__link-4" href="#">Отправить заявку</a></li>
+												<li class="menu__item-4"> <a class="menu__link-4" href="#">Уровень сервиса</a></li>
+												<li class="menu__item-4"> <a class="menu__link-4" href="#">Заказы</a></li>
+												<li class="menu__item-4"> <a class="menu__link-4" href="#">Обмен правами</a></li>
+												<li class="menu__item-4"> <a class="menu__link-4" href="#">Финансовая информация</a></li>
+											</ul>
+										</li>
+										<li class="menu__item-3"><a class="menu__link-3" href="#">Счета</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="menu__item-1"><a class="menu__link-1" href="#"> 
+								<svg class="icon-headphones">
+									<use xlink:href="img/sprite.svg#headphones"></use>
+								</svg>Оперативно-ситуационный центр</a></li>
+						<li class="menu__item-1"><a class="menu__link-1" href="#"> 
+								<svg class="icon-hammer">
+									<use xlink:href="img/sprite.svg#hammer"></use>
+								</svg>Техническое обслуживание</a></li>
+					</ul>
+				</div>
+				<!-- /menu-->
+			</div>
+			<div class="main__right"> 
+				<div class="main__right-top"> 
+					<!-- user-block-->
+					<div class="user-block">
+						<div class="user-block__icons"> 
+							<ul class="user-block__list"> 
+								<li> <a href="#"> 
+										<svg class="icon-man">
+											<use xlink:href="img/sprite.svg#man"></use>
+										</svg></a></li>
+								<li> <a href="#"> 
+										<svg class="icon-bell">
+											<use xlink:href="img/sprite.svg#bell"></use>
+										</svg></a></li>
+							</ul>
+						</div>
+						<div class="user-block__name">Романенко Н.А</div>
+					</div>
+					<!-- /user-block-->
+				</div>
+				<div class="main__right-bottom"> 
+					<!-- breadcrumbs-->
+					<div class="breadcrumbs">
+						<ul> 
+							<li> <a href="#">Материально-техническое обеспечение</a></li>
+							<li> <a href="#">Личный кабинет РАпарт</a></li>
+							<li> <a href="#">Поставка</a></li>
+							<li> <span>Заявки</span></li>
+						</ul>
+					</div>
+					<!-- /breadcrumbs-->
+										<!-- sort-->
+										<form class="sort" action="#">
+											<div class="sort__search"> 
+												<input type="text">
+												<svg class="icon-search">
+													<use xlink:href="img/sprite.svg#search"></use>
+												</svg>
+												<ul class="sort__search-drop"> 
+													<li>0,2-16-28-ХИМ.ПАС-ОСТ 1 34508-80</li>
+													<li>(2)-10-60-Хим.Пас-ОСТ 1 31162-80</li>
+													<li>Лист холоднокатанный</li>
+													<li>Эмаль ЭП-140М цвет темно-красн...</li>
+													<li>Болт</li>
+													<li>0,2-16-28-ХИМ.ПАС-ОСТ 1 34508-80</li>
+													<li>(2)-10-60-Хим.Пас-ОСТ 1 31162-80</li>
+													<li>Лист холоднокатанный</li>
+													<li>Эмаль ЭП-140М цвет темно-красн...</li>
+													<li>Болт</li>
+												</ul>
+											</div>
+											<div class="sort__controll"> 
+												<div class="sort__items"> 
+													<div class="sort__item"> 
+														<input id="sortCount_less" type="radio" name="sortCount">
+														<label for="sortCount_less"> 
+															<svg class="icon-pyramid">
+																<use xlink:href="img/sprite.svg#pyramid"></use>
+															</svg>По убыванию
+														</label>
+													</div>
+													<div class="sort__item"> 
+														<input id="sortCount_more" type="radio" name="sortCount">
+														<label for="sortCount_more"> 
+															<svg class="icon-pyramid">
+																<use xlink:href="img/sprite.svg#pyramid"></use>
+															</svg>По возрастанию
+														</label>
+													</div>
+												</div>
+												<div class="sort__checkbox"> 
+													<input id="inStock" type="checkbox">
+													<label for="inStock"><span class="sort__checkbox-circle"></span>Только в наличии</label>
+												</div>
+												<div class="sort__count">
+													<div class="sort__count-title">Количество: </div>
+													<div class="sort__count-item"> 
+														<input id="count_30" type="radio" name="count" checked>
+														<label for="count_30">30</label>
+													</div>
+													<div class="sort__count-item"> 
+														<input id="count_50" type="radio" name="count">
+														<label for="count_50">50</label>
+													</div>
+													<div class="sort__count-item"> 
+														<input id="count_100" type="radio" name="count">
+														<label for="count_100">100</label>
+													</div>
+												</div>
+												<div class="sort__cart js-modal-btn" data-drop="cartModal"> 
+													<svg class="icon-cart">
+														<use xlink:href="img/sprite.svg#cart"></use>
+													</svg><span>1</span>
+												</div>
+											</div>
+										</form>
+										<!-- /sort-->
+										<!-- filter-->
+										<form class="filter" action="#">
+											<div class="filter__row"> 
+												<div class="filter__col"> 
+													<div class="filter__selects"> 
+														<div class="filter__selects-row"> 
+															<div class="filter__selects-col"> 
+																<div class="input input--select input--has-icon"> 
+																	<input id="date" type="text" name="date" placeholder="Выбрать период">
+																	<svg class="icon-calendar">
+																		<use xlink:href="img/sprite.svg#calendar"></use>
+																	</svg><b> </b>
+																</div>
+															</div>
+															<div class="filter__selects-col"> 
+																<div class="select"> 
+																	<select class="js-select-styled" id="status" name="status" data-placeholder="Статус"> 
+																		<option value="" disabled selected hidden>Статус</option>
+																		<option value="#">В работе</option>
+																		<option value="#">Выполнен</option>
+																		<option value="#">Новый</option>
+																		<option value="#">Закрыт</option>
+																		<option value="#">AOG</option>
+																	</select>
+																</div>
+															</div>
+															<div class="filter__selects-col"> 
+																<div class="select"> 
+																	<select class="js-select-styled" id="priority" name="priority" data-placeholder="Приоритет"> 
+																		<option value="" disabled selected hidden>Приоритет</option>
+																		<option value="#">CRITICAL A (MEL A)</option>
+																		<option value="#">ROUTINE B (MEL B)</option>
+																		<option value="#">ROUTINE C (MEL C)</option>
+																		<option value="#">ROUTINE D (MEL D)</option>
+																		<option value="#">AOG</option>
+																	</select>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="filter__col">
+													<div class="filter__icon"> 
+														<svg class="icon-basket">
+															<use xlink:href="img/sprite.svg#basket"></use>
+														</svg>
+													</div>
+												</div>
+												<div class="filter__col filter__col--right"><a class="filter__download" href="#"> 
+														<svg class="icon-excel">
+															<use xlink:href="img/sprite.svg#excel"></use>
+														</svg>Скачать отчет</a></div>
+											</div>
+										</form>
+										<!-- /filter-->
+					<!-- table-->
+					<div class="table">
+						<table class="table__table">
+							<tr> 
+								<th> 
+									<div class="table__table-title">Дата</div>
+								</th>
+								<th> 
+									<div class="table__table-title">№ Заказчика</div>
+								</th>
+								<th> 
+									<div class="table__table-title">Приоритет</div>
+								</th>
+								<th> 
+									<div class="table__table-title">Статус</div>
+								</th>
+							</tr>
+							<tr class="table__item js-table-item"> 
+								<td> 
+									<div class="table__table-text">16.06.2020</div>
+								</td>
+								<td> 
+									<div class="table__table-text">AZT140720-HBS</div>
+								</td>
+								<td> 
+									<div class="table__table-text">CRITICAL A (MEL A)</div>
+								</td>
+								<td> 
+									<div class="table__table-status table__table-status--issued">КП выдано</div>
+								</td>
+							</tr>
+							<tr class="table__has-table-row">
+								<td class="table__has-table-td js-table-drop" colspan="4"> 
+									<table class="table__drop">
+										<tr> 
+											<th> 
+												<div class="table__drop-title">№</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">P/N</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">Кол-во</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">Состояние</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">КП</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">Кол-во в КП</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">Срок поставки</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">Цена с НДС/ Ставка НДС</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">В заказ</div>
+											</th>
+										</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_0_0" type="checkbox">
+																							<label for="table_checkbox_0_0"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">2</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Распределительное устройство переменного тока</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_0_1" type="checkbox">
+																							<label for="table_checkbox_0_1"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">3</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Розетка</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_0_2" type="checkbox">
+																							<label for="table_checkbox_0_2"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">4</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Розетка</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_0_3" type="checkbox">
+																							<label for="table_checkbox_0_3"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">5</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Розетка</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_0_4" type="checkbox">
+																							<label for="table_checkbox_0_4"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">6</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Розетка</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_0_5" type="checkbox">
+																							<label for="table_checkbox_0_5"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">7</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Розетка</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_0_6" type="checkbox">
+																							<label for="table_checkbox_0_6"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">8</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Розетка</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_0_7" type="checkbox">
+																							<label for="table_checkbox_0_7"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">9</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Розетка</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_0_8" type="checkbox">
+																							<label for="table_checkbox_0_8"> </label>
+																						</div>
+																					</td>
+																				</tr>
+									</table>
+								</td>
+							</tr>
+							<tr class="table__item js-table-item"> 
+								<td> 
+									<div class="table__table-text">16.06.2020</div>
+								</td>
+								<td> 
+									<div class="table__table-text">AZT140720-HBS</div>
+								</td>
+								<td> 
+									<div class="table__table-text">CRITICAL A (MEL A)</div>
+								</td>
+								<td> 
+									<div class="table__table-status table__table-status--issued">КП выдано</div>
+								</td>
+							</tr>
+							<tr class="table__has-table-row">
+								<td class="table__has-table-td js-table-drop" colspan="4"> 
+									<table class="table__drop">
+										<tr> 
+											<th> 
+												<div class="table__drop-title">№</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">P/N</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">Кол-во</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">Состояние</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">КП</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">Кол-во в КП</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">Срок поставки</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">Цена с НДС/ Ставка НДС</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">В заказ</div>
+											</th>
+										</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_1_0" type="checkbox">
+																							<label for="table_checkbox_1_0"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">2</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_1_1" type="checkbox">
+																							<label for="table_checkbox_1_1"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">3</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_1_2" type="checkbox">
+																							<label for="table_checkbox_1_2"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">4</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_1_3" type="checkbox">
+																							<label for="table_checkbox_1_3"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">5</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_1_4" type="checkbox">
+																							<label for="table_checkbox_1_4"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">6</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_1_5" type="checkbox">
+																							<label for="table_checkbox_1_5"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">7</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_1_6" type="checkbox">
+																							<label for="table_checkbox_1_6"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">8</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_1_7" type="checkbox">
+																							<label for="table_checkbox_1_7"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">9</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_1_8" type="checkbox">
+																							<label for="table_checkbox_1_8"> </label>
+																						</div>
+																					</td>
+																				</tr>
+									</table>
+								</td>
+							</tr>
+							<tr class="table__item js-table-item"> 
+								<td> 
+									<div class="table__table-text">16.06.2020</div>
+								</td>
+								<td> 
+									<div class="table__table-text">AZT140720-HBS</div>
+								</td>
+								<td> 
+									<div class="table__table-text">CRITICAL A (MEL A)</div>
+								</td>
+								<td> 
+									<div class="table__table-status table__table-status--issued">КП выдано</div>
+								</td>
+							</tr>
+							<tr class="table__has-table-row">
+								<td class="table__has-table-td js-table-drop" colspan="4"> 
+									<table class="table__drop">
+										<tr> 
+											<th> 
+												<div class="table__drop-title">№</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">P/N</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">Кол-во</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">Состояние</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">КП</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">Кол-во в КП</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">Срок поставки</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">Цена с НДС/ Ставка НДС</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">В заказ</div>
+											</th>
+										</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_2_0" type="checkbox">
+																							<label for="table_checkbox_2_0"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">2</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_2_1" type="checkbox">
+																							<label for="table_checkbox_2_1"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">3</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_2_2" type="checkbox">
+																							<label for="table_checkbox_2_2"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">4</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_2_3" type="checkbox">
+																							<label for="table_checkbox_2_3"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">5</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_2_4" type="checkbox">
+																							<label for="table_checkbox_2_4"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">6</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_2_5" type="checkbox">
+																							<label for="table_checkbox_2_5"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">7</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_2_6" type="checkbox">
+																							<label for="table_checkbox_2_6"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">8</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_2_7" type="checkbox">
+																							<label for="table_checkbox_2_7"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">9</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_2_8" type="checkbox">
+																							<label for="table_checkbox_2_8"> </label>
+																						</div>
+																					</td>
+																				</tr>
+									</table>
+								</td>
+							</tr>
+							<tr class="table__item js-table-item"> 
+								<td> 
+									<div class="table__table-text">16.06.2020</div>
+								</td>
+								<td> 
+									<div class="table__table-text">AZT140720-HBS</div>
+								</td>
+								<td> 
+									<div class="table__table-text">CRITICAL A (MEL A)</div>
+								</td>
+								<td> 
+									<div class="table__table-status table__table-status--discontinued">Прекращено</div>
+								</td>
+							</tr>
+							<tr class="table__has-table-row">
+								<td class="table__has-table-td js-table-drop" colspan="4"> 
+									<table class="table__drop">
+										<tr> 
+											<th> 
+												<div class="table__drop-title">№</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">P/N</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">Кол-во</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">Состояние</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">КП</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">Кол-во в КП</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">Срок поставки</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">Цена с НДС/ Ставка НДС</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">В заказ</div>
+											</th>
+										</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_3_0" type="checkbox">
+																							<label for="table_checkbox_3_0"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">2</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_3_1" type="checkbox">
+																							<label for="table_checkbox_3_1"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">3</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_3_2" type="checkbox">
+																							<label for="table_checkbox_3_2"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">4</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_3_3" type="checkbox">
+																							<label for="table_checkbox_3_3"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">5</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_3_4" type="checkbox">
+																							<label for="table_checkbox_3_4"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">6</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_3_5" type="checkbox">
+																							<label for="table_checkbox_3_5"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">7</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_3_6" type="checkbox">
+																							<label for="table_checkbox_3_6"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">8</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_3_7" type="checkbox">
+																							<label for="table_checkbox_3_7"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">9</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_3_8" type="checkbox">
+																							<label for="table_checkbox_3_8"> </label>
+																						</div>
+																					</td>
+																				</tr>
+									</table>
+								</td>
+							</tr>
+							<tr class="table__item js-table-item"> 
+								<td> 
+									<div class="table__table-text">16.06.2020</div>
+								</td>
+								<td> 
+									<div class="table__table-text">AZT140720-HBS</div>
+								</td>
+								<td> 
+									<div class="table__table-text">CRITICAL A (MEL A)</div>
+								</td>
+								<td> 
+									<div class="table__table-status table__table-status--discontinued">Прекращено</div>
+								</td>
+							</tr>
+							<tr class="table__has-table-row">
+								<td class="table__has-table-td js-table-drop" colspan="4"> 
+									<table class="table__drop">
+										<tr> 
+											<th> 
+												<div class="table__drop-title">№</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">P/N</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">Кол-во</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">Состояние</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">КП</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">Кол-во в КП</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">Срок поставки</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">Цена с НДС/ Ставка НДС</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">В заказ</div>
+											</th>
+										</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_4_0" type="checkbox">
+																							<label for="table_checkbox_4_0"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">2</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_4_1" type="checkbox">
+																							<label for="table_checkbox_4_1"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">3</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_4_2" type="checkbox">
+																							<label for="table_checkbox_4_2"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">4</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_4_3" type="checkbox">
+																							<label for="table_checkbox_4_3"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">5</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_4_4" type="checkbox">
+																							<label for="table_checkbox_4_4"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">6</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_4_5" type="checkbox">
+																							<label for="table_checkbox_4_5"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">7</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_4_6" type="checkbox">
+																							<label for="table_checkbox_4_6"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">8</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_4_7" type="checkbox">
+																							<label for="table_checkbox_4_7"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">9</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_4_8" type="checkbox">
+																							<label for="table_checkbox_4_8"> </label>
+																						</div>
+																					</td>
+																				</tr>
+									</table>
+								</td>
+							</tr>
+							<tr class="table__item js-table-item"> 
+								<td> 
+									<div class="table__table-text">16.06.2020</div>
+								</td>
+								<td> 
+									<div class="table__table-text">AZT140720-HBS</div>
+								</td>
+								<td> 
+									<div class="table__table-text">CRITICAL A (MEL A)</div>
+								</td>
+								<td> 
+									<div class="table__table-status table__table-status--issued">КП выдано</div>
+								</td>
+							</tr>
+							<tr class="table__has-table-row">
+								<td class="table__has-table-td js-table-drop" colspan="4"> 
+									<table class="table__drop">
+										<tr> 
+											<th> 
+												<div class="table__drop-title">№</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">P/N</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">Кол-во</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">Состояние</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">КП</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">Кол-во в КП</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">Срок поставки</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">Цена с НДС/ Ставка НДС</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">В заказ</div>
+											</th>
+										</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_5_0" type="checkbox">
+																							<label for="table_checkbox_5_0"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">2</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_5_1" type="checkbox">
+																							<label for="table_checkbox_5_1"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">3</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_5_2" type="checkbox">
+																							<label for="table_checkbox_5_2"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">4</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_5_3" type="checkbox">
+																							<label for="table_checkbox_5_3"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">5</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_5_4" type="checkbox">
+																							<label for="table_checkbox_5_4"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">6</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_5_5" type="checkbox">
+																							<label for="table_checkbox_5_5"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">7</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_5_6" type="checkbox">
+																							<label for="table_checkbox_5_6"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">8</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_5_7" type="checkbox">
+																							<label for="table_checkbox_5_7"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">9</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_5_8" type="checkbox">
+																							<label for="table_checkbox_5_8"> </label>
+																						</div>
+																					</td>
+																				</tr>
+									</table>
+								</td>
+							</tr>
+							<tr class="table__item js-table-item"> 
+								<td> 
+									<div class="table__table-text">16.06.2020</div>
+								</td>
+								<td> 
+									<div class="table__table-text">AZT140720-HBS</div>
+								</td>
+								<td> 
+									<div class="table__table-text">CRITICAL A (MEL A)</div>
+								</td>
+								<td> 
+									<div class="table__table-status table__table-status--issued">КП выдано</div>
+								</td>
+							</tr>
+							<tr class="table__has-table-row">
+								<td class="table__has-table-td js-table-drop" colspan="4"> 
+									<table class="table__drop">
+										<tr> 
+											<th> 
+												<div class="table__drop-title">№</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">P/N</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">Кол-во</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">Состояние</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">КП</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">Кол-во в КП</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">Срок поставки</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">Цена с НДС/ Ставка НДС</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">В заказ</div>
+											</th>
+										</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_6_0" type="checkbox">
+																							<label for="table_checkbox_6_0"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">2</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_6_1" type="checkbox">
+																							<label for="table_checkbox_6_1"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">3</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_6_2" type="checkbox">
+																							<label for="table_checkbox_6_2"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">4</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_6_3" type="checkbox">
+																							<label for="table_checkbox_6_3"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">5</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_6_4" type="checkbox">
+																							<label for="table_checkbox_6_4"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">6</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_6_5" type="checkbox">
+																							<label for="table_checkbox_6_5"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">7</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_6_6" type="checkbox">
+																							<label for="table_checkbox_6_6"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">8</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_6_7" type="checkbox">
+																							<label for="table_checkbox_6_7"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">9</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_6_8" type="checkbox">
+																							<label for="table_checkbox_6_8"> </label>
+																						</div>
+																					</td>
+																				</tr>
+									</table>
+								</td>
+							</tr>
+							<tr class="table__item js-table-item"> 
+								<td> 
+									<div class="table__table-text">16.06.2020</div>
+								</td>
+								<td> 
+									<div class="table__table-text">AZT140720-HBS</div>
+								</td>
+								<td> 
+									<div class="table__table-text">CRITICAL A (MEL A)</div>
+								</td>
+								<td> 
+									<div class="table__table-status table__table-status--issued">КП выдано</div>
+								</td>
+							</tr>
+							<tr class="table__has-table-row">
+								<td class="table__has-table-td js-table-drop" colspan="4"> 
+									<table class="table__drop">
+										<tr> 
+											<th> 
+												<div class="table__drop-title">№</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">P/N</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">Кол-во</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">Состояние</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">КП</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">Кол-во в КП</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">Срок поставки</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">Цена с НДС/ Ставка НДС</div>
+											</th>
+											<th> 
+												<div class="table__drop-title">В заказ</div>
+											</th>
+										</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_7_0" type="checkbox">
+																							<label for="table_checkbox_7_0"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">2</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_7_1" type="checkbox">
+																							<label for="table_checkbox_7_1"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">3</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_7_2" type="checkbox">
+																							<label for="table_checkbox_7_2"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">4</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_7_3" type="checkbox">
+																							<label for="table_checkbox_7_3"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">5</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_7_4" type="checkbox">
+																							<label for="table_checkbox_7_4"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">6</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_7_5" type="checkbox">
+																							<label for="table_checkbox_7_5"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">7</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_7_6" type="checkbox">
+																							<label for="table_checkbox_7_6"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">8</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_7_7" type="checkbox">
+																							<label for="table_checkbox_7_7"> </label>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr> 
+																					<td> 
+																						<div class="table__drop-text">9</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">T7.92.3701.905.000.70/A </div>
+																						<div class="table__drop-gray-text"> 
+																							<p class="js-text-overflow">Бокс для персонального аварийного радиомаяка ПАРМ 406А</p>
+																						</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">КП направлено</div>
+																						<div class="table__drop-gray-text">Действует до 01.02.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">00KA-009800</div>
+																						<div class="table__drop-gray-text">01.01.2023</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">2 шт</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text table__text-center">1</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-text">10940, 2 USD / 0%</div>
+																					</td>
+																					<td> 
+																						<div class="table__drop-checkbox">
+																							<input id="table_checkbox_7_8" type="checkbox">
+																							<label for="table_checkbox_7_8"> </label>
+																						</div>
+																					</td>
+																				</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<!-- /table-->
+					<!-- pagination-->
+					<div class="pagination"><a class="pagination__arrow pagination__arrow--prev" href="#"> 
+							<svg class="icon-arrow-down">
+								<use xlink:href="img/sprite.svg#arrow-down"></use>
+							</svg></a>
+						<ul class="pagination__list"> 
+							<li> <a href="#">1</a></li>
+							<li> <a href="#">2</a></li>
+							<li> <a class="active" href="#">3</a></li>
+							<li> <a href="#">4</a></li>
+							<li> <a href="#">5</a></li>
+							<li> <span>...</span></li>
+							<li> <a href="#">12</a></li>
+						</ul><a class="pagination__arrow pagination__arrow--next" href="#"> 
+							<svg class="icon-arrow-down">
+								<use xlink:href="img/sprite.svg#arrow-down"></use>
+							</svg></a>
+					</div>
+					<!-- /pagination-->
+					<!-- modal-->
+					<div class="modal" id="cartModal">
+						<!-- cart-->
+						<div class="cart">
+							<div class="cart__products"> 
+								<div class="cart__head"> 
+									<div class="cart__title">Корзина</div>
+									<div class="cart__close js-drop-close" data-drop="cartModal">Скрыть
+										<div class="cart__cross"> </div>
+									</div>
+								</div>
+								<div class="cart__items"> 
+																		<div class="cart__item cart--nostock">
+																			<div class="cart__img"> <img src="img/products/image-1.jpg" alt=""></div>
+																			<div class="cart__content"> 
+																				<div class="cart__subtitle">9005000-55102</div>
+																				<div class="cart__name">Компьютер T3CAS</div>
+																				<div class="cart__num">Кол-во:  <span>44 шт</span></div>
+																				<div class="cart__bottom"> 
+																					<div class="cart__stock">Нет в наличии</div>
+																					<div class="cart__price">от 200 000₽</div>
+																					<div class="cart__counter"> 
+																						<div class="counter js-counter">
+																							<div class="counter__btn js-counter-minus"> 
+																								<svg class="icon-minus">
+																									<use xlink:href="img/sprite.svg#minus"></use>
+																								</svg>
+																							</div>
+																							<div class="counter__input js-counter-input">
+																								<input type="text" value="2" maxlength="3">
+																							</div>
+																							<div class="counter__btn js-counter-plus"> 
+																								<svg class="icon-plus">
+																									<use xlink:href="img/sprite.svg#plus"></use>
+																								</svg>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="cart__delete"> 
+																				<svg class="icon-basket">
+																					<use xlink:href="img/sprite.svg#basket"></use>
+																				</svg>
+																			</div>
+																		</div>
+																		<div class="cart__item cart--soonstock">
+																			<div class="cart__img"> <img src="img/products/image-2.jpg" alt=""></div>
+																			<div class="cart__content"> 
+																				<div class="cart__subtitle">0,2-16-28-ХИМ.ПАС-ОСТ 1 34508-80</div>
+																				<div class="cart__name">Шайба</div>
+																				<div class="cart__num">Кол-во:  <span>12 шт</span></div>
+																				<div class="cart__bottom"> 
+																					<div class="cart__stock">Будет 22.02.23</div>
+																					<div class="cart__price">157 890₽</div>
+																					<div class="cart__counter"> 
+																						<div class="counter js-counter">
+																							<div class="counter__btn js-counter-minus"> 
+																								<svg class="icon-minus">
+																									<use xlink:href="img/sprite.svg#minus"></use>
+																								</svg>
+																							</div>
+																							<div class="counter__input js-counter-input">
+																								<input type="text" value="2" maxlength="3">
+																							</div>
+																							<div class="counter__btn js-counter-plus"> 
+																								<svg class="icon-plus">
+																									<use xlink:href="img/sprite.svg#plus"></use>
+																								</svg>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="cart__delete"> 
+																				<svg class="icon-basket">
+																					<use xlink:href="img/sprite.svg#basket"></use>
+																				</svg>
+																			</div>
+																		</div>
+																		<div class="cart__item">
+																			<div class="cart__img"> <img src="img/products/no-image.jpg" alt=""></div>
+																			<div class="cart__content"> 
+																				<div class="cart__subtitle">0,2-16-28-ХИМ.ПАС-ОСТ 1 34508-80</div>
+																				<div class="cart__name">Развертка ручная цилиндрическая</div>
+																				<div class="cart__num">Кол-во:  <span>12 шт</span></div>
+																				<div class="cart__bottom"> 
+																					<div class="cart__stock">В наличии</div>
+																					<div class="cart__price">157 890₽</div>
+																					<div class="cart__counter"> 
+																						<div class="counter js-counter">
+																							<div class="counter__btn js-counter-minus"> 
+																								<svg class="icon-minus">
+																									<use xlink:href="img/sprite.svg#minus"></use>
+																								</svg>
+																							</div>
+																							<div class="counter__input js-counter-input">
+																								<input type="text" value="2" maxlength="3">
+																							</div>
+																							<div class="counter__btn js-counter-plus"> 
+																								<svg class="icon-plus">
+																									<use xlink:href="img/sprite.svg#plus"></use>
+																								</svg>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="cart__delete"> 
+																				<svg class="icon-basket">
+																					<use xlink:href="img/sprite.svg#basket"></use>
+																				</svg>
+																			</div>
+																		</div>
+																		<div class="cart__item cart--soonstock">
+																			<div class="cart__img"> <img src="img/products/image-9.jpg" alt=""></div>
+																			<div class="cart__content"> 
+																				<div class="cart__subtitle">0,2-16-28-ХИМ.ПАС-ОСТ 1 34508-80</div>
+																				<div class="cart__name">Розетка</div>
+																				<div class="cart__num">Кол-во:  <span>12 шт</span></div>
+																				<div class="cart__bottom"> 
+																					<div class="cart__stock">Будет 22.02.23</div>
+																					<div class="cart__price">185 800₽</div>
+																					<div class="cart__counter"> 
+																						<div class="counter js-counter">
+																							<div class="counter__btn js-counter-minus"> 
+																								<svg class="icon-minus">
+																									<use xlink:href="img/sprite.svg#minus"></use>
+																								</svg>
+																							</div>
+																							<div class="counter__input js-counter-input">
+																								<input type="text" value="2" maxlength="3">
+																							</div>
+																							<div class="counter__btn js-counter-plus"> 
+																								<svg class="icon-plus">
+																									<use xlink:href="img/sprite.svg#plus"></use>
+																								</svg>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="cart__delete"> 
+																				<svg class="icon-basket">
+																					<use xlink:href="img/sprite.svg#basket"></use>
+																				</svg>
+																			</div>
+																		</div>
+																		<div class="cart__item cart--soonstock">
+																			<div class="cart__img"> <img src="img/products/image-3.jpg" alt=""></div>
+																			<div class="cart__content"> 
+																				<div class="cart__subtitle">0,2-16-28-ХИМ.ПАС-ОСТ 1 34508-80</div>
+																				<div class="cart__name">Распределительное устройство переменног...</div>
+																				<div class="cart__num">Кол-во:  <span>12 шт</span></div>
+																				<div class="cart__bottom"> 
+																					<div class="cart__stock">Будет 22.02.23</div>
+																					<div class="cart__price">157 890₽</div>
+																					<div class="cart__counter"> 
+																						<div class="counter js-counter">
+																							<div class="counter__btn js-counter-minus"> 
+																								<svg class="icon-minus">
+																									<use xlink:href="img/sprite.svg#minus"></use>
+																								</svg>
+																							</div>
+																							<div class="counter__input js-counter-input">
+																								<input type="text" value="2" maxlength="3">
+																							</div>
+																							<div class="counter__btn js-counter-plus"> 
+																								<svg class="icon-plus">
+																									<use xlink:href="img/sprite.svg#plus"></use>
+																								</svg>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="cart__delete"> 
+																				<svg class="icon-basket">
+																					<use xlink:href="img/sprite.svg#basket"></use>
+																				</svg>
+																			</div>
+																		</div>
+								</div>
+							</div>
+							<div class="cart__arrange"> 
+								<div class="cart__subhead"> 
+									<div class="cart__title">Общая сумма</div>
+									<div class="cart__result">530 820₽</div>
+								</div>
+								<div class="cart__all">Всего товаров 6 шт</div>
+								<div class="cart__text">После отправки запроса менеджер свяжется с Вами в ближайшее время</div>
+								<div class="cart__btn btn">Оформить заказ</div>
+							</div>
+						</div>
+						<!-- /cart-->
+					</div>
+					<div class="modal__overlay"></div>
+					<!-- /modal-->
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery.min.js"> </script>
+		<script src="js/plugins/air-datepicker.js"> </script>
+		<script src="js/plugins/select2.min.js"> </script>
+		<script src="js/plugins/highcharts.js"> </script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
