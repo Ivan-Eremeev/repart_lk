@@ -21,42 +21,6 @@ window.onload = function () {
   }
   menu();
 
-  // // Липкое меню.
-  // function stikyMenu(header) {
-  //   let headerTop = header.offset().top;
-  //   headerToggleClass();
-  //   $(window).scroll(function () {
-  //     headerToggleClass();
-  //   });
-  //   function headerToggleClass() {
-  //     if ($(window).scrollTop() > headerTop + 130) {
-  //       header.addClass('sticky');
-  //     } else if ($(window).scrollTop() <= headerTop) {
-  //       header.removeClass('sticky');
-  //     }
-  //   }
-  // };
-  // stikyMenu($('#headerSticky'));
-
-  // // Swiper | Слайдер
-  // if ($('#swiper').length) {
-  //   const swiper = new Swiper('#swiper', {
-  //     slidesPerView: 1,
-  //     simulateTouch: false,
-  //     pagination: {
-  //       el: '.swiper-pagination',
-  //       clickable: true,
-  //     },
-  //     navigation: {
-  //       nextEl: '.swiper-button-next',
-  //       prevEl: '.swiper-button-prev',
-  //     },
-  //     scrollbar: {
-  //       el: '.swiper-scrollbar',
-  //     },
-  //   });
-  // }
-
   // Air Datepicker | Календарь в блоке "filter"
   new AirDatepicker('#date', {
     range: true,
@@ -147,113 +111,6 @@ window.onload = function () {
 	}
 	tabs();
 
-  // // Аккордеон
-  // function accordion(accordion, settings) {
-  //   if (accordion.length) {
-  //     $('.js-accordion').each(function () {
-  //       let currentAccordion = $(this);
-  //       let trigger = currentAccordion.find('.js-accordion-trigger');
-  //       let content = $('.js-accordion-content');
-  //       let time = 300;
-  //       trigger.on('click', function () {
-  //         let currentTrigger = $(this);
-  //         let data = currentTrigger.data('content');
-  //         if (!currentTrigger.hasClass('active')) {
-  //           if (settings) {
-  //             content.stop().slideUp(
-  //               time,
-  //               function () {
-  //                 $(this).removeClass('open');
-  //               }
-  //             )
-  //             trigger.removeClass('active');
-  //           };
-  //           currentTrigger.addClass('active');
-  //           currentAccordion.find('#' + data).stop().slideDown(
-  //             time,
-  //             function () {
-  //               $(this).addClass('open')
-  //             }
-  //           );
-  //         } else {
-  //           currentTrigger.removeClass('active');
-  //           currentAccordion.find('#' + data).stop().slideUp(
-  //             time,
-  //             function () {
-  //               $(this).removeClass('open')
-  //             }
-  //           );
-  //         }
-  //       })
-  //     })
-  //   }
-  // }
-  // accordion($('.js-accordion'), false);
-
-  // // Sticky Sidebar | Липкий сайдбар
-  // if ($('.js-sticky').length) {
-  //   var stickySidebar = new StickySidebar('.js-sticky', {
-  //     topSpacing: 65,
-  //     bottomSpacing: 10,
-  //     containerSelector: false,
-  //     innerWrapperSelector: '.sidebar__inner',
-  //     resizeSensor: true,
-  //     stickyClass: 'is-affixed',
-  //     minWidth: 0
-  //   });
-  // }
-
-  // // Кнопка скролла вверх страницы
-  // function scrollUp() {
-  //   const btn = $('.js-scrollup');
-  //   $(window).scroll(function () {
-  //     btnShowFade();
-  //   });
-  //   function btnShowFade() {
-  //     if ($(this).scrollTop() > 200) {
-  //       btn.addClass('show');
-  //     } else {
-  //       btn.removeClass('show');
-  //     }
-  //   }
-  //   btnShowFade();
-  //   btn.click(function () {
-  //     $('body,html').animate({
-  //       scrollTop: 0
-  //     }, 500);
-  //     return false;
-  //   });
-  // }
-  // scrollUp();
-
-  // // Показать еще в фильтрах
-  // function showMoreFilters() {
-  //   const list = $('.js-more-list');
-  //   const btn = $('.js-more-btn');
-  //   const count = 4;
-  //   list.each(function () {
-  //     $(this).find('li').each(function (index) {
-  //       if (index > count - 1) {
-  //         $(this).fadeOut();
-  //       }
-  //     })
-  //   })
-  //   btn.on('click', function () {
-  //     $(this).fadeOut();
-  //     $(this).parent().find($('.js-more-list li')).fadeIn();
-  //   })
-  // }
-  // showMoreFilters();
-
-  // // Очистить фильтр 
-  // function clearFilter() {
-  //   let clearBnt = $('.js-filters-clear');
-  //   clearBnt.on('click', function () {
-  //     $(this).closest('.filters').find('input').prop('checked', false);
-  //   })
-  // }
-  // clearFilter();
-
   // Изменение количества товара (плюс минус)
   function counter(block) {
     const counter = document.querySelectorAll(block);
@@ -285,40 +142,6 @@ window.onload = function () {
     }
   }
   counter('.js-counter');
-
-  // // noUiSlider || Ползунок выбора
-  // if (document.getElementById('noUiSlider')) {
-  //   const rangeSlider = document.getElementById('noUiSlider');
-  //   const inputMin = document.getElementById('noUiSliderMin');
-  //   const inputMax = document.getElementById('noUiSliderMax');
-  //   let min = Number(rangeSlider.dataset.min);
-  //   let max = Number(rangeSlider.dataset.max);
-  //   let nowMin = Number(rangeSlider.dataset.nowmin);
-  //   let nowMax = Number(rangeSlider.dataset.nowmax);
-  //   console.log(nowMin,nowMax);
-  //   noUiSlider.create(rangeSlider, {
-  //     start: [nowMin, nowMax],
-  //     connect: true,
-  //     step: 10,
-  //     range: {
-  //       'min': min,
-  //       'max': max
-  //     }
-  //   });
-  //   rangeSlider.noUiSlider.on('update', function (values, handle) {
-  //     if (handle) {
-  //       inputMax.value = values[handle];
-  //     } else {
-  //       inputMin.value = values[handle];
-  //     }
-  //   });
-  //   inputMin.addEventListener('change', function () {
-  //     rangeSlider.noUiSlider.set([this.value, null]);
-  //   });
-  //   inputMax.addEventListener('change', function () {
-  //     rangeSlider.noUiSlider.set([null, this.value]);
-  //   });
-  // };
 
   // Выпадайки при клике по кнопке
   // Задать блокам выпадайкам айдишник совпадающий с data-drop="" в кнопке для этого блока
