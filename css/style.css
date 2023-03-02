@@ -316,6 +316,7 @@ body.lock {
   padding: 50px 50px 40px;
   width: auto;
   max-width: 420px;
+  border-radius: 5px;
   margin: 20px auto;
 }
 .popup__title {

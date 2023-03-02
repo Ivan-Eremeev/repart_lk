@@ -197,14 +197,10 @@
 											</svg>Комментарий 10.12.23
 											<div class="form__file-item-cross"> </div>
 										</div>
-										<div class="form__textarea"> 
-											<textarea></textarea>
-										</div>
-										<div class="form__file-input">
-											<svg class="icon-plus2">
-												<use xlink:href="img/sprite.svg#plus2"></use>
-											</svg>Добавить комментарий
-										</div>
+										<div class="form__file-input"><a class="open-popup-link" href="#messagePopup">
+												<svg class="icon-plus2">
+													<use xlink:href="img/sprite.svg#plus2"></use>
+												</svg>Добавить комментарий</a></div>
 									</div>
 								</div>
 							</div>
@@ -214,6 +210,21 @@
 						</div>
 					</form>
 					<!-- /form-->
+					<!-- popup-->
+					<div class="popup popup--width700 mfp-hide" id="messagePopup">
+						<form action="#"> 
+							<div class="popup__title">Комментария к заявке PRO112722</div>
+							<div class="popup__input">
+								<div class="textarea"> 
+									<textarea></textarea>
+								</div>
+							</div>
+							<div class="popup__btn">
+								<button class="btn" type="submit">Отправить</button>
+							</div>
+						</form>
+					</div>
+					<!-- /popup-->
 				</div>
 				<!-- popup-->
 				<div class="popup mfp-hide" id="changePasswordPopup">

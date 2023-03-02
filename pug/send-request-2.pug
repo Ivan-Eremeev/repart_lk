@@ -89,14 +89,24 @@ block content
                 use(xlink:href="img/sprite.svg#comment")
               | Комментарий 10.12.23
               .form__file-item-cross 
-            .form__textarea 
-              textarea
             .form__file-input
-              svg(class="icon-plus2")
-                use(xlink:href="img/sprite.svg#plus2")
-              | Добавить комментарий
+              a(href="#messagePopup").open-popup-link
+                svg(class="icon-plus2")
+                  use(xlink:href="img/sprite.svg#plus2")
+                | Добавить комментарий
     .form__btn
       button(type="submit").btn Отправить
   // /form
+
+  // popup
+  #messagePopup.popup.popup--width700.mfp-hide
+    form(action="#") 
+      .popup__title Комментария к заявке PRO112722
+      .popup__input
+        .textarea 
+          textarea
+      .popup__btn
+        button(type="submit").btn Отправить
+  // /popup
 
   
