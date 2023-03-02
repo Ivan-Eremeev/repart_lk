@@ -1,6 +1,7 @@
 /* products */
 .products { 
   border-left: 1px solid $border_color;
+  margin-bottom: 40px;
   &__col {
     @include col(4);
     border-top: 1px solid $border_color;

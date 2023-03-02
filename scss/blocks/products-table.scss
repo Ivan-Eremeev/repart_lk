@@ -1,11 +1,21 @@
 /* products-table */
 .products-table { 
+  border: 1px solid $border_color;
+  margin-bottom: 40px;
   &__table {
     width: 100%; 
     th {
-      font-weight: 500;
-      text-align-last: left;
-    }
+        padding: 14px 10px;
+        border-bottom: 1px solid $border_color;
+        font-weight: 500;
+        text-align: left;
+        &:first-child {
+          padding-left: 30px;
+        }
+        &:last-child {
+          padding-right: 30px;
+        }
+      }
     td {
       padding: 20px 10px;
       vertical-align: middle;
@@ -18,7 +28,9 @@
     }
   }
   &__item {
-    border-bottom: 1px solid $border_color;      
+    &:not(:last-child) {
+      border-bottom: 1px solid $border_color;
+    }
     &--nostock {
       .products-table__stock {
         &:before {
@@ -97,21 +109,6 @@
     }
   }
   &--noimage {
-    .products-table__table {
-      border-top: 1px solid $border_color;
-      border-left: 1px solid $border_color;
-      border-right: 1px solid $border_color;
-      th {
-        padding: 14px 10px;
-        border-bottom: 1px solid $border_color;
-        &:first-child {
-          padding-left: 30px;
-        }
-        &:last-child {
-          padding-right: 30px;
-        }
-      }
-    }
     .products-table__name {
       white-space: nowrap;
       overflow: hidden;

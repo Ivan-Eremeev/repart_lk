@@ -57,6 +57,31 @@ block content
         +products-item-noimage('img/products/no-image.jpg', '(2)-10-60-Хим.Пас-ОСТ 1 31162-80', 'Лист холоднокатанныйAS', 'Кол-во:  <span>44 шт</span>', 'В наличии', 'от 200 000₽')
   // /products
 
+  // pagination
+  .pagination
+    a(href="#").pagination__arrow.pagination__arrow--prev 
+      svg(class="icon-arrow-down")
+        use(xlink:href="img/sprite.svg#arrow-down")
+    ul.pagination__list 
+      li 
+        a(href="#") 1
+      li 
+        a(href="#") 2
+      li 
+        a(href="#").active 3
+      li 
+        a(href="#") 4
+      li 
+        a(href="#") 5
+      li 
+        span ...
+      li 
+        a(href="#") 12
+    a(href="#").pagination__arrow.pagination__arrow--next 
+      svg(class="icon-arrow-down")
+        use(xlink:href="img/sprite.svg#arrow-down")
+  // /pagination
+
   // modal
   .modal#cartModal
     // cart
