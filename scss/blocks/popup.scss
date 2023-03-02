@@ -28,9 +28,16 @@
   }
   &__btn {
     .btn {
-      width: 100%;
       height: 50px;
     }
+    &--width-full {
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+  &--width700 {
+    max-width: 700px;
   }
 }
 /* overlay at start */

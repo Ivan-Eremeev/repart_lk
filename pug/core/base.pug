@@ -140,7 +140,7 @@ html(lang="ru")
               .user-block__name-drop#userDropMenu
                 ul.main__drop-list 
                   li 
-                    a(href="#test-popup").open-popup-link Настройки
+                    a(href="#changePasswordPopup").open-popup-link Настройки
                   li 
                     a(href="#") Выход 
           // /user-block
@@ -150,7 +150,7 @@ html(lang="ru")
           block content
 
         // popup
-        #test-popup.popup.mfp-hide
+        #changePasswordPopup.popup.mfp-hide
           form(action="#") 
             .popup__title.popup__title--center Изменить пароль
             .popup__subtitle Введите новый пароль
@@ -165,7 +165,7 @@ html(lang="ru")
                 input#passwordNewConfirm(type="password", name="passwordNewConfirm" placeholder="Введите  пароль")
                 svg(class="icon-eye").js-toggle-password 
                   use(xlink:href="img/sprite.svg#eye")
-            .popup__btn 
+            .popup__btn.popup__btn--width-full
               button(type="submit").btn Сохранить
         // /popup
 

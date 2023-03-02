@@ -92,7 +92,7 @@
 							<div class="user-block__name-text js-drop-btn" data-drop="userDropMenu">Романенко Н.А</div>
 							<div class="user-block__name-drop" id="userDropMenu">
 								<ul class="main__drop-list"> 
-									<li> <a class="open-popup-link" href="#test-popup">Настройки</a></li>
+									<li> <a class="open-popup-link" href="#changePasswordPopup">Настройки</a></li>
 									<li> <a href="#">Выход </a></li>
 								</ul>
 							</div>
@@ -248,14 +248,10 @@
 											</svg>Комментарий 10.12.23
 											<div class="form__file-item-cross"> </div>
 										</div>
-										<div class="form__textarea"> 
-											<textarea></textarea>
-										</div>
-										<div class="form__file-input">
-											<svg class="icon-plus2">
-												<use xlink:href="img/sprite.svg#plus2"></use>
-											</svg>Добавить комментарий
-										</div>
+										<div class="form__file-input"><a class="open-popup-link" href="#messagePopup">
+												<svg class="icon-plus2">
+													<use xlink:href="img/sprite.svg#plus2"></use>
+												</svg>Добавить комментарий</a></div>
 									</div>
 								</div>
 							</div>
@@ -265,9 +261,24 @@
 						</div>
 					</form>
 					<!-- /form-->
+					<!-- popup-->
+					<div class="popup popup--width700 mfp-hide" id="messagePopup">
+						<form action="#"> 
+							<div class="popup__title">Комментария к заявке PRO112722</div>
+							<div class="popup__input">
+								<div class="textarea"> 
+									<textarea></textarea>
+								</div>
+							</div>
+							<div class="popup__btn">
+								<button class="btn" type="submit">Отправить</button>
+							</div>
+						</form>
+					</div>
+					<!-- /popup-->
 				</div>
 				<!-- popup-->
-				<div class="popup mfp-hide" id="test-popup">
+				<div class="popup mfp-hide" id="changePasswordPopup">
 					<form action="#"> 
 						<div class="popup__title popup__title--center">Изменить пароль</div>
 						<div class="popup__subtitle">Введите новый пароль</div>
@@ -288,7 +299,7 @@
 								</svg>
 							</div>
 						</div>
-						<div class="popup__btn"> 
+						<div class="popup__btn popup__btn--width-full">
 							<button class="btn" type="submit">Сохранить</button>
 						</div>
 					</form>

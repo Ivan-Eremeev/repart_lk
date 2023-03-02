@@ -337,8 +337,13 @@ body.lock {
   height: 50px;
 }
 .popup__btn .btn {
-  width: 100%;
   height: 50px;
+}
+.popup__btn--width-full .btn {
+  width: 100%;
+}
+.popup--width700 {
+  max-width: 700px;
 }
 
 /* overlay at start */
@@ -591,6 +596,19 @@ body.lock {
 }
 
 /* /input */
+/* textarea */
+.textarea textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px 20px;
+  resize: none;
+  background-color: #F8F8F8;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+/* /textarea */
 /* select2 */
 .select2-dropdown {
   border: none;
@@ -3162,14 +3180,15 @@ body.lock {
   align-items: center;
   padding-left: 20px;
   margin-top: auto;
+  position: relative;
+}
+.form__file-input a {
   color: #828282;
   fill: #828282;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  position: relative;
+}
+.form__file-input a:hover {
+  color: #4163BC;
+  fill: #4163BC;
 }
 .form__file-input input {
   position: absolute;
@@ -3184,6 +3203,12 @@ body.lock {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  color: #828282;
+  fill: #828282;
+}
+.form__file-input label:hover {
+  color: #4163BC;
+  fill: #4163BC;
 }
 .form__file-input svg {
   width: 13px;
