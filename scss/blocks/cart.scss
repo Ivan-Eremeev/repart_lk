@@ -176,6 +176,7 @@
     padding-left: 10px;
     color: $grayText_color;
     position: relative;
+    white-space: nowrap;
     &:before {
       content: '';
       display: block;
@@ -191,6 +192,7 @@
   &__price {
     font-weight: bold;
     margin-right: 50px;
+    white-space: nowrap;
   }
   &__counter {
     margin-left: auto;

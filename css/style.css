@@ -1675,7 +1675,7 @@ body.lock {
 /* /products */
 /* modal */
 .modal {
-  max-width: 1150px;
+  max-width: 1200px;
   background-color: #fff;
   position: fixed;
   top: 0;
@@ -1939,6 +1939,7 @@ body.lock {
   padding-left: 10px;
   color: #828282;
   position: relative;
+  white-space: nowrap;
 }
 .cart__stock:before {
   content: "";
@@ -1954,6 +1955,7 @@ body.lock {
 .cart__price {
   font-weight: bold;
   margin-right: 50px;
+  white-space: nowrap;
 }
 .cart__counter {
   margin-left: auto;
