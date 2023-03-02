@@ -36,6 +36,18 @@
         width: 100%;
       }
     }
+    &--center {
+      text-align: center;
+    }
+  }
+  &__icon-check {
+    margin-bottom: 20px;
+    text-align: center;
+    fill: #219653;
+    svg {
+      width: 40px;
+      height: 40px;
+    }
   }
   &--width700 {
     max-width: 700px;

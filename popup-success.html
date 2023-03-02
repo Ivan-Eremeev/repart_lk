@@ -6,7 +6,7 @@
 		<meta name="keywords" content="">
 		<meta name="description" content="">
 		<meta name="robots" content="noindex, nofollow">
-		<title>Навигация по страницам</title>
+		<title>Заказ успешно отправлен</title>
 		<link rel="stylesheet" href="css/plugins/air-datepicker.css">
 		<link rel="stylesheet" href="css/plugins/magnific-popup.css">
 		<link rel="stylesheet" href="css/plugins/select2.min.css">
@@ -100,30 +100,20 @@
 					</div>
 					<!-- /user-block-->
 				</div>
-				<div class="main__right-bottom"> 
-					<div class="navpage"> 
-						<div class="wrapper">
-							<h1>Навигация по страницам</h1>
-							<ul> 
-								<li> <a href="main.html">Главная</a></li>
-								<li> <a href="products-tail.html">Товары (плитка)</a></li>
-								<li> <a href="products-tail-noimage.html">Товары (плитка без фото)</a></li>
-								<li> <a href="products-table.html">Товары (список)</a></li>
-								<li> <a href="products-table-noimage.html">Товары (список без фото)</a></li>
-								<li><a href="requests.html">Заявки </a></li>
-								<li> <a href="orders.html">Заказы</a></li>
-								<li> <a href="orders-pul.html">Заказы ПУЛ</a></li>
-								<li> <a href="orders-open.html">Открытые заказы</a></li>
-								<li> <a href="charts.html">Уровень сервиса</a></li>
-								<li> <a href="charts-forday.html">Уровень сервиса за день</a></li>
-								<li> <a href="send-order.html">Отправить заказ</a></li>
-								<li> <a href="send-request.html">Отправить заявку</a></li>
-								<li> <a href="send-request-2.html">Отправить заявку 2</a></li>
-								<li> <a href="receipts.html">Счета</a></li>
-								<li> <a href="popup-success.html">Заказ успешно отправлен</a></li>
-							</ul>
+				<div class="main__right-bottom"> <a class="open-popup-link" href="#messagePopup">Попап</a>
+					<!-- popup-->
+					<div class="popup mfp-hide" id="messagePopup">
+						<div class="popup__icon-check"> 
+							<svg class="icon-check">
+								<use xlink:href="img/sprite.svg#check"></use>
+							</svg>
+						</div>
+						<div class="popup__title popup__title--center">Заказ успешно отправлен!</div>
+						<div class="popup__btn popup__btn--center popup-close-btn">
+							<div class="btn">Закрыть</div>
 						</div>
 					</div>
+					<!-- /popup-->
 				</div>
 				<!-- popup-->
 				<div class="popup mfp-hide" id="changePasswordPopup">

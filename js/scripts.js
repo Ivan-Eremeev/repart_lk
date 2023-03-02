@@ -107,7 +107,15 @@ window.onload = function () {
 
   // Magnific Popup | Попап окна
   $('.open-popup-link').magnificPopup({
-    mainClass: 'mfp-fade'
+    mainClass: 'mfp-fade',
+    callbacks: {
+      open: function () {
+        $('.popup-close-btn').on('click', function (event) {
+          event.preventDefault();
+          $.magnificPopup.close();
+        });
+      }
+    }
   });
 
   // // Табы

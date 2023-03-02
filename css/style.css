@@ -343,6 +343,18 @@ body.lock {
 .popup__btn--width-full .btn {
   width: 100%;
 }
+.popup__btn--center {
+  text-align: center;
+}
+.popup__icon-check {
+  margin-bottom: 20px;
+  text-align: center;
+  fill: #219653;
+}
+.popup__icon-check svg {
+  width: 40px;
+  height: 40px;
+}
 .popup--width700 {
   max-width: 700px;
 }

@@ -1,0 +1,20 @@
+extends core/base.pug
+
+block title 
+  title Заказ успешно отправлен
+
+block content
+
+  a(href="#messagePopup").open-popup-link Попап
+
+  // popup
+  #messagePopup.popup.mfp-hide
+    .popup__icon-check 
+      svg(class="icon-check")
+        use(xlink:href="img/sprite.svg#check")
+    .popup__title.popup__title--center Заказ успешно отправлен!
+    .popup__btn.popup__btn--center.popup-close-btn
+      .btn Закрыть
+  // /popup
+
+  
