@@ -1030,7 +1030,6 @@ body.lock {
 .sort__search {
   width: 100%;
   max-width: 510px;
-  margin-right: 20px;
   position: relative;
 }
 .sort__search input {
@@ -1104,7 +1103,7 @@ body.lock {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-right: 30px;
+  margin-left: 30px;
 }
 .sort__item {
   display: -webkit-box;
@@ -1156,7 +1155,7 @@ body.lock {
   transform: rotate(180deg);
 }
 .sort__checkbox {
-  margin-right: 30px;
+  margin-left: 30px;
 }
 .sort__checkbox label {
   display: -webkit-box;
@@ -1219,7 +1218,7 @@ body.lock {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-right: 30px;
+  margin-left: 30px;
 }
 .sort__count-item {
   margin-left: 10px;
@@ -1245,7 +1244,7 @@ body.lock {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-right: 30px;
+  margin-left: 30px;
   border-radius: 2px;
   overflow: hidden;
   background-color: #F8F8F8;
@@ -1295,6 +1294,7 @@ body.lock {
   align-items: center;
   min-height: 35px;
   padding: 0 12px;
+  margin-left: 30px;
   border-radius: 2px;
   background-color: #F8F8F8;
   fill: #828282;

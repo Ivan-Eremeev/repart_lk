@@ -1,4 +1,4 @@
-mixin sort(view)
+mixin sort(view, cartNot)
   // sort
   form(action="#").sort
     .sort__search 
@@ -58,8 +58,9 @@ mixin sort(view)
             label(for="view_tile") 
               svg(class="icon-tile")
                 use(xlink:href="img/sprite.svg#tile")
-      .sort__cart.js-modal-btn(data-drop="cartModal") 
-        svg(class="icon-cart")
-          use(xlink:href="img/sprite.svg#cart")
-        span 1
+      if !cartNot
+        .sort__cart.js-modal-btn(data-drop="cartModal") 
+          svg(class="icon-cart")
+            use(xlink:href="img/sprite.svg#cart")
+          span 1
   // /sort
